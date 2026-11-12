@@ -1,0 +1,18 @@
+{
+ "min_games_for_ranking": 10,
+ "games_by_tournament": {
+  "FirstStand": 45,
+  "LCK_Cup": 125,
+  "LCK_PlayIn_PO": 55,
+  "LCK_R1-2": 204,
+  "LCK_R3-4": 98,
+  "MSI": 71,
+  "Road_to_MSI": 20,
+  "Worlds": 60
+ },
+ "notes": [
+  "Worlds는 진행 중 — 수령분까지만 반영 (11/15 이후 갱신 예정)",
+  "경기·게임 전적은 raw 기준: 게임 전적 = raw 게임 승패, 경기 전적·최근 5경기 = raw에 게임이 모두 있는 경기만",
+  "raw에 일부 게임만 있어 경기 전적·최근 5경기에서 뺀 경기: DK vs T1 08/14 (raw 2/3게임), BLG vs TES 10/29 (raw 2/3게임)"
+ ]
+}
