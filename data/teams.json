@@ -1,6 +1,6 @@
 {
  "version": "lwrc_v1.0-rev",
- "generated_at": "2026-11-16T02:54:32+00:00",
+ "generated_at": "2026-11-16T03:31:52+00:00",
  "allocation_method": "regression",
  "g_model_version": "lwrc_v1.0-rev+ridge-crossfit5+snapshot-def2f93c414f52e7",
  "teams": [
@@ -17,7 +17,7 @@
    "form": "WWWW",
    "g": 15,
    "ix": 122,
-   "pg": 17857,
+   "pg": 17776,
    "top_role": "TOP"
   },
   {
@@ -33,7 +33,7 @@
    "form": "WWL",
    "g": 9,
    "ix": 118,
-   "pg": 12620,
+   "pg": 12582,
    "top_role": "MID"
   },
   {
@@ -49,7 +49,7 @@
    "form": "WLWWL",
    "g": 16,
    "ix": 109,
-   "pg": 7240,
+   "pg": 7134,
    "top_role": "JG"
   },
   {
@@ -64,8 +64,8 @@
    "wr": 0.4615,
    "form": "LWWL",
    "g": 13,
-   "ix": 97,
-   "pg": -2647,
+   "ix": 96,
+   "pg": -2831,
    "top_role": "SUP"
   },
   {
@@ -81,7 +81,7 @@
    "form": "LWL",
    "g": 11,
    "ix": 91,
-   "pg": -7261,
+   "pg": -7016,
    "top_role": "SUP"
   },
   {
@@ -97,7 +97,7 @@
    "form": "WLL",
    "g": 12,
    "ix": 86,
-   "pg": -11333,
+   "pg": -11266,
    "top_role": "JG"
   },
   {
@@ -112,8 +112,8 @@
    "wr": 0.25,
    "form": "LL",
    "g": 8,
-   "ix": 77,
-   "pg": -16861,
+   "ix": 78,
+   "pg": -16620,
    "top_role": "JG"
   },
   {
@@ -128,9 +128,377 @@
    "wr": 0.0,
    "form": "LL",
    "g": 6,
-   "ix": 74,
-   "pg": -18683,
+   "ix": 75,
+   "pg": -18646,
    "top_role": "JG"
+  },
+  {
+   "scope": "intl",
+   "team": "GEN",
+   "lg": "LCK",
+   "W": 7,
+   "L": 2,
+   "sw": 17,
+   "sl": 7,
+   "sd": 10,
+   "wr": 0.7083,
+   "form": "WWWWL",
+   "g": 24,
+   "ix": 117,
+   "pg": 14136,
+   "top_role": "TOP"
+  },
+  {
+   "scope": "intl",
+   "team": "BLG",
+   "lg": "LPL",
+   "W": 13,
+   "L": 3,
+   "sw": 37,
+   "sl": 14,
+   "sd": 23,
+   "wr": 0.7255,
+   "form": "LWWWW",
+   "g": 51,
+   "ix": 116,
+   "pg": 13638,
+   "top_role": "MID"
+  },
+  {
+   "scope": "intl",
+   "team": "T1",
+   "lg": "LCK",
+   "W": 7,
+   "L": 4,
+   "sw": 22,
+   "sl": 11,
+   "sd": 11,
+   "wr": 0.6667,
+   "form": "WLWWL",
+   "g": 33,
+   "ix": 112,
+   "pg": 9902,
+   "top_role": "BOT"
+  },
+  {
+   "scope": "intl",
+   "team": "HLE",
+   "lg": "LCK",
+   "W": 6,
+   "L": 4,
+   "sw": 16,
+   "sl": 11,
+   "sd": 5,
+   "wr": 0.5926,
+   "form": "WLLWL",
+   "g": 27,
+   "ix": 106,
+   "pg": 4214,
+   "top_role": "MID"
+  },
+  {
+   "scope": "intl",
+   "team": "KC",
+   "lg": "LEC",
+   "W": 7,
+   "L": 4,
+   "sw": 18,
+   "sl": 12,
+   "sd": 6,
+   "wr": 0.6,
+   "form": "WLLWW",
+   "g": 30,
+   "ix": 105,
+   "pg": 4455,
+   "top_role": "BOT"
+  },
+  {
+   "scope": "intl",
+   "team": "IG",
+   "lg": "LPL",
+   "W": 4,
+   "L": 2,
+   "sw": 7,
+   "sl": 6,
+   "sd": 1,
+   "wr": 0.5385,
+   "form": "WWWWL",
+   "g": 13,
+   "ix": 99,
+   "pg": -293,
+   "top_role": "JG"
+  },
+  {
+   "scope": "intl",
+   "team": "DK",
+   "lg": "LCK",
+   "W": 3,
+   "L": 1,
+   "sw": 4,
+   "sl": 3,
+   "sd": 1,
+   "wr": 0.5714,
+   "form": "WWWL",
+   "g": 7,
+   "ix": 99,
+   "pg": -563,
+   "top_role": "MID"
+  },
+  {
+   "scope": "intl",
+   "team": "MVK",
+   "lg": "LCP",
+   "W": 2,
+   "L": 2,
+   "sw": 6,
+   "sl": 7,
+   "sd": 4294967295,
+   "wr": 0.4615,
+   "form": "WLWL",
+   "g": 13,
+   "ix": 99,
+   "pg": -1058,
+   "top_role": "TOP"
+  },
+  {
+   "scope": "intl",
+   "team": "G2",
+   "lg": "LEC",
+   "W": 6,
+   "L": 7,
+   "sw": 17,
+   "sl": 19,
+   "sd": 4294967294,
+   "wr": 0.4722,
+   "form": "LLWLL",
+   "g": 36,
+   "ix": 98,
+   "pg": -1787,
+   "top_role": "JG"
+  },
+  {
+   "scope": "intl",
+   "team": "JDG",
+   "lg": "LPL",
+   "W": 2,
+   "L": 2,
+   "sw": 6,
+   "sl": 7,
+   "sd": 4294967295,
+   "wr": 0.4615,
+   "form": "LWWL",
+   "g": 13,
+   "ix": 98,
+   "pg": -1979,
+   "top_role": "SUP"
+  },
+  {
+   "scope": "intl",
+   "team": "TLAW",
+   "lg": "LCS",
+   "W": 3,
+   "L": 5,
+   "sw": 9,
+   "sl": 10,
+   "sd": 4294967295,
+   "wr": 0.4737,
+   "form": "LLLWL",
+   "g": 19,
+   "ix": 97,
+   "pg": -2202,
+   "top_role": "TOP"
+  },
+  {
+   "scope": "intl",
+   "team": "C9",
+   "lg": "LCS",
+   "W": 0,
+   "L": 2,
+   "sw": 3,
+   "sl": 6,
+   "sd": 4294967293,
+   "wr": 0.3333,
+   "form": "LL",
+   "g": 9,
+   "ix": 97,
+   "pg": -2740,
+   "top_role": "JG"
+  },
+  {
+   "scope": "intl",
+   "team": "LOS",
+   "lg": "CBLOL",
+   "W": 2,
+   "L": 3,
+   "sw": 5,
+   "sl": 5,
+   "sd": 0,
+   "wr": 0.5,
+   "form": "LLWWL",
+   "g": 10,
+   "ix": 96,
+   "pg": -4260,
+   "top_role": "TOP"
+  },
+  {
+   "scope": "intl",
+   "team": "LYON",
+   "lg": "LCS",
+   "W": 7,
+   "L": 7,
+   "sw": 21,
+   "sl": 22,
+   "sd": 4294967295,
+   "wr": 0.4884,
+   "form": "WLLWL",
+   "g": 43,
+   "ix": 95,
+   "pg": -3669,
+   "top_role": "MID"
+  },
+  {
+   "scope": "intl",
+   "team": "TES",
+   "lg": "LPL",
+   "W": 3,
+   "L": 4,
+   "sw": 8,
+   "sl": 11,
+   "sd": 4294967293,
+   "wr": 0.4211,
+   "form": "LWWWL",
+   "g": 19,
+   "ix": 93,
+   "pg": -5926,
+   "top_role": "MID"
+  },
+  {
+   "scope": "intl",
+   "team": "BFX",
+   "lg": "LCK",
+   "W": 1,
+   "L": 2,
+   "sw": 5,
+   "sl": 6,
+   "sd": 4294967295,
+   "wr": 0.4545,
+   "form": "LWL",
+   "g": 11,
+   "ix": 92,
+   "pg": -6172,
+   "top_role": "SUP"
+  },
+  {
+   "scope": "intl",
+   "team": "MKOI",
+   "lg": "LEC",
+   "W": 2,
+   "L": 3,
+   "sw": 2,
+   "sl": 6,
+   "sd": 4294967292,
+   "wr": 0.25,
+   "form": "WWLLL",
+   "g": 8,
+   "ix": 86,
+   "pg": -12261,
+   "top_role": "BOT"
+  },
+  {
+   "scope": "intl",
+   "team": "FUR",
+   "lg": "CBLOL",
+   "W": 1,
+   "L": 4,
+   "sw": 4,
+   "sl": 13,
+   "sd": 4294967287,
+   "wr": 0.2353,
+   "form": "LLLWL",
+   "g": 17,
+   "ix": 85,
+   "pg": -12517,
+   "top_role": "SUP"
+  },
+  {
+   "scope": "intl",
+   "team": "TSW",
+   "lg": "LCP",
+   "W": 1,
+   "L": 7,
+   "sw": 3,
+   "sl": 17,
+   "sd": 4294967282,
+   "wr": 0.15,
+   "form": "WLLLL",
+   "g": 20,
+   "ix": 81,
+   "pg": -14656,
+   "top_role": "JG"
+  },
+  {
+   "scope": "intl",
+   "team": "LLL",
+   "lg": "CBLOL",
+   "W": 0,
+   "L": 2,
+   "sw": 2,
+   "sl": 6,
+   "sd": 4294967292,
+   "wr": 0.25,
+   "form": "LL",
+   "g": 8,
+   "ix": 78,
+   "pg": -15795,
+   "top_role": "JG"
+  },
+  {
+   "scope": "intl",
+   "team": "CFO",
+   "lg": "LCP",
+   "W": 1,
+   "L": 3,
+   "sw": 1,
+   "sl": 4,
+   "sd": 4294967293,
+   "wr": 0.2,
+   "form": "WLLL",
+   "g": 5,
+   "ix": 78,
+   "pg": -17774,
+   "top_role": "BOT"
+  },
+  {
+   "scope": "intl",
+   "team": "DCG",
+   "lg": "LCP",
+   "W": 0,
+   "L": 2,
+   "sw": 0,
+   "sl": 6,
+   "sd": 4294967290,
+   "wr": 0.0,
+   "form": "LL",
+   "g": 6,
+   "ix": 78,
+   "pg": -17189,
+   "top_role": "SUP"
+  },
+  {
+   "scope": "intl",
+   "team": "AL",
+   "lg": "LPL",
+   "W": 0,
+   "L": 3,
+   "sw": 0,
+   "sl": 4,
+   "sd": 4294967292,
+   "wr": 0.0,
+   "form": "LLL",
+   "g": 4,
+   "ix": 65,
+   "pg": -31946,
+   "top_role": "BOT"
   },
   {
    "scope": "lck",
@@ -144,8 +512,8 @@
    "wr": 0.7426,
    "form": "WLWWW",
    "g": 101,
-   "ix": 119,
-   "pg": 15269,
+   "ix": 118,
+   "pg": 15162,
    "top_role": "MID"
   },
   {
@@ -161,7 +529,7 @@
    "form": "LWLWL",
    "g": 108,
    "ix": 107,
-   "pg": 5756,
+   "pg": 5704,
    "top_role": "SUP"
   },
   {
@@ -177,7 +545,7 @@
    "form": "WWLWL",
    "g": 99,
    "ix": 107,
-   "pg": 5081,
+   "pg": 5132,
    "top_role": "MID"
   },
   {
@@ -193,7 +561,7 @@
    "form": "WLWWL",
    "g": 120,
    "ix": 101,
-   "pg": 1070,
+   "pg": 1082,
    "top_role": "BOT"
   },
   {
@@ -209,7 +577,7 @@
    "form": "LWWLL",
    "g": 102,
    "ix": 97,
-   "pg": -2679,
+   "pg": -2672,
    "top_role": "BOT"
   },
   {
@@ -225,7 +593,7 @@
    "form": "LWWLL",
    "g": 111,
    "ix": 96,
-   "pg": -3289,
+   "pg": -3211,
    "top_role": "SUP"
   },
   {
@@ -241,7 +609,7 @@
    "form": "WWLLL",
    "g": 93,
    "ix": 95,
-   "pg": -3673,
+   "pg": -3733,
    "top_role": "JG"
   },
   {
@@ -257,7 +625,7 @@
    "form": "LWWWL",
    "g": 86,
    "ix": 95,
-   "pg": -4153,
+   "pg": -4121,
    "top_role": "MID"
   },
   {
@@ -273,7 +641,7 @@
    "form": "LLLLL",
    "g": 96,
    "ix": 93,
-   "pg": -5623,
+   "pg": -5678,
    "top_role": "MID"
   },
   {
@@ -289,7 +657,7 @@
    "form": "WWWLW",
    "g": 88,
    "ix": 87,
-   "pg": -10438,
+   "pg": -10337,
    "top_role": "TOP"
   },
   {
@@ -305,7 +673,7 @@
    "form": "WWWWW",
    "g": 22,
    "ix": 132,
-   "pg": 25847,
+   "pg": 25867,
    "top_role": "TOP"
   },
   {
@@ -321,7 +689,7 @@
    "form": "WWWLL",
    "g": 23,
    "ix": 112,
-   "pg": 10445,
+   "pg": 10508,
    "top_role": "SUP"
   },
   {
@@ -337,7 +705,7 @@
    "form": "WWLWL",
    "g": 33,
    "ix": 101,
-   "pg": 988,
+   "pg": 1066,
    "top_role": "SUP"
   },
   {
@@ -353,7 +721,7 @@
    "form": "WLWWL",
    "g": 35,
    "ix": 99,
-   "pg": -670,
+   "pg": -769,
    "top_role": "BOT"
   },
   {
@@ -369,7 +737,7 @@
    "form": "WLWLL",
    "g": 33,
    "ix": 96,
-   "pg": -3021,
+   "pg": -2936,
    "top_role": "TOP"
   },
   {
@@ -384,8 +752,8 @@
    "wr": 0.4545,
    "form": "WWLWL",
    "g": 33,
-   "ix": 95,
-   "pg": -4027,
+   "ix": 96,
+   "pg": -3880,
    "top_role": "TOP"
   },
   {
@@ -401,7 +769,7 @@
    "form": "LLWLL",
    "g": 21,
    "ix": 94,
-   "pg": -5100,
+   "pg": -5252,
    "top_role": "MID"
   },
   {
@@ -417,7 +785,7 @@
    "form": "LLWWL",
    "g": 14,
    "ix": 92,
-   "pg": -7155,
+   "pg": -7018,
    "top_role": "SUP"
   },
   {
@@ -433,7 +801,7 @@
    "form": "LLWLL",
    "g": 17,
    "ix": 90,
-   "pg": -8399,
+   "pg": -8660,
    "top_role": "BOT"
   },
   {
@@ -449,7 +817,7 @@
    "form": "LLLLL",
    "g": 19,
    "ix": 86,
-   "pg": -12390,
+   "pg": -12542,
    "top_role": "TOP"
   },
   {
@@ -465,7 +833,7 @@
    "form": "WWWWL",
    "g": 49,
    "ix": 117,
-   "pg": 14010,
+   "pg": 13860,
    "top_role": "MID"
   },
   {
@@ -481,7 +849,7 @@
    "form": "WWLWW",
    "g": 47,
    "ix": 115,
-   "pg": 11788,
+   "pg": 11801,
    "top_role": "MID"
   },
   {
@@ -497,7 +865,7 @@
    "form": "WWWLW",
    "g": 49,
    "ix": 109,
-   "pg": 7346,
+   "pg": 7315,
    "top_role": "SUP"
   },
   {
@@ -513,7 +881,7 @@
    "form": "WWWWL",
    "g": 50,
    "ix": 103,
-   "pg": 2586,
+   "pg": 2756,
    "top_role": "SUP"
   },
   {
@@ -529,7 +897,7 @@
    "form": "LLWWL",
    "g": 49,
    "ix": 103,
-   "pg": 2547,
+   "pg": 2551,
    "top_role": "BOT"
   },
   {
@@ -545,7 +913,7 @@
    "form": "LLLLL",
    "g": 43,
    "ix": 97,
-   "pg": -2457,
+   "pg": -2561,
    "top_role": "JG"
   },
   {
@@ -561,7 +929,7 @@
    "form": "WLWLL",
    "g": 44,
    "ix": 93,
-   "pg": -5748,
+   "pg": -5957,
    "top_role": "MID"
   },
   {
@@ -576,8 +944,8 @@
    "wr": 0.359,
    "form": "WLLWL",
    "g": 39,
-   "ix": 89,
-   "pg": -8580,
+   "ix": 90,
+   "pg": -8407,
    "top_role": "SUP"
   },
   {
@@ -593,7 +961,7 @@
    "form": "LLLWL",
    "g": 41,
    "ix": 89,
-   "pg": -8601,
+   "pg": -8516,
    "top_role": "BOT"
   },
   {
@@ -609,7 +977,7 @@
    "form": "LLLLL",
    "g": 37,
    "ix": 71,
-   "pg": -21857,
+   "pg": -21777,
    "top_role": "TOP"
   },
   {
@@ -625,7 +993,7 @@
    "form": "WLWWW",
    "g": 30,
    "ix": 111,
-   "pg": 9689,
+   "pg": 9562,
    "top_role": "MID"
   },
   {
@@ -641,7 +1009,7 @@
    "form": "LWWWL",
    "g": 24,
    "ix": 104,
-   "pg": 3169,
+   "pg": 3248,
    "top_role": "MID"
   },
   {
@@ -657,7 +1025,7 @@
    "form": "WWLWL",
    "g": 38,
    "ix": 102,
-   "pg": 1674,
+   "pg": 1747,
    "top_role": "MID"
   },
   {
@@ -673,24 +1041,8 @@
    "form": "LWLWL",
    "g": 36,
    "ix": 101,
-   "pg": 750,
+   "pg": 602,
    "top_role": "SUP"
-  },
-  {
-   "scope": "lck_s3",
-   "team": "DK",
-   "lg": "LCK",
-   "W": 7,
-   "L": 4,
-   "sw": 18,
-   "sl": 17,
-   "sd": 1,
-   "wr": 0.5143,
-   "form": "WLWWL",
-   "g": 35,
-   "ix": 101,
-   "pg": 605,
-   "top_role": "BOT"
   },
   {
    "scope": "lck_s3",
@@ -705,8 +1057,24 @@
    "form": "WWWLW",
    "g": 18,
    "ix": 101,
-   "pg": 158,
+   "pg": 191,
    "top_role": "JG"
+  },
+  {
+   "scope": "lck_s3",
+   "team": "DK",
+   "lg": "LCK",
+   "W": 7,
+   "L": 4,
+   "sw": 18,
+   "sl": 17,
+   "sd": 1,
+   "wr": 0.5143,
+   "form": "WLWWL",
+   "g": 35,
+   "ix": 100,
+   "pg": 498,
+   "top_role": "BOT"
   },
   {
    "scope": "lck_s3",
@@ -721,7 +1089,7 @@
    "form": "WWLLL",
    "g": 31,
    "ix": 100,
-   "pg": 180,
+   "pg": 241,
    "top_role": "JG"
   },
   {
@@ -737,7 +1105,7 @@
    "form": "LWWLL",
    "g": 39,
    "ix": 99,
-   "pg": -1043,
+   "pg": -1051,
    "top_role": "SUP"
   },
   {
@@ -752,8 +1120,8 @@
    "wr": 0.4167,
    "form": "LWWLL",
    "g": 36,
-   "ix": 92,
-   "pg": -6498,
+   "ix": 93,
+   "pg": -6378,
    "top_role": "MID"
   },
   {
@@ -769,7 +1137,7 @@
    "form": "LLLLL",
    "g": 19,
    "ix": 86,
-   "pg": -11175,
+   "pg": -11085,
    "top_role": "BOT"
   },
   {
@@ -785,7 +1153,7 @@
    "form": "WWWL",
    "g": 17,
    "ix": 113,
-   "pg": 10824,
+   "pg": 10510,
    "top_role": "MID"
   },
   {
@@ -801,7 +1169,7 @@
    "form": "WWLWL",
    "g": 21,
    "ix": 111,
-   "pg": 9372,
+   "pg": 9382,
    "top_role": "BOT"
   },
   {
@@ -817,7 +1185,7 @@
    "form": "WWLWW",
    "g": 20,
    "ix": 108,
-   "pg": 6362,
+   "pg": 6228,
    "top_role": "SUP"
   },
   {
@@ -832,8 +1200,8 @@
    "wr": 0.6471,
    "form": "WLWWL",
    "g": 17,
-   "ix": 105,
-   "pg": 4517,
+   "ix": 106,
+   "pg": 4886,
    "top_role": "SUP"
   },
   {
@@ -849,7 +1217,7 @@
    "form": "LWWL",
    "g": 12,
    "ix": 102,
-   "pg": 1569,
+   "pg": 1271,
    "top_role": "TOP"
   },
   {
@@ -865,7 +1233,7 @@
    "form": "WLL",
    "g": 9,
    "ix": 96,
-   "pg": -3079,
+   "pg": -2894,
    "top_role": "BOT"
   },
   {
@@ -881,7 +1249,7 @@
    "form": "WLWL",
    "g": 15,
    "ix": 90,
-   "pg": -8759,
+   "pg": -8935,
    "top_role": "TOP"
   },
   {
@@ -897,7 +1265,7 @@
    "form": "LWL",
    "g": 10,
    "ix": 87,
-   "pg": -10250,
+   "pg": -10071,
    "top_role": "BOT"
   },
   {
@@ -913,8 +1281,8 @@
    "form": "LL",
    "g": 9,
    "ix": 85,
-   "pg": -12588,
-   "top_role": "JG"
+   "pg": -12638,
+   "top_role": "MID"
   },
   {
    "scope": "msi",
@@ -928,8 +1296,8 @@
    "wr": 0.0,
    "form": "LL",
    "g": 6,
-   "ix": 78,
-   "pg": -19440,
+   "ix": 79,
+   "pg": -19188,
    "top_role": "SUP"
   },
   {
@@ -944,40 +1312,88 @@
    "wr": 0.0,
    "form": "LL",
    "g": 6,
-   "ix": 76,
-   "pg": -18689,
-   "top_role": "TOP"
-  },
-  {
-   "scope": "worlds",
-   "team": "T1",
-   "lg": "LCK",
-   "W": 3,
-   "L": 1,
-   "sw": 4,
-   "sl": 1,
-   "sd": 3,
-   "wr": 0.8,
-   "form": "WLWW",
-   "g": 5,
-   "ix": 134,
-   "pg": 26455,
+   "ix": 77,
+   "pg": -18153,
    "top_role": "TOP"
   },
   {
    "scope": "worlds",
    "team": "GEN",
    "lg": "LCK",
+   "W": 5,
+   "L": 1,
+   "sw": 11,
+   "sl": 4,
+   "sd": 7,
+   "wr": 0.7333,
+   "form": "WWWWL",
+   "g": 15,
+   "ix": 118,
+   "pg": 15784,
+   "top_role": "TOP"
+  },
+  {
+   "scope": "worlds",
+   "team": "BLG",
+   "lg": "LPL",
+   "W": 6,
+   "L": 2,
+   "sw": 14,
+   "sl": 5,
+   "sd": 9,
+   "wr": 0.7368,
+   "form": "LWWWW",
+   "g": 19,
+   "ix": 114,
+   "pg": 12763,
+   "top_role": "MID"
+  },
+  {
+   "scope": "worlds",
+   "team": "T1",
+   "lg": "LCK",
    "W": 3,
-   "L": 0,
-   "sw": 4,
-   "sl": 1,
-   "sd": 3,
-   "wr": 0.8,
-   "form": "WWW",
-   "g": 5,
-   "ix": 126,
-   "pg": 19665,
+   "L": 2,
+   "sw": 7,
+   "sl": 5,
+   "sd": 2,
+   "wr": 0.5833,
+   "form": "WLWWL",
+   "g": 12,
+   "ix": 112,
+   "pg": 10075,
+   "top_role": "SUP"
+  },
+  {
+   "scope": "worlds",
+   "team": "KC",
+   "lg": "LEC",
+   "W": 6,
+   "L": 2,
+   "sw": 15,
+   "sl": 6,
+   "sd": 9,
+   "wr": 0.7143,
+   "form": "WLLWW",
+   "g": 21,
+   "ix": 110,
+   "pg": 8315,
+   "top_role": "JG"
+  },
+  {
+   "scope": "worlds",
+   "team": "IG",
+   "lg": "LPL",
+   "W": 4,
+   "L": 2,
+   "sw": 7,
+   "sl": 6,
+   "sd": 1,
+   "wr": 0.5385,
+   "form": "WWWWL",
+   "g": 13,
+   "ix": 101,
+   "pg": 803,
    "top_role": "JG"
   },
   {
@@ -985,80 +1401,32 @@
    "team": "DK",
    "lg": "LCK",
    "W": 3,
-   "L": 0,
-   "sw": 4,
-   "sl": 0,
-   "sd": 4,
-   "wr": 1.0,
-   "form": "WWW",
-   "g": 4,
-   "ix": 125,
-   "pg": 21767,
-   "top_role": "MID"
-  },
-  {
-   "scope": "worlds",
-   "team": "BLG",
-   "lg": "LPL",
-   "W": 2,
    "L": 1,
-   "sw": 3,
-   "sl": 2,
+   "sw": 4,
+   "sl": 3,
    "sd": 1,
-   "wr": 0.6,
-   "form": "LWW",
-   "g": 5,
-   "ix": 117,
-   "pg": 14947,
+   "wr": 0.5714,
+   "form": "WWWL",
+   "g": 7,
+   "ix": 101,
+   "pg": 595,
    "top_role": "MID"
-  },
-  {
-   "scope": "worlds",
-   "team": "KC",
-   "lg": "LEC",
-   "W": 5,
-   "L": 2,
-   "sw": 12,
-   "sl": 4,
-   "sd": 8,
-   "wr": 0.75,
-   "form": "WWLLW",
-   "g": 16,
-   "ix": 111,
-   "pg": 9016,
-   "top_role": "BOT"
   },
   {
    "scope": "worlds",
    "team": "TES",
    "lg": "LPL",
-   "W": 2,
-   "L": 1,
-   "sw": 3,
-   "sl": 2,
-   "sd": 1,
-   "wr": 0.6,
-   "form": "LWW",
-   "g": 5,
-   "ix": 110,
-   "pg": 7326,
-   "top_role": "TOP"
-  },
-  {
-   "scope": "worlds",
-   "team": "IG",
-   "lg": "LPL",
    "W": 3,
-   "L": 1,
-   "sw": 4,
-   "sl": 2,
-   "sd": 2,
-   "wr": 0.6667,
-   "form": "LWWW",
-   "g": 6,
-   "ix": 108,
-   "pg": 5702,
-   "top_role": "SUP"
+   "L": 2,
+   "sw": 5,
+   "sl": 5,
+   "sd": 0,
+   "wr": 0.5,
+   "form": "LWWWL",
+   "g": 10,
+   "ix": 101,
+   "pg": 253,
+   "top_role": "TOP"
   },
   {
    "scope": "worlds",
@@ -1073,7 +1441,7 @@
    "form": "WLWL",
    "g": 13,
    "ix": 100,
-   "pg": -618,
+   "pg": 2,
    "top_role": "TOP"
   },
   {
@@ -1089,88 +1457,56 @@
    "form": "LL",
    "g": 9,
    "ix": 98,
-   "pg": -2080,
-   "top_role": "JG"
-  },
-  {
-   "scope": "worlds",
-   "team": "LYON",
-   "lg": "LCS",
-   "W": 2,
-   "L": 2,
-   "sw": 4,
-   "sl": 4,
-   "sd": 0,
-   "wr": 0.5,
-   "form": "WWLL",
-   "g": 8,
-   "ix": 96,
-   "pg": -3479,
-   "top_role": "MID"
-  },
-  {
-   "scope": "worlds",
-   "team": "G2",
-   "lg": "LEC",
-   "W": 1,
-   "L": 2,
-   "sw": 1,
-   "sl": 2,
-   "sd": 4294967295,
-   "wr": 0.3333,
-   "form": "LWL",
-   "g": 3,
-   "ix": 94,
-   "pg": -5407,
+   "pg": -1540,
    "top_role": "JG"
   },
   {
    "scope": "worlds",
    "team": "LOS",
    "lg": "CBLOL",
-   "W": 1,
-   "L": 2,
-   "sw": 2,
-   "sl": 2,
+   "W": 2,
+   "L": 3,
+   "sw": 5,
+   "sl": 5,
    "sd": 0,
    "wr": 0.5,
-   "form": "LLW",
-   "g": 4,
-   "ix": 93,
-   "pg": -6351,
+   "form": "LLWWL",
+   "g": 10,
+   "ix": 97,
+   "pg": -2976,
    "top_role": "TOP"
+  },
+  {
+   "scope": "worlds",
+   "team": "HLE",
+   "lg": "LCK",
+   "W": 2,
+   "L": 3,
+   "sw": 3,
+   "sl": 4,
+   "sd": 4294967295,
+   "wr": 0.4286,
+   "form": "WLLWL",
+   "g": 7,
+   "ix": 95,
+   "pg": -3279,
+   "top_role": "MID"
   },
   {
    "scope": "worlds",
    "team": "TLAW",
    "lg": "LCS",
    "W": 1,
-   "L": 2,
-   "sw": 2,
-   "sl": 2,
-   "sd": 0,
-   "wr": 0.5,
-   "form": "LLW",
-   "g": 4,
-   "ix": 91,
-   "pg": -7865,
-   "top_role": "TOP"
-  },
-  {
-   "scope": "worlds",
-   "team": "MKOI",
-   "lg": "LEC",
-   "W": 2,
-   "L": 2,
-   "sw": 2,
+   "L": 3,
+   "sw": 3,
    "sl": 4,
-   "sd": 4294967294,
-   "wr": 0.3333,
-   "form": "WWLL",
-   "g": 6,
-   "ix": 90,
-   "pg": -8058,
-   "top_role": "BOT"
+   "sd": 4294967295,
+   "wr": 0.4286,
+   "form": "LLWL",
+   "g": 7,
+   "ix": 91,
+   "pg": -8561,
+   "top_role": "TOP"
   },
   {
    "scope": "worlds",
@@ -1184,25 +1520,57 @@
    "wr": 0.3636,
    "form": "LWL",
    "g": 11,
-   "ix": 89,
-   "pg": -9103,
+   "ix": 90,
+   "pg": -8363,
    "top_role": "SUP"
   },
   {
    "scope": "worlds",
-   "team": "HLE",
-   "lg": "LCK",
-   "W": 1,
-   "L": 2,
-   "sw": 1,
-   "sl": 2,
-   "sd": 4294967295,
-   "wr": 0.3333,
-   "form": "WLL",
-   "g": 3,
-   "ix": 87,
-   "pg": -8706,
+   "team": "LYON",
+   "lg": "LCS",
+   "W": 3,
+   "L": 3,
+   "sw": 6,
+   "sl": 8,
+   "sd": 4294967294,
+   "wr": 0.4286,
+   "form": "WLLWL",
+   "g": 14,
+   "ix": 90,
+   "pg": -8446,
    "top_role": "MID"
+  },
+  {
+   "scope": "worlds",
+   "team": "MKOI",
+   "lg": "LEC",
+   "W": 2,
+   "L": 3,
+   "sw": 2,
+   "sl": 6,
+   "sd": 4294967292,
+   "wr": 0.25,
+   "form": "WWLLL",
+   "g": 8,
+   "ix": 87,
+   "pg": -11112,
+   "top_role": "SUP"
+  },
+  {
+   "scope": "worlds",
+   "team": "G2",
+   "lg": "LEC",
+   "W": 1,
+   "L": 3,
+   "sw": 1,
+   "sl": 4,
+   "sd": 4294967293,
+   "wr": 0.2,
+   "form": "LWLL",
+   "g": 5,
+   "ix": 83,
+   "pg": -13918,
+   "top_role": "JG"
   },
   {
    "scope": "worlds",
@@ -1216,8 +1584,8 @@
    "wr": 0.2,
    "form": "WLLL",
    "g": 5,
-   "ix": 78,
-   "pg": -17543,
+   "ix": 79,
+   "pg": -16661,
    "top_role": "JG"
   },
   {
@@ -1232,9 +1600,9 @@
    "wr": 0.0,
    "form": "LLL",
    "g": 4,
-   "ix": 72,
-   "pg": -23020,
-   "top_role": "MID"
+   "ix": 73,
+   "pg": -22644,
+   "top_role": "JG"
   },
   {
    "scope": "worlds",
@@ -1248,8 +1616,8 @@
    "wr": 0.0,
    "form": "LLL",
    "g": 4,
-   "ix": 65,
-   "pg": -31355,
+   "ix": 66,
+   "pg": -30711,
    "top_role": "BOT"
   },
   {
@@ -4560,18 +4928,30 @@
     "first_game_utc": "2026-08-14 08:08:02.940000+00:00"
    }
   ],
+  "intl": [
+   {
+    "lp_match_id": "2026 Season World Championship/Main Event_Quarterfinals_4",
+    "teams": [
+     "KC",
+     "T1"
+    ],
+    "raw_games": 3,
+    "played": 4,
+    "first_game_utc": "2026-11-06 23:15:41.823000+00:00"
+   }
+  ],
   "fs": [],
   "msi": [],
   "worlds": [
    {
-    "lp_match_id": "2026 Season World Championship/Main Event_Round 4_4",
+    "lp_match_id": "2026 Season World Championship/Main Event_Quarterfinals_4",
     "teams": [
-     "BLG",
-     "TES"
+     "KC",
+     "T1"
     ],
-    "raw_games": 2,
-    "played": 3,
-    "first_game_utc": "2026-10-29 22:38:27.299000+00:00"
+    "raw_games": 3,
+    "played": 4,
+    "first_game_utc": "2026-11-06 23:15:41.823000+00:00"
    }
   ],
   "lec": [

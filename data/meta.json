@@ -24,7 +24,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:54:32+00:00",
+   "generated_at": "2026-11-16T03:31:52+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "LCK_Cup": 125,
@@ -239,6 +239,10 @@
    "name": "국제대회",
    "scopes": [
     [
+     "intl",
+     "통합"
+    ],
+    [
      "fs",
      "First Stand"
     ],
@@ -253,21 +257,21 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:54:32+00:00",
+   "generated_at": "2026-11-16T03:31:52+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "FirstStand": 45,
     "MSI": 71,
-    "Worlds": 60
+    "Worlds": 97
    },
    "incomplete_matches": [
-    "BLG vs TES 10/29 (raw 2/3게임)"
+    "KC vs T1 11/06 (raw 3/4게임)"
    ]
   }
  ],
  "notes": [
   "리그마다 G 모델·배분을 그 리그 게임만으로 학습하고, LwRC+ 기준(100)도 그 리그 같은 포지션 평균이다. 리그 간 수준 차이는 보정하지 않으므로 리그가 다른 선수의 LwRC+는 직접 비교하지 않는다.",
-  "국제대회(First Stand · MSI · Worlds)는 기존 산출(LCK + 국제대회로 학습). Worlds는 전체 46경기 98게임 중 10/30 수령분 60게임(플레이인 22 + Swiss 38)만 반영 — Swiss 나머지 13게임과 결선 25게임은 국제대회 학습 기준을 정한 뒤 갱신 예정",
+  "국제대회(First Stand · MSI · Worlds)는 기존 산출(LCK + 국제대회로 학습). Worlds는 전체 46경기 98게임 중 97게임 반영 (8강 KC vs T1 1게임은 raw 미수령)",
   "경기·게임 전적은 raw 기준: 게임 전적 = raw 게임 승패, 경기 전적·최근 5경기 = raw에 게임이 모두 있는 경기만"
  ]
 }
