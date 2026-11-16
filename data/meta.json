@@ -1,18 +1,273 @@
 {
- "min_games_for_ranking": 10,
- "games_by_tournament": {
-  "FirstStand": 45,
-  "LCK_Cup": 125,
-  "LCK_PlayIn_PO": 55,
-  "LCK_R1-2": 204,
-  "LCK_R3-4": 98,
-  "MSI": 71,
-  "Road_to_MSI": 20,
-  "Worlds": 60
- },
+ "min_games_for_ranking": 1,
+ "leagues": [
+  {
+   "key": "lck",
+   "name": "LCK",
+   "scopes": [
+    [
+     "lck",
+     "시즌"
+    ],
+    [
+     "lck_s1",
+     "Split 1"
+    ],
+    [
+     "lck_s2",
+     "Split 2"
+    ],
+    [
+     "lck_s3",
+     "Split 3"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:54:32+00:00",
+   "reference_note": null,
+   "games_by_tournament": {
+    "LCK_Cup": 125,
+    "LCK_PlayIn_PO": 55,
+    "LCK_R1-2": 204,
+    "LCK_R3-4": 98,
+    "Road_to_MSI": 20
+   },
+   "incomplete_matches": [
+    "DK vs T1 08/14 (raw 2/3게임)"
+   ]
+  },
+  {
+   "key": "lec",
+   "name": "LEC",
+   "scopes": [
+    [
+     "lec",
+     "시즌"
+    ],
+    [
+     "lec_s1",
+     "Versus"
+    ],
+    [
+     "lec_s2",
+     "Spring"
+    ],
+    [
+     "lec_s3",
+     "Summer"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:54:37+00:00",
+   "reference_note": null,
+   "games_by_tournament": {
+    "LEC_Spring": 141,
+    "LEC_Summer": 137,
+    "LEC_Versus": 103
+   },
+   "incomplete_matches": [
+    "MKOI vs VIT 02/16 (raw 1/2게임)"
+   ]
+  },
+  {
+   "key": "lcs",
+   "name": "LCS",
+   "scopes": [
+    [
+     "lcs",
+     "시즌"
+    ],
+    [
+     "lcs_s1",
+     "Lock-In"
+    ],
+    [
+     "lcs_s2",
+     "Spring"
+    ],
+    [
+     "lcs_s3",
+     "Summer"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:54:42+00:00",
+   "reference_note": null,
+   "games_by_tournament": {
+    "LCS_LockIn": 59,
+    "LCS_Spring": 98,
+    "LCS_Summer": 103
+   },
+   "incomplete_matches": []
+  },
+  {
+   "key": "cblol",
+   "name": "CBLOL",
+   "scopes": [
+    [
+     "cblol",
+     "시즌"
+    ],
+    [
+     "cblol_s1",
+     "Cup"
+    ],
+    [
+     "cblol_s2",
+     "Split 1"
+    ],
+    [
+     "cblol_s3",
+     "Split 2"
+    ],
+    [
+     "cblol_s4",
+     "승강전"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:54:47+00:00",
+   "reference_note": null,
+   "games_by_tournament": {
+    "CBLOL_Cup": 68,
+    "CBLOL_Promotion": 12,
+    "CBLOL_S1": 105,
+    "CBLOL_S2": 102
+   },
+   "incomplete_matches": []
+  },
+  {
+   "key": "lcp",
+   "name": "LCP",
+   "scopes": [
+    [
+     "lcp",
+     "시즌"
+    ],
+    [
+     "lcp_s1",
+     "Split 1"
+    ],
+    [
+     "lcp_s2",
+     "Split 2"
+    ],
+    [
+     "lcp_s3",
+     "Split 3"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:54:51+00:00",
+   "reference_note": null,
+   "games_by_tournament": {
+    "LCP_S1": 102,
+    "LCP_S2": 101,
+    "LCP_S3": 80
+   },
+   "incomplete_matches": []
+  },
+  {
+   "key": "vcs",
+   "name": "VCS",
+   "scopes": [
+    [
+     "vcs",
+     "시즌"
+    ],
+    [
+     "vcs_s1",
+     "Spring"
+    ],
+    [
+     "vcs_s2",
+     "Summer"
+    ],
+    [
+     "vcs_s3",
+     "Finals"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:57:08+00:00",
+   "reference_note": "표본이 156게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
+   "games_by_tournament": {
+    "VCS_Finals": 42,
+    "VCS_Spring": 55,
+    "VCS_Summer": 59
+   },
+   "incomplete_matches": []
+  },
+  {
+   "key": "pcs",
+   "name": "PCS",
+   "scopes": [
+    [
+     "pcs",
+     "시즌"
+    ],
+    [
+     "pcs_s1",
+     "Spring"
+    ],
+    [
+     "pcs_s2",
+     "Summer"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:57:10+00:00",
+   "reference_note": "표본이 84게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
+   "games_by_tournament": {
+    "PCS_Spring": 48,
+    "PCS_Summer": 36
+   },
+   "incomplete_matches": [
+    "EWH vs RNF 08/17 (raw 2/3게임)",
+    "RNF vs SSG 09/04 (raw 2/4게임)"
+   ]
+  },
+  {
+   "key": "intl",
+   "name": "국제대회",
+   "scopes": [
+    [
+     "fs",
+     "First Stand"
+    ],
+    [
+     "msi",
+     "MSI"
+    ],
+    [
+     "worlds",
+     "Worlds"
+    ]
+   ],
+   "allocation_method": "regression",
+   "version": "lwrc_v1.0-rev",
+   "generated_at": "2026-11-16T02:54:32+00:00",
+   "reference_note": null,
+   "games_by_tournament": {
+    "FirstStand": 45,
+    "MSI": 71,
+    "Worlds": 60
+   },
+   "incomplete_matches": [
+    "BLG vs TES 10/29 (raw 2/3게임)"
+   ]
+  }
+ ],
  "notes": [
-  "Worlds는 진행 중 — 수령분까지만 반영 (11/15 이후 갱신 예정)",
-  "경기·게임 전적은 raw 기준: 게임 전적 = raw 게임 승패, 경기 전적·최근 5경기 = raw에 게임이 모두 있는 경기만",
-  "raw에 일부 게임만 있어 경기 전적·최근 5경기에서 뺀 경기: DK vs T1 08/14 (raw 2/3게임), BLG vs TES 10/29 (raw 2/3게임)"
+  "리그마다 G 모델·배분을 그 리그 게임만으로 학습하고, LwRC+ 기준(100)도 그 리그 같은 포지션 평균이다. 리그 간 수준 차이는 보정하지 않으므로 리그가 다른 선수의 LwRC+는 직접 비교하지 않는다.",
+  "국제대회(First Stand · MSI · Worlds)는 기존 산출(LCK + 국제대회로 학습). Worlds는 10/31 수령분까지 — 국제대회 학습 기준을 정한 뒤 결선 포함으로 갱신 예정",
+  "경기·게임 전적은 raw 기준: 게임 전적 = raw 게임 승패, 경기 전적·최근 5경기 = raw에 게임이 모두 있는 경기만"
  ]
 }
