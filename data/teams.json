@@ -1,6 +1,6 @@
 {
  "version": "lwrc_v1.0-rev",
- "generated_at": "2026-11-17T06:40:07+00:00",
+ "generated_at": "2026-11-17T12:21:20+00:00",
  "allocation_method": "regression",
  "g_model_version": "lwrc_v1.0-rev+ridge-crossfit5+snapshot-def2f93c414f52e7",
  "teams": [
@@ -53,7 +53,7 @@
     {
      "player_id": "87e5e5e8-28a7-58fc-b9d9-27249acfb6c0",
      "name": "Viper",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BLG",
      "g": 15,
      "minutes": 473.01,
@@ -121,7 +121,7 @@
     {
      "player_id": "3462f12f-1fe2-5662-9ba7-48cafe966e7b",
      "name": "Ruler",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GEN",
      "g": 9,
      "minutes": 248.65,
@@ -189,7 +189,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 16,
      "minutes": 509.52,
@@ -257,7 +257,7 @@
     {
      "player_id": "9ba5fc1f-ce82-5363-831c-6cbcc358eb03",
      "name": "GALA",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "JDG",
      "g": 13,
      "minutes": 394.35,
@@ -325,7 +325,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 11,
      "minutes": 330.6,
@@ -393,7 +393,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 12,
      "minutes": 377.76,
@@ -461,7 +461,7 @@
     {
      "player_id": "33b1cebb-0eb0-5596-93fb-a361e2b34156",
      "name": "Bull",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 8,
      "minutes": 235.1,
@@ -529,7 +529,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 6,
      "minutes": 173.82,
@@ -597,7 +597,7 @@
     {
      "player_id": "3462f12f-1fe2-5662-9ba7-48cafe966e7b",
      "name": "Ruler",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GEN",
      "g": 24,
      "minutes": 766.16,
@@ -665,7 +665,7 @@
     {
      "player_id": "87e5e5e8-28a7-58fc-b9d9-27249acfb6c0",
      "name": "Viper",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BLG",
      "g": 51,
      "minutes": 1719.19,
@@ -698,7 +698,7 @@
    "g": 33,
    "ix": 112,
    "pg": 9902,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "65d35d1c-430d-523f-a74a-cf6eef5d2a2d",
@@ -733,7 +733,7 @@
     {
      "player_id": "530e8532-97dd-5619-97cf-ef007864c01e",
      "name": "Peyz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "T1",
      "g": 33,
      "minutes": 1097.08,
@@ -801,7 +801,7 @@
     {
      "player_id": "01a08588-9849-5bde-a7df-258cb0afb283",
      "name": "Gumayusi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "HLE",
      "g": 27,
      "minutes": 828.88,
@@ -834,7 +834,7 @@
    "g": 30,
    "ix": 105,
    "pg": 4455,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "a853018a-3a15-543a-a548-50409ee71742",
@@ -869,7 +869,7 @@
     {
      "player_id": "8765df75-b4bf-5c21-9910-337178d749f6",
      "name": "Caliste",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KC",
      "g": 30,
      "minutes": 984.68,
@@ -937,7 +937,7 @@
     {
      "player_id": "e2cb379b-5bb3-503b-89b8-15c2904aece0",
      "name": "JiaQi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "IG",
      "g": 13,
      "minutes": 415.88,
@@ -1005,7 +1005,7 @@
     {
      "player_id": "efdfa357-d68a-5d71-9c88-b74c2ac8ed76",
      "name": "Smash",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DK",
      "g": 7,
      "minutes": 236.8,
@@ -1063,7 +1063,7 @@
     {
      "player_id": "99f95e41-bebb-501b-9d1f-0a4dbd42dbb0",
      "name": "Harky",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVK",
      "g": 13,
      "minutes": 402.61,
@@ -1151,7 +1151,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 36,
      "minutes": 1188.12,
@@ -1219,7 +1219,7 @@
     {
      "player_id": "9ba5fc1f-ce82-5363-831c-6cbcc358eb03",
      "name": "GALA",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "JDG",
      "g": 13,
      "minutes": 394.35,
@@ -1287,7 +1287,7 @@
     {
      "player_id": "9226d0a5-e1bf-5390-925e-996361d2c84c",
      "name": "Yeon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TLAW",
      "g": 19,
      "minutes": 641.04,
@@ -1355,7 +1355,7 @@
     {
      "player_id": "916332f9-fefe-5f24-9f4a-5fd8a032b88b",
      "name": "Tactical",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "C9",
      "g": 9,
      "minutes": 315.37,
@@ -1423,7 +1423,7 @@
     {
      "player_id": "f6f8a423-32b8-5f05-8fd6-f3cef5733242",
      "name": "Duduhh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LOS",
      "g": 10,
      "minutes": 374.9,
@@ -1491,7 +1491,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 43,
      "minutes": 1394.7,
@@ -1549,7 +1549,7 @@
     {
      "player_id": "cc885164-ef2a-5ddb-a798-9d53fab61c04",
      "name": "JackeyLove",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TES",
      "g": 19,
      "minutes": 625.77,
@@ -1647,7 +1647,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 11,
      "minutes": 330.6,
@@ -1680,7 +1680,7 @@
    "g": 8,
    "ix": 86,
    "pg": -12261,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "862cb1a7-6d3e-5015-a056-d2d6dfdc55fd",
@@ -1715,7 +1715,7 @@
     {
      "player_id": "0c155a82-db30-5b66-abc8-e5cbf14e416b",
      "name": "Supa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MKOI",
      "g": 8,
      "minutes": 268.27,
@@ -1783,7 +1783,7 @@
     {
      "player_id": "bde12424-5476-5636-9caf-1002ee180c75",
      "name": "Ayu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FUR",
      "g": 17,
      "minutes": 566.57,
@@ -1851,7 +1851,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 20,
      "minutes": 616.89,
@@ -1919,7 +1919,7 @@
     {
      "player_id": "33b1cebb-0eb0-5596-93fb-a361e2b34156",
      "name": "Bull",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 8,
      "minutes": 235.1,
@@ -1952,7 +1952,7 @@
    "g": 5,
    "ix": 78,
    "pg": -17774,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "dd45aa6c-8b84-56c4-af69-8d4d51d850a2",
@@ -1987,7 +1987,7 @@
     {
      "player_id": "e4a8fdae-d9a9-5cc4-948a-e42b7696336f",
      "name": "Doggo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFO",
      "g": 5,
      "minutes": 162.53,
@@ -2055,7 +2055,7 @@
     {
      "player_id": "dae90bd9-d46f-508b-ba82-821ec2884057",
      "name": "Feng",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DCG",
      "g": 6,
      "minutes": 182.58,
@@ -2088,7 +2088,7 @@
    "g": 4,
    "ix": 65,
    "pg": -31946,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "234debf9-0b2b-5aa0-bbd5-ce58d4827ccc",
@@ -2123,7 +2123,7 @@
     {
      "player_id": "34cf427a-1162-5d75-9fbe-3e97129b1f17",
      "name": "Hope",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "AL",
      "g": 4,
      "minutes": 144.29,
@@ -2191,7 +2191,7 @@
     {
      "player_id": "3462f12f-1fe2-5662-9ba7-48cafe966e7b",
      "name": "Ruler",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GEN",
      "g": 101,
      "minutes": 3270.02,
@@ -2249,7 +2249,7 @@
     {
      "player_id": "530e8532-97dd-5619-97cf-ef007864c01e",
      "name": "Peyz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "T1",
      "g": 108,
      "minutes": 3557.2,
@@ -2337,7 +2337,7 @@
     {
      "player_id": "01a08588-9849-5bde-a7df-258cb0afb283",
      "name": "Gumayusi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "HLE",
      "g": 99,
      "minutes": 3139.97,
@@ -2380,7 +2380,7 @@
    "g": 120,
    "ix": 101,
    "pg": 1082,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "59bdbc92-4e50-5cf1-ac38-6b069153b85c",
@@ -2405,7 +2405,7 @@
     {
      "player_id": "efdfa357-d68a-5d71-9c88-b74c2ac8ed76",
      "name": "Smash",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DK",
      "g": 120,
      "minutes": 3912.53,
@@ -2458,7 +2458,7 @@
    "g": 102,
    "ix": 97,
    "pg": -2672,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "3c430e37-0b80-5012-b2e7-c1cbaad26182",
@@ -2503,7 +2503,7 @@
     {
      "player_id": "14122de5-bcc1-5fff-ad9e-8cab949eb802",
      "name": "Aiming",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 63,
      "minutes": 2096.25,
@@ -2513,7 +2513,7 @@
     {
      "player_id": "4085de75-c0d3-5e7a-a1cc-579c0ecf6626",
      "name": "Jiwoo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 26,
      "minutes": 879.79,
@@ -2523,7 +2523,7 @@
     {
      "player_id": "74ce9536-a2f7-5617-8bc2-169df288b09f",
      "name": "FenRir",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 13,
      "minutes": 400.75,
@@ -2611,7 +2611,7 @@
     {
      "player_id": "4f447154-fd89-524c-8df8-2f805f17af67",
      "name": "Taeyoon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 59,
      "minutes": 1874.58,
@@ -2621,7 +2621,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NS",
      "g": 50,
      "minutes": 1560.47,
@@ -2641,7 +2641,7 @@
     {
      "player_id": "5aec9063-bc1d-5fd7-9189-aa003f965806",
      "name": "Slayer",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 2,
      "minutes": 60.31,
@@ -2689,7 +2689,7 @@
     {
      "player_id": "7846aaf2-1a58-513a-878c-9e65ae04810f",
      "name": "Teddy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BRO",
      "g": 93,
      "minutes": 3097.01,
@@ -2787,7 +2787,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NS",
      "g": 45,
      "minutes": 1392.12,
@@ -2797,7 +2797,7 @@
     {
      "player_id": "4f447154-fd89-524c-8df8-2f805f17af67",
      "name": "Taeyoon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 41,
      "minutes": 1299.73,
@@ -2875,7 +2875,7 @@
     {
      "player_id": "b98b4482-0c9e-5632-affb-5c8d08bd28c9",
      "name": "LazyFeel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 41,
      "minutes": 1296.21,
@@ -2885,7 +2885,7 @@
     {
      "player_id": "4085de75-c0d3-5e7a-a1cc-579c0ecf6626",
      "name": "Jiwoo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 38,
      "minutes": 1208.76,
@@ -2905,7 +2905,7 @@
     {
      "player_id": "14122de5-bcc1-5fff-ad9e-8cab949eb802",
      "name": "Aiming",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 17,
      "minutes": 556.5,
@@ -2963,7 +2963,7 @@
     {
      "player_id": "ed3558e4-2110-5a6b-82d7-113c0f02e854",
      "name": "deokdam",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DNS",
      "g": 84,
      "minutes": 2640.78,
@@ -3023,7 +3023,7 @@
     {
      "player_id": "cada4050-d519-56b2-9dea-bcd1bd3ff9f8",
      "name": "Enosh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DNS",
      "g": 4,
      "minutes": 105.15,
@@ -3091,7 +3091,7 @@
     {
      "player_id": "3462f12f-1fe2-5662-9ba7-48cafe966e7b",
      "name": "Ruler",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GEN",
      "g": 22,
      "minutes": 696.24,
@@ -3159,7 +3159,7 @@
     {
      "player_id": "530e8532-97dd-5619-97cf-ef007864c01e",
      "name": "Peyz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "T1",
      "g": 23,
      "minutes": 766.66,
@@ -3227,7 +3227,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 33,
      "minutes": 1043.82,
@@ -3260,7 +3260,7 @@
    "g": 35,
    "ix": 99,
    "pg": -769,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "59bdbc92-4e50-5cf1-ac38-6b069153b85c",
@@ -3295,7 +3295,7 @@
     {
      "player_id": "efdfa357-d68a-5d71-9c88-b74c2ac8ed76",
      "name": "Smash",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DK",
      "g": 35,
      "minutes": 1137.33,
@@ -3363,7 +3363,7 @@
     {
      "player_id": "4085de75-c0d3-5e7a-a1cc-579c0ecf6626",
      "name": "Jiwoo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 33,
      "minutes": 1058.26,
@@ -3431,7 +3431,7 @@
     {
      "player_id": "ed3558e4-2110-5a6b-82d7-113c0f02e854",
      "name": "deokdam",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DNS",
      "g": 33,
      "minutes": 1091.0,
@@ -3509,7 +3509,7 @@
     {
      "player_id": "4f447154-fd89-524c-8df8-2f805f17af67",
      "name": "Taeyoon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NS",
      "g": 21,
      "minutes": 673.69,
@@ -3577,7 +3577,7 @@
     {
      "player_id": "01a08588-9849-5bde-a7df-258cb0afb283",
      "name": "Gumayusi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "HLE",
      "g": 14,
      "minutes": 467.56,
@@ -3610,7 +3610,7 @@
    "g": 17,
    "ix": 90,
    "pg": -8660,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "3c430e37-0b80-5012-b2e7-c1cbaad26182",
@@ -3645,7 +3645,7 @@
     {
      "player_id": "14122de5-bcc1-5fff-ad9e-8cab949eb802",
      "name": "Aiming",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 17,
      "minutes": 581.14,
@@ -3723,7 +3723,7 @@
     {
      "player_id": "7846aaf2-1a58-513a-878c-9e65ae04810f",
      "name": "Teddy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BRO",
      "g": 19,
      "minutes": 630.8,
@@ -3791,7 +3791,7 @@
     {
      "player_id": "3462f12f-1fe2-5662-9ba7-48cafe966e7b",
      "name": "Ruler",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GEN",
      "g": 49,
      "minutes": 1575.95,
@@ -3859,7 +3859,7 @@
     {
      "player_id": "01a08588-9849-5bde-a7df-258cb0afb283",
      "name": "Gumayusi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "HLE",
      "g": 47,
      "minutes": 1443.57,
@@ -3937,7 +3937,7 @@
     {
      "player_id": "530e8532-97dd-5619-97cf-ef007864c01e",
      "name": "Peyz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "T1",
      "g": 49,
      "minutes": 1595.07,
@@ -3995,7 +3995,7 @@
     {
      "player_id": "efdfa357-d68a-5d71-9c88-b74c2ac8ed76",
      "name": "Smash",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DK",
      "g": 50,
      "minutes": 1594.55,
@@ -4048,7 +4048,7 @@
    "g": 49,
    "ix": 103,
    "pg": 2551,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "3c430e37-0b80-5012-b2e7-c1cbaad26182",
@@ -4093,7 +4093,7 @@
     {
      "player_id": "14122de5-bcc1-5fff-ad9e-8cab949eb802",
      "name": "Aiming",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 46,
      "minutes": 1515.11,
@@ -4103,7 +4103,7 @@
     {
      "player_id": "74ce9536-a2f7-5617-8bc2-169df288b09f",
      "name": "FenRir",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 3,
      "minutes": 88.1,
@@ -4151,7 +4151,7 @@
     {
      "player_id": "7846aaf2-1a58-513a-878c-9e65ae04810f",
      "name": "Teddy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BRO",
      "g": 43,
      "minutes": 1420.06,
@@ -4249,7 +4249,7 @@
     {
      "player_id": "b98b4482-0c9e-5632-affb-5c8d08bd28c9",
      "name": "LazyFeel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 39,
      "minutes": 1234.98,
@@ -4259,7 +4259,7 @@
     {
      "player_id": "4085de75-c0d3-5e7a-a1cc-579c0ecf6626",
      "name": "Jiwoo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 5,
      "minutes": 150.5,
@@ -4327,7 +4327,7 @@
     {
      "player_id": "4f447154-fd89-524c-8df8-2f805f17af67",
      "name": "Taeyoon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 20,
      "minutes": 650.37,
@@ -4337,7 +4337,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NS",
      "g": 17,
      "minutes": 516.65,
@@ -4357,7 +4357,7 @@
     {
      "player_id": "5aec9063-bc1d-5fd7-9189-aa003f965806",
      "name": "Slayer",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 2,
      "minutes": 60.31,
@@ -4380,7 +4380,7 @@
    "g": 41,
    "ix": 89,
    "pg": -8516,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "50c0f224-af5b-5ce1-9d1e-eaad25b837ca",
@@ -4425,7 +4425,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NS",
      "g": 21,
      "minutes": 661.51,
@@ -4435,7 +4435,7 @@
     {
      "player_id": "4f447154-fd89-524c-8df8-2f805f17af67",
      "name": "Taeyoon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 20,
      "minutes": 626.04,
@@ -4503,7 +4503,7 @@
     {
      "player_id": "ed3558e4-2110-5a6b-82d7-113c0f02e854",
      "name": "deokdam",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DNS",
      "g": 33,
      "minutes": 985.39,
@@ -4543,7 +4543,7 @@
     {
      "player_id": "cada4050-d519-56b2-9dea-bcd1bd3ff9f8",
      "name": "Enosh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DNS",
      "g": 4,
      "minutes": 105.15,
@@ -4611,7 +4611,7 @@
     {
      "player_id": "3462f12f-1fe2-5662-9ba7-48cafe966e7b",
      "name": "Ruler",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GEN",
      "g": 30,
      "minutes": 997.82,
@@ -4679,7 +4679,7 @@
     {
      "player_id": "2419afca-06f7-5de0-87ba-16a446591e6f",
      "name": "Diable",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NS",
      "g": 24,
      "minutes": 730.61,
@@ -4747,7 +4747,7 @@
     {
      "player_id": "01a08588-9849-5bde-a7df-258cb0afb283",
      "name": "Gumayusi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "HLE",
      "g": 38,
      "minutes": 1228.83,
@@ -4815,7 +4815,7 @@
     {
      "player_id": "530e8532-97dd-5619-97cf-ef007864c01e",
      "name": "Peyz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "T1",
      "g": 36,
      "minutes": 1195.47,
@@ -4903,7 +4903,7 @@
     {
      "player_id": "ed3558e4-2110-5a6b-82d7-113c0f02e854",
      "name": "deokdam",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DNS",
      "g": 18,
      "minutes": 564.39,
@@ -4936,7 +4936,7 @@
    "g": 35,
    "ix": 100,
    "pg": 498,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "59bdbc92-4e50-5cf1-ac38-6b069153b85c",
@@ -4971,7 +4971,7 @@
     {
      "player_id": "efdfa357-d68a-5d71-9c88-b74c2ac8ed76",
      "name": "Smash",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DK",
      "g": 35,
      "minutes": 1180.65,
@@ -5039,7 +5039,7 @@
     {
      "player_id": "7846aaf2-1a58-513a-878c-9e65ae04810f",
      "name": "Teddy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BRO",
      "g": 31,
      "minutes": 1046.16,
@@ -5107,7 +5107,7 @@
     {
      "player_id": "4f447154-fd89-524c-8df8-2f805f17af67",
      "name": "Taeyoon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BFX",
      "g": 39,
      "minutes": 1224.21,
@@ -5185,7 +5185,7 @@
     {
      "player_id": "4085de75-c0d3-5e7a-a1cc-579c0ecf6626",
      "name": "Jiwoo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 26,
      "minutes": 879.79,
@@ -5195,7 +5195,7 @@
     {
      "player_id": "74ce9536-a2f7-5617-8bc2-169df288b09f",
      "name": "FenRir",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KT",
      "g": 10,
      "minutes": 312.65,
@@ -5218,7 +5218,7 @@
    "g": 19,
    "ix": 86,
    "pg": -11085,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "f046d904-c930-5fb0-8f10-ad766c17e3b7",
@@ -5263,7 +5263,7 @@
     {
      "player_id": "14122de5-bcc1-5fff-ad9e-8cab949eb802",
      "name": "Aiming",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 17,
      "minutes": 556.5,
@@ -5273,7 +5273,7 @@
     {
      "player_id": "b98b4482-0c9e-5632-affb-5c8d08bd28c9",
      "name": "LazyFeel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KRX",
      "g": 2,
      "minutes": 61.23,
@@ -5341,7 +5341,7 @@
     {
      "player_id": "87e5e5e8-28a7-58fc-b9d9-27249acfb6c0",
      "name": "Viper",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BLG",
      "g": 17,
      "minutes": 563.24,
@@ -5374,7 +5374,7 @@
    "g": 21,
    "ix": 111,
    "pg": 9382,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "65d35d1c-430d-523f-a74a-cf6eef5d2a2d",
@@ -5409,7 +5409,7 @@
     {
      "player_id": "530e8532-97dd-5619-97cf-ef007864c01e",
      "name": "Peyz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "T1",
      "g": 21,
      "minutes": 698.87,
@@ -5477,7 +5477,7 @@
     {
      "player_id": "01a08588-9849-5bde-a7df-258cb0afb283",
      "name": "Gumayusi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "HLE",
      "g": 20,
      "minutes": 618.51,
@@ -5545,7 +5545,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 17,
      "minutes": 557.94,
@@ -5613,7 +5613,7 @@
     {
      "player_id": "9226d0a5-e1bf-5390-925e-996361d2c84c",
      "name": "Yeon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TLAW",
      "g": 12,
      "minutes": 376.07,
@@ -5646,7 +5646,7 @@
    "g": 9,
    "ix": 96,
    "pg": -2894,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "a853018a-3a15-543a-a548-50409ee71742",
@@ -5681,7 +5681,7 @@
     {
      "player_id": "8765df75-b4bf-5c21-9910-337178d749f6",
      "name": "Caliste",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KC",
      "g": 9,
      "minutes": 285.36,
@@ -5749,7 +5749,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 15,
      "minutes": 516.98,
@@ -5782,7 +5782,7 @@
    "g": 10,
    "ix": 87,
    "pg": -10071,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "210ba7e1-e664-5307-904a-5404d2092e17",
@@ -5817,7 +5817,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 10,
      "minutes": 308.43,
@@ -5885,7 +5885,7 @@
     {
      "player_id": "cc885164-ef2a-5ddb-a798-9d53fab61c04",
      "name": "JackeyLove",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TES",
      "g": 9,
      "minutes": 303.96,
@@ -5953,7 +5953,7 @@
     {
      "player_id": "bde12424-5476-5636-9caf-1002ee180c75",
      "name": "Ayu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FUR",
      "g": 6,
      "minutes": 208.35,
@@ -6021,7 +6021,7 @@
     {
      "player_id": "dae90bd9-d46f-508b-ba82-821ec2884057",
      "name": "Feng",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DCG",
      "g": 6,
      "minutes": 182.58,
@@ -6089,7 +6089,7 @@
     {
      "player_id": "3462f12f-1fe2-5662-9ba7-48cafe966e7b",
      "name": "Ruler",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GEN",
      "g": 15,
      "minutes": 517.51,
@@ -6157,7 +6157,7 @@
     {
      "player_id": "87e5e5e8-28a7-58fc-b9d9-27249acfb6c0",
      "name": "Viper",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "BLG",
      "g": 19,
      "minutes": 682.94,
@@ -6225,7 +6225,7 @@
     {
      "player_id": "530e8532-97dd-5619-97cf-ef007864c01e",
      "name": "Peyz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "T1",
      "g": 12,
      "minutes": 398.21,
@@ -6293,7 +6293,7 @@
     {
      "player_id": "8765df75-b4bf-5c21-9910-337178d749f6",
      "name": "Caliste",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KC",
      "g": 21,
      "minutes": 699.31,
@@ -6361,7 +6361,7 @@
     {
      "player_id": "e2cb379b-5bb3-503b-89b8-15c2904aece0",
      "name": "JiaQi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "IG",
      "g": 13,
      "minutes": 415.88,
@@ -6429,7 +6429,7 @@
     {
      "player_id": "efdfa357-d68a-5d71-9c88-b74c2ac8ed76",
      "name": "Smash",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DK",
      "g": 7,
      "minutes": 236.8,
@@ -6497,7 +6497,7 @@
     {
      "player_id": "cc885164-ef2a-5ddb-a798-9d53fab61c04",
      "name": "JackeyLove",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TES",
      "g": 10,
      "minutes": 321.81,
@@ -6555,7 +6555,7 @@
     {
      "player_id": "99f95e41-bebb-501b-9d1f-0a4dbd42dbb0",
      "name": "Harky",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVK",
      "g": 13,
      "minutes": 402.61,
@@ -6643,7 +6643,7 @@
     {
      "player_id": "916332f9-fefe-5f24-9f4a-5fd8a032b88b",
      "name": "Tactical",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "C9",
      "g": 9,
      "minutes": 315.37,
@@ -6711,7 +6711,7 @@
     {
      "player_id": "f6f8a423-32b8-5f05-8fd6-f3cef5733242",
      "name": "Duduhh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LOS",
      "g": 10,
      "minutes": 374.9,
@@ -6779,7 +6779,7 @@
     {
      "player_id": "01a08588-9849-5bde-a7df-258cb0afb283",
      "name": "Gumayusi",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "HLE",
      "g": 7,
      "minutes": 210.38,
@@ -6847,7 +6847,7 @@
     {
      "player_id": "9226d0a5-e1bf-5390-925e-996361d2c84c",
      "name": "Yeon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TLAW",
      "g": 7,
      "minutes": 264.98,
@@ -6915,7 +6915,7 @@
     {
      "player_id": "bde12424-5476-5636-9caf-1002ee180c75",
      "name": "Ayu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FUR",
      "g": 11,
      "minutes": 358.22,
@@ -6983,7 +6983,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 14,
      "minutes": 459.01,
@@ -7051,7 +7051,7 @@
     {
      "player_id": "0c155a82-db30-5b66-abc8-e5cbf14e416b",
      "name": "Supa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MKOI",
      "g": 8,
      "minutes": 268.27,
@@ -7119,7 +7119,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 5,
      "minutes": 161.62,
@@ -7187,7 +7187,7 @@
     {
      "player_id": "e4a8fdae-d9a9-5cc4-948a-e42b7696336f",
      "name": "Doggo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFO",
      "g": 5,
      "minutes": 162.53,
@@ -7255,7 +7255,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 4,
      "minutes": 134.63,
@@ -7288,7 +7288,7 @@
    "g": 4,
    "ix": 66,
    "pg": -30711,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "234debf9-0b2b-5aa0-bbd5-ce58d4827ccc",
@@ -7323,7 +7323,7 @@
     {
      "player_id": "34cf427a-1162-5d75-9fbe-3e97129b1f17",
      "name": "Hope",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "AL",
      "g": 4,
      "minutes": 144.29,
@@ -7356,7 +7356,7 @@
    "g": 104,
    "ix": 113,
    "pg": 11119,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "a853018a-3a15-543a-a548-50409ee71742",
@@ -7391,7 +7391,7 @@
     {
      "player_id": "8765df75-b4bf-5c21-9910-337178d749f6",
      "name": "Caliste",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KC",
      "g": 104,
      "minutes": 3472.63,
@@ -7449,7 +7449,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 89,
      "minutes": 2964.49,
@@ -7537,7 +7537,7 @@
     {
      "player_id": "0c155a82-db30-5b66-abc8-e5cbf14e416b",
      "name": "Supa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MKOI",
      "g": 92,
      "minutes": 3021.67,
@@ -7595,7 +7595,7 @@
     {
      "player_id": "5893afbf-dec1-5ee5-95fb-3b0d37ac908c",
      "name": "Carzzy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VIT",
      "g": 77,
      "minutes": 2575.57,
@@ -7683,7 +7683,7 @@
     {
      "player_id": "7602140f-b1e5-5a27-87f7-1670738be2e3",
      "name": "SamD",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NAVI",
      "g": 75,
      "minutes": 2564.26,
@@ -7751,7 +7751,7 @@
     {
      "player_id": "895b332b-6a7e-532b-931e-87009399f11f",
      "name": "Crownie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LR",
      "g": 11,
      "minutes": 373.89,
@@ -7829,7 +7829,7 @@
     {
      "player_id": "12dfa5f7-76dd-5761-ade1-bb589de051fa",
      "name": "Noah",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GX",
      "g": 50,
      "minutes": 1665.77,
@@ -7849,7 +7849,7 @@
     {
      "player_id": "047fce81-b2fb-593c-a2ee-e5849d632302",
      "name": "Flakked",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GX",
      "g": 33,
      "minutes": 1096.97,
@@ -7872,7 +7872,7 @@
    "g": 60,
    "ix": 96,
    "pg": -3251,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "80a49c3a-f074-5706-9af4-8d7ef75fd971",
@@ -7897,7 +7897,7 @@
     {
      "player_id": "d2acad7a-6bfa-503d-81b8-a45473fc3c34",
      "name": "Upset",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FNC",
      "g": 60,
      "minutes": 2008.97,
@@ -7950,7 +7950,7 @@
    "g": 52,
    "ix": 90,
    "pg": -8780,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "d1c7032c-f518-560f-9d38-1b38fcc53665",
@@ -7975,7 +7975,7 @@
     {
      "player_id": "6a45a618-c012-58a4-8b41-dc9f0e19c9f3",
      "name": "Jopa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SK",
      "g": 52,
      "minutes": 1815.97,
@@ -8053,7 +8053,7 @@
     {
      "player_id": "5cf6b453-9f5e-5c6d-8aa4-3f8b110e1c27",
      "name": "Paduck",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHFT",
      "g": 54,
      "minutes": 1865.13,
@@ -8151,7 +8151,7 @@
     {
      "player_id": "52505ad4-686d-5441-941d-2945de2f7f5c",
      "name": "Ice",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TH",
      "g": 35,
      "minutes": 1153.52,
@@ -8181,7 +8181,7 @@
     {
      "player_id": "a625af3e-efe1-5cdd-b64f-6bd75b036003",
      "name": "Hype",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TH",
      "g": 19,
      "minutes": 604.87,
@@ -8214,7 +8214,7 @@
    "g": 11,
    "ix": 80,
    "pg": -17075,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "2aba808b-2382-5c23-b590-5ec5318833d1",
@@ -8249,7 +8249,7 @@
     {
      "player_id": "fa7e6575-631a-5869-8648-44c88b5e6818",
      "name": "Hazel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KCB",
      "g": 11,
      "minutes": 373.35,
@@ -8317,7 +8317,7 @@
     {
      "player_id": "8765df75-b4bf-5c21-9910-337178d749f6",
      "name": "Caliste",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KC",
      "g": 31,
      "minutes": 1054.19,
@@ -8385,7 +8385,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 23,
      "minutes": 761.64,
@@ -8453,7 +8453,7 @@
     {
      "player_id": "5893afbf-dec1-5ee5-95fb-3b0d37ac908c",
      "name": "Carzzy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VIT",
      "g": 17,
      "minutes": 576.95,
@@ -8521,7 +8521,7 @@
     {
      "player_id": "0c155a82-db30-5b66-abc8-e5cbf14e416b",
      "name": "Supa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MKOI",
      "g": 21,
      "minutes": 671.35,
@@ -8589,7 +8589,7 @@
     {
      "player_id": "7602140f-b1e5-5a27-87f7-1670738be2e3",
      "name": "SamD",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NAVI",
      "g": 18,
      "minutes": 598.29,
@@ -8657,7 +8657,7 @@
     {
      "player_id": "895b332b-6a7e-532b-931e-87009399f11f",
      "name": "Crownie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LR",
      "g": 11,
      "minutes": 373.89,
@@ -8725,7 +8725,7 @@
     {
      "player_id": "5cf6b453-9f5e-5c6d-8aa4-3f8b110e1c27",
      "name": "Paduck",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHFT",
      "g": 11,
      "minutes": 379.78,
@@ -8793,7 +8793,7 @@
     {
      "player_id": "12dfa5f7-76dd-5761-ade1-bb589de051fa",
      "name": "Noah",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GX",
      "g": 22,
      "minutes": 742.59,
@@ -8861,7 +8861,7 @@
     {
      "player_id": "52505ad4-686d-5441-941d-2945de2f7f5c",
      "name": "Ice",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TH",
      "g": 15,
      "minutes": 508.41,
@@ -8894,7 +8894,7 @@
    "g": 15,
    "ix": 90,
    "pg": -7967,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "fb22f9db-4f42-562c-a80c-6acdb3b59817",
@@ -8929,7 +8929,7 @@
     {
      "player_id": "d2acad7a-6bfa-503d-81b8-a45473fc3c34",
      "name": "Upset",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FNC",
      "g": 15,
      "minutes": 478.88,
@@ -8997,7 +8997,7 @@
     {
      "player_id": "6a45a618-c012-58a4-8b41-dc9f0e19c9f3",
      "name": "Jopa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SK",
      "g": 11,
      "minutes": 364.38,
@@ -9030,7 +9030,7 @@
    "g": 11,
    "ix": 80,
    "pg": -17457,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "2aba808b-2382-5c23-b590-5ec5318833d1",
@@ -9065,7 +9065,7 @@
     {
      "player_id": "fa7e6575-631a-5869-8648-44c88b5e6818",
      "name": "Hazel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KCB",
      "g": 11,
      "minutes": 373.35,
@@ -9133,7 +9133,7 @@
     {
      "player_id": "8765df75-b4bf-5c21-9910-337178d749f6",
      "name": "Caliste",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KC",
      "g": 42,
      "minutes": 1371.68,
@@ -9191,7 +9191,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 35,
      "minutes": 1149.44,
@@ -9244,7 +9244,7 @@
    "g": 34,
    "ix": 107,
    "pg": 6243,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "862cb1a7-6d3e-5015-a056-d2d6dfdc55fd",
@@ -9279,7 +9279,7 @@
     {
      "player_id": "0c155a82-db30-5b66-abc8-e5cbf14e416b",
      "name": "Supa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MKOI",
      "g": 34,
      "minutes": 1143.35,
@@ -9347,7 +9347,7 @@
     {
      "player_id": "5893afbf-dec1-5ee5-95fb-3b0d37ac908c",
      "name": "Carzzy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VIT",
      "g": 30,
      "minutes": 1060.21,
@@ -9380,7 +9380,7 @@
    "g": 23,
    "ix": 101,
    "pg": 1105,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "fb22f9db-4f42-562c-a80c-6acdb3b59817",
@@ -9415,7 +9415,7 @@
     {
      "player_id": "d2acad7a-6bfa-503d-81b8-a45473fc3c34",
      "name": "Upset",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FNC",
      "g": 23,
      "minutes": 809.0,
@@ -9483,7 +9483,7 @@
     {
      "player_id": "7602140f-b1e5-5a27-87f7-1670738be2e3",
      "name": "SamD",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NAVI",
      "g": 27,
      "minutes": 946.01,
@@ -9551,7 +9551,7 @@
     {
      "player_id": "12dfa5f7-76dd-5761-ade1-bb589de051fa",
      "name": "Noah",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GX",
      "g": 28,
      "minutes": 923.18,
@@ -9609,7 +9609,7 @@
     {
      "player_id": "5cf6b453-9f5e-5c6d-8aa4-3f8b110e1c27",
      "name": "Paduck",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHFT",
      "g": 22,
      "minutes": 769.26,
@@ -9662,7 +9662,7 @@
    "g": 21,
    "ix": 87,
    "pg": -11459,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "d1c7032c-f518-560f-9d38-1b38fcc53665",
@@ -9697,7 +9697,7 @@
     {
      "player_id": "6a45a618-c012-58a4-8b41-dc9f0e19c9f3",
      "name": "Jopa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SK",
      "g": 21,
      "minutes": 746.25,
@@ -9755,7 +9755,7 @@
     {
      "player_id": "52505ad4-686d-5441-941d-2945de2f7f5c",
      "name": "Ice",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TH",
      "g": 20,
      "minutes": 645.11,
@@ -9843,7 +9843,7 @@
     {
      "player_id": "ba261e18-a54e-54c0-a945-3070cc26cd0d",
      "name": "Hans Sama",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "G2",
      "g": 31,
      "minutes": 1053.41,
@@ -9876,7 +9876,7 @@
    "g": 31,
    "ix": 112,
    "pg": 10648,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "a853018a-3a15-543a-a548-50409ee71742",
@@ -9911,7 +9911,7 @@
     {
      "player_id": "8765df75-b4bf-5c21-9910-337178d749f6",
      "name": "Caliste",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KC",
      "g": 31,
      "minutes": 1046.75,
@@ -9979,7 +9979,7 @@
     {
      "player_id": "0c155a82-db30-5b66-abc8-e5cbf14e416b",
      "name": "Supa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MKOI",
      "g": 37,
      "minutes": 1206.96,
@@ -10047,7 +10047,7 @@
     {
      "player_id": "5893afbf-dec1-5ee5-95fb-3b0d37ac908c",
      "name": "Carzzy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VIT",
      "g": 30,
      "minutes": 938.41,
@@ -10115,7 +10115,7 @@
     {
      "player_id": "7602140f-b1e5-5a27-87f7-1670738be2e3",
      "name": "SamD",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NAVI",
      "g": 30,
      "minutes": 1019.96,
@@ -10183,7 +10183,7 @@
     {
      "player_id": "047fce81-b2fb-593c-a2ee-e5849d632302",
      "name": "Flakked",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GX",
      "g": 33,
      "minutes": 1096.97,
@@ -10251,7 +10251,7 @@
     {
      "player_id": "d2acad7a-6bfa-503d-81b8-a45473fc3c34",
      "name": "Upset",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FNC",
      "g": 22,
      "minutes": 721.09,
@@ -10284,7 +10284,7 @@
    "g": 20,
    "ix": 94,
    "pg": -4984,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "d1c7032c-f518-560f-9d38-1b38fcc53665",
@@ -10319,7 +10319,7 @@
     {
      "player_id": "6a45a618-c012-58a4-8b41-dc9f0e19c9f3",
      "name": "Jopa",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SK",
      "g": 20,
      "minutes": 705.35,
@@ -10387,7 +10387,7 @@
     {
      "player_id": "5cf6b453-9f5e-5c6d-8aa4-3f8b110e1c27",
      "name": "Paduck",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHFT",
      "g": 21,
      "minutes": 716.09,
@@ -10455,7 +10455,7 @@
     {
      "player_id": "a625af3e-efe1-5cdd-b64f-6bd75b036003",
      "name": "Hype",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TH",
      "g": 19,
      "minutes": 604.87,
@@ -10503,7 +10503,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 82,
      "minutes": 2794.68,
@@ -10611,7 +10611,7 @@
     {
      "player_id": "9226d0a5-e1bf-5390-925e-996361d2c84c",
      "name": "Yeon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TLAW",
      "g": 77,
      "minutes": 2514.22,
@@ -10689,7 +10689,7 @@
     {
      "player_id": "ef10e7e7-b271-5751-ad2f-0ef75a23861d",
      "name": "Zven",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "C9",
      "g": 46,
      "minutes": 1478.55,
@@ -10709,7 +10709,7 @@
     {
      "player_id": "916332f9-fefe-5f24-9f4a-5fd8a032b88b",
      "name": "Tactical",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "C9",
      "g": 32,
      "minutes": 1105.8,
@@ -10767,7 +10767,7 @@
     {
      "player_id": "ca4310f7-211a-5bca-aff6-5d1f3577efe9",
      "name": "Massu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FLY",
      "g": 70,
      "minutes": 2225.53,
@@ -10800,7 +10800,7 @@
    "g": 66,
    "ix": 97,
    "pg": -2577,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "37ff4c13-d632-50b2-b864-2c37d77c2163",
@@ -10835,7 +10835,7 @@
     {
      "player_id": "8c0b42c3-a6cc-53c8-ad3e-f944927f3cf8",
      "name": "Rahel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SEN",
      "g": 66,
      "minutes": 2199.46,
@@ -10903,7 +10903,7 @@
     {
      "player_id": "de8174c8-8859-5da4-995c-8594294ffabd",
      "name": "Bvoy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SR",
      "g": 59,
      "minutes": 1891.24,
@@ -10961,7 +10961,7 @@
     {
      "player_id": "21ca8b9d-8183-5009-8bd9-f7f5441d788b",
      "name": "sajed",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DSG",
      "g": 47,
      "minutes": 1504.04,
@@ -11034,7 +11034,7 @@
    "g": 41,
    "ix": 77,
    "pg": -18422,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "c8695c1d-9268-5412-ad9b-44545df52e81",
@@ -11049,7 +11049,7 @@
     {
      "player_id": "3877c4f5-4432-5af2-8894-80a6932ce6a3",
      "name": "FBI",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DIG",
      "g": 39,
      "minutes": 1242.3,
@@ -11109,7 +11109,7 @@
     {
      "player_id": "33c24f64-4cf3-576d-99bc-795c2fa55286",
      "name": "Mobility",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DIG",
      "g": 2,
      "minutes": 67.66,
@@ -11177,7 +11177,7 @@
     {
      "player_id": "ef10e7e7-b271-5751-ad2f-0ef75a23861d",
      "name": "Zven",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "C9",
      "g": 17,
      "minutes": 552.75,
@@ -11245,7 +11245,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 22,
      "minutes": 759.14,
@@ -11313,7 +11313,7 @@
     {
      "player_id": "8c0b42c3-a6cc-53c8-ad3e-f944927f3cf8",
      "name": "Rahel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SEN",
      "g": 20,
      "minutes": 676.58,
@@ -11381,7 +11381,7 @@
     {
      "player_id": "9226d0a5-e1bf-5390-925e-996361d2c84c",
      "name": "Yeon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TLAW",
      "g": 15,
      "minutes": 495.91,
@@ -11414,7 +11414,7 @@
    "g": 17,
    "ix": 95,
    "pg": -4432,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "9e5a8c10-59b0-55e8-8308-38d9ef261432",
@@ -11439,7 +11439,7 @@
     {
      "player_id": "21ca8b9d-8183-5009-8bd9-f7f5441d788b",
      "name": "sajed",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DSG",
      "g": 17,
      "minutes": 558.87,
@@ -11527,7 +11527,7 @@
     {
      "player_id": "ca4310f7-211a-5bca-aff6-5d1f3577efe9",
      "name": "Massu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FLY",
      "g": 14,
      "minutes": 442.52,
@@ -11560,7 +11560,7 @@
    "g": 7,
    "ix": 89,
    "pg": -9370,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "18c9def0-7aed-57ea-af59-b2071d0ffa13",
@@ -11595,7 +11595,7 @@
     {
      "player_id": "3877c4f5-4432-5af2-8894-80a6932ce6a3",
      "name": "FBI",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DIG",
      "g": 5,
      "minutes": 170.04,
@@ -11615,7 +11615,7 @@
     {
      "player_id": "33c24f64-4cf3-576d-99bc-795c2fa55286",
      "name": "Mobility",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DIG",
      "g": 2,
      "minutes": 67.66,
@@ -11683,7 +11683,7 @@
     {
      "player_id": "de8174c8-8859-5da4-995c-8594294ffabd",
      "name": "Bvoy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SR",
      "g": 6,
      "minutes": 197.05,
@@ -11741,7 +11741,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 29,
      "minutes": 1003.96,
@@ -11829,7 +11829,7 @@
     {
      "player_id": "9226d0a5-e1bf-5390-925e-996361d2c84c",
      "name": "Yeon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TLAW",
      "g": 36,
      "minutes": 1200.98,
@@ -11897,7 +11897,7 @@
     {
      "player_id": "ef10e7e7-b271-5751-ad2f-0ef75a23861d",
      "name": "Zven",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "C9",
      "g": 29,
      "minutes": 925.81,
@@ -11965,7 +11965,7 @@
     {
      "player_id": "ca4310f7-211a-5bca-aff6-5d1f3577efe9",
      "name": "Massu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FLY",
      "g": 31,
      "minutes": 994.44,
@@ -11998,7 +11998,7 @@
    "g": 21,
    "ix": 94,
    "pg": -4950,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "37ff4c13-d632-50b2-b864-2c37d77c2163",
@@ -12033,7 +12033,7 @@
     {
      "player_id": "8c0b42c3-a6cc-53c8-ad3e-f944927f3cf8",
      "name": "Rahel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SEN",
      "g": 21,
      "minutes": 714.86,
@@ -12066,7 +12066,7 @@
    "g": 18,
    "ix": 85,
    "pg": -11612,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "58185f83-c763-556d-87d3-3dee9244f90e",
@@ -12101,7 +12101,7 @@
     {
      "player_id": "de8174c8-8859-5da4-995c-8594294ffabd",
      "name": "Bvoy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SR",
      "g": 18,
      "minutes": 570.36,
@@ -12159,7 +12159,7 @@
     {
      "player_id": "21ca8b9d-8183-5009-8bd9-f7f5441d788b",
      "name": "sajed",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DSG",
      "g": 15,
      "minutes": 474.09,
@@ -12247,7 +12247,7 @@
     {
      "player_id": "3877c4f5-4432-5af2-8894-80a6932ce6a3",
      "name": "FBI",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DIG",
      "g": 17,
      "minutes": 559.26,
@@ -12315,7 +12315,7 @@
     {
      "player_id": "9226d0a5-e1bf-5390-925e-996361d2c84c",
      "name": "Yeon",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TLAW",
      "g": 26,
      "minutes": 817.33,
@@ -12373,7 +12373,7 @@
     {
      "player_id": "e724683e-bce9-58a5-985e-c46f2be90ad0",
      "name": "Berserker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LYON",
      "g": 31,
      "minutes": 1031.59,
@@ -12461,7 +12461,7 @@
     {
      "player_id": "916332f9-fefe-5f24-9f4a-5fd8a032b88b",
      "name": "Tactical",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "C9",
      "g": 32,
      "minutes": 1105.8,
@@ -12529,7 +12529,7 @@
     {
      "player_id": "ca4310f7-211a-5bca-aff6-5d1f3577efe9",
      "name": "Massu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FLY",
      "g": 25,
      "minutes": 788.57,
@@ -12562,7 +12562,7 @@
    "g": 25,
    "ix": 97,
    "pg": -2303,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "37ff4c13-d632-50b2-b864-2c37d77c2163",
@@ -12597,7 +12597,7 @@
     {
      "player_id": "8c0b42c3-a6cc-53c8-ad3e-f944927f3cf8",
      "name": "Rahel",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SEN",
      "g": 25,
      "minutes": 808.02,
@@ -12665,7 +12665,7 @@
     {
      "player_id": "de8174c8-8859-5da4-995c-8594294ffabd",
      "name": "Bvoy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SR",
      "g": 35,
      "minutes": 1123.83,
@@ -12733,7 +12733,7 @@
     {
      "player_id": "21ca8b9d-8183-5009-8bd9-f7f5441d788b",
      "name": "sajed",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DSG",
      "g": 15,
      "minutes": 471.08,
@@ -12791,7 +12791,7 @@
     {
      "player_id": "3877c4f5-4432-5af2-8894-80a6932ce6a3",
      "name": "FBI",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DIG",
      "g": 17,
      "minutes": 513.0,
@@ -12869,7 +12869,7 @@
     {
      "player_id": "bde12424-5476-5636-9caf-1002ee180c75",
      "name": "Ayu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FUR",
      "g": 85,
      "minutes": 2810.39,
@@ -12967,7 +12967,7 @@
     {
      "player_id": "f5310d6a-306f-5ef7-8653-21ecf705e781",
      "name": "Brance",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "EST",
      "g": 6,
      "minutes": 188.91,
@@ -13025,7 +13025,7 @@
     {
      "player_id": "f6f8a423-32b8-5f05-8fd6-f3cef5733242",
      "name": "Duduhh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LOS",
      "g": 92,
      "minutes": 2965.42,
@@ -13103,7 +13103,7 @@
     {
      "player_id": "33b1cebb-0eb0-5596-93fb-a361e2b34156",
      "name": "Bull",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 48,
      "minutes": 1621.0,
@@ -13163,7 +13163,7 @@
     {
      "player_id": "673818de-4878-5941-bd1f-c8a9d8e155be",
      "name": "Rabelo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 27,
      "minutes": 868.16,
@@ -13221,7 +13221,7 @@
     {
      "player_id": "b5d519de-385a-51f6-937b-477d4d9b777e",
      "name": "Morttheus",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RED",
      "g": 55,
      "minutes": 1845.63,
@@ -13271,7 +13271,7 @@
     {
      "player_id": "673818de-4878-5941-bd1f-c8a9d8e155be",
      "name": "Rabelo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 22,
      "minutes": 781.04,
@@ -13359,7 +13359,7 @@
     {
      "player_id": "98e1cec4-8305-59ce-acda-252fd84ee7d2",
      "name": "Jeskla",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VKS",
      "g": 24,
      "minutes": 783.83,
@@ -13379,7 +13379,7 @@
     {
      "player_id": "36a74f98-ad53-5693-b9fa-2436f51fb629",
      "name": "ceo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VKS",
      "g": 23,
      "minutes": 762.08,
@@ -13409,7 +13409,7 @@
     {
      "player_id": "b5d519de-385a-51f6-937b-477d4d9b777e",
      "name": "Morttheus",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RED",
      "g": 16,
      "minutes": 514.83,
@@ -13487,7 +13487,7 @@
     {
      "player_id": "ccdd233f-80f1-5508-93c8-495c37c51c44",
      "name": "Kojima",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KBM",
      "g": 6,
      "minutes": 158.34,
@@ -13565,7 +13565,7 @@
     {
      "player_id": "b1cf9dcc-faf3-5f25-a0f2-b568f68eeb1c",
      "name": "Hena",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "PNG",
      "g": 28,
      "minutes": 905.11,
@@ -13595,7 +13595,7 @@
     {
      "player_id": "cd048f70-1501-561a-add7-a8d3caee4ee2",
      "name": "Trigger",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "PNG",
      "g": 25,
      "minutes": 811.9,
@@ -13625,7 +13625,7 @@
     {
      "player_id": "99707d84-ff25-5a32-9add-a2355f31139f",
      "name": "Marvin",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "PNG",
      "g": 5,
      "minutes": 153.13,
@@ -13673,7 +13673,7 @@
     {
      "player_id": "170265f2-6d49-5420-8498-9015ed6395bc",
      "name": "BAO",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FX",
      "g": 55,
      "minutes": 1734.1,
@@ -13801,7 +13801,7 @@
     {
      "player_id": "36a74f98-ad53-5693-b9fa-2436f51fb629",
      "name": "ceo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VKS",
      "g": 22,
      "minutes": 752.46,
@@ -13811,7 +13811,7 @@
     {
      "player_id": "ad76aec4-c6ca-51a2-aeb6-126be7465ac7",
      "name": "Snaker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LEV",
      "g": 15,
      "minutes": 488.49,
@@ -13821,7 +13821,7 @@
     {
      "player_id": "a84cb53e-f869-5f63-bd56-f6129a44246f",
      "name": "Strensh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LEV",
      "g": 14,
      "minutes": 450.76,
@@ -13889,7 +13889,7 @@
     {
      "player_id": "b6962913-a918-5cbd-b63f-2808d4b2b974",
      "name": "Scenari0",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GLE",
      "g": 3,
      "minutes": 68.47,
@@ -13957,7 +13957,7 @@
     {
      "player_id": "b81ac416-7261-581f-8050-3b7af2b67833",
      "name": "FIX",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "9ZG",
      "g": 3,
      "minutes": 81.66,
@@ -14025,7 +14025,7 @@
     {
      "player_id": "673818de-4878-5941-bd1f-c8a9d8e155be",
      "name": "Rabelo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RED",
      "g": 20,
      "minutes": 705.13,
@@ -14093,7 +14093,7 @@
     {
      "player_id": "bde12424-5476-5636-9caf-1002ee180c75",
      "name": "Ayu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FUR",
      "g": 22,
      "minutes": 711.15,
@@ -14151,7 +14151,7 @@
     {
      "player_id": "33b1cebb-0eb0-5596-93fb-a361e2b34156",
      "name": "Bull",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 19,
      "minutes": 657.22,
@@ -14239,7 +14239,7 @@
     {
      "player_id": "f6f8a423-32b8-5f05-8fd6-f3cef5733242",
      "name": "Duduhh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LOS",
      "g": 14,
      "minutes": 456.53,
@@ -14307,7 +14307,7 @@
     {
      "player_id": "36a74f98-ad53-5693-b9fa-2436f51fb629",
      "name": "ceo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LEV",
      "g": 22,
      "minutes": 752.46,
@@ -14365,7 +14365,7 @@
     {
      "player_id": "b5d519de-385a-51f6-937b-477d4d9b777e",
      "name": "Morttheus",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VKS",
      "g": 16,
      "minutes": 514.83,
@@ -14418,7 +14418,7 @@
    "g": 14,
    "ix": 86,
    "pg": -11485,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "d0c12251-d4da-5221-a80b-8ddf280778fb",
@@ -14463,7 +14463,7 @@
     {
      "player_id": "cd048f70-1501-561a-add7-a8d3caee4ee2",
      "name": "Trigger",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "PNG",
      "g": 9,
      "minutes": 314.21,
@@ -14473,7 +14473,7 @@
     {
      "player_id": "99707d84-ff25-5a32-9add-a2355f31139f",
      "name": "Marvin",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "PNG",
      "g": 5,
      "minutes": 153.13,
@@ -14531,7 +14531,7 @@
     {
      "player_id": "170265f2-6d49-5420-8498-9015ed6395bc",
      "name": "BAO",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FX",
      "g": 9,
      "minutes": 295.87,
@@ -14599,7 +14599,7 @@
     {
      "player_id": "bde12424-5476-5636-9caf-1002ee180c75",
      "name": "Ayu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FUR",
      "g": 28,
      "minutes": 963.18,
@@ -14677,7 +14677,7 @@
     {
      "player_id": "b5d519de-385a-51f6-937b-477d4d9b777e",
      "name": "Morttheus",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RED",
      "g": 24,
      "minutes": 803.98,
@@ -14687,7 +14687,7 @@
     {
      "player_id": "673818de-4878-5941-bd1f-c8a9d8e155be",
      "name": "Rabelo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RED",
      "g": 2,
      "minutes": 75.91,
@@ -14735,7 +14735,7 @@
     {
      "player_id": "f6f8a423-32b8-5f05-8fd6-f3cef5733242",
      "name": "Duduhh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LOS",
      "g": 43,
      "minutes": 1382.09,
@@ -14823,7 +14823,7 @@
     {
      "player_id": "33b1cebb-0eb0-5596-93fb-a361e2b34156",
      "name": "Bull",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 29,
      "minutes": 963.78,
@@ -14901,7 +14901,7 @@
     {
      "player_id": "170265f2-6d49-5420-8498-9015ed6395bc",
      "name": "BAO",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FX",
      "g": 30,
      "minutes": 959.79,
@@ -14934,7 +14934,7 @@
    "g": 23,
    "ix": 96,
    "pg": -3467,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "0b119438-49eb-5f4f-8edc-8df990f3751c",
@@ -14949,7 +14949,7 @@
     {
      "player_id": "36a74f98-ad53-5693-b9fa-2436f51fb629",
      "name": "ceo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VKS",
      "g": 23,
      "minutes": 762.08,
@@ -15047,7 +15047,7 @@
     {
      "player_id": "cd048f70-1501-561a-add7-a8d3caee4ee2",
      "name": "Trigger",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "PNG",
      "g": 16,
      "minutes": 497.69,
@@ -15100,7 +15100,7 @@
    "g": 15,
    "ix": 76,
    "pg": -19083,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "0b34dc69-d297-5a5d-9439-6c7b04ef9b84",
@@ -15135,7 +15135,7 @@
     {
      "player_id": "ad76aec4-c6ca-51a2-aeb6-126be7465ac7",
      "name": "Snaker",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LEV",
      "g": 15,
      "minutes": 488.49,
@@ -15203,7 +15203,7 @@
     {
      "player_id": "f6f8a423-32b8-5f05-8fd6-f3cef5733242",
      "name": "Duduhh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LOS",
      "g": 29,
      "minutes": 929.69,
@@ -15261,7 +15261,7 @@
     {
      "player_id": "bde12424-5476-5636-9caf-1002ee180c75",
      "name": "Ayu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FUR",
      "g": 35,
      "minutes": 1136.06,
@@ -15359,7 +15359,7 @@
     {
      "player_id": "673818de-4878-5941-bd1f-c8a9d8e155be",
      "name": "Rabelo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LLL",
      "g": 27,
      "minutes": 868.16,
@@ -15417,7 +15417,7 @@
     {
      "player_id": "b1cf9dcc-faf3-5f25-a0f2-b568f68eeb1c",
      "name": "Hena",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "PNG",
      "g": 28,
      "minutes": 905.11,
@@ -15470,7 +15470,7 @@
    "g": 31,
    "ix": 94,
    "pg": -4542,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "cf13a1d6-c4e6-5a0b-b972-b36081ab4e0d",
@@ -15505,7 +15505,7 @@
     {
      "player_id": "b5d519de-385a-51f6-937b-477d4d9b777e",
      "name": "Morttheus",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RED",
      "g": 31,
      "minutes": 1041.66,
@@ -15583,7 +15583,7 @@
     {
      "player_id": "98e1cec4-8305-59ce-acda-252fd84ee7d2",
      "name": "Jeskla",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VKS",
      "g": 24,
      "minutes": 783.83,
@@ -15651,7 +15651,7 @@
     {
      "player_id": "170265f2-6d49-5420-8498-9015ed6395bc",
      "name": "BAO",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FX",
      "g": 16,
      "minutes": 478.44,
@@ -15719,7 +15719,7 @@
     {
      "player_id": "a84cb53e-f869-5f63-bd56-f6129a44246f",
      "name": "Strensh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LEV",
      "g": 14,
      "minutes": 450.76,
@@ -15787,7 +15787,7 @@
     {
      "player_id": "f6f8a423-32b8-5f05-8fd6-f3cef5733242",
      "name": "Duduhh",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "LOS",
      "g": 6,
      "minutes": 197.12,
@@ -15855,7 +15855,7 @@
     {
      "player_id": "f5310d6a-306f-5ef7-8653-21ecf705e781",
      "name": "Brance",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "EST",
      "g": 6,
      "minutes": 188.91,
@@ -15888,7 +15888,7 @@
    "g": 6,
    "ix": 92,
    "pg": -4677,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "f5736185-5648-5875-b399-5c3e0dc39e37",
@@ -15923,7 +15923,7 @@
     {
      "player_id": "ccdd233f-80f1-5508-93c8-495c37c51c44",
      "name": "Kojima",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "KBM",
      "g": 6,
      "minutes": 158.34,
@@ -15991,7 +15991,7 @@
     {
      "player_id": "b6962913-a918-5cbd-b63f-2808d4b2b974",
      "name": "Scenari0",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GLE",
      "g": 3,
      "minutes": 68.47,
@@ -16059,7 +16059,7 @@
     {
      "player_id": "b81ac416-7261-581f-8050-3b7af2b67833",
      "name": "FIX",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "9ZG",
      "g": 3,
      "minutes": 81.66,
@@ -16117,7 +16117,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 79,
      "minutes": 2467.51,
@@ -16195,7 +16195,7 @@
     {
      "player_id": "776bda22-2a6f-5afe-aa07-aaa76da3257c",
      "name": "Artemis",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GAM",
      "g": 73,
      "minutes": 2420.19,
@@ -16273,7 +16273,7 @@
     {
      "player_id": "dae90bd9-d46f-508b-ba82-821ec2884057",
      "name": "Feng",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DCG",
      "g": 91,
      "minutes": 2911.93,
@@ -16351,7 +16351,7 @@
     {
      "player_id": "e4a8fdae-d9a9-5cc4-948a-e42b7696336f",
      "name": "Doggo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFO",
      "g": 79,
      "minutes": 2532.18,
@@ -16414,7 +16414,7 @@
    "g": 75,
    "ix": 95,
    "pg": -3964,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "fa9d8524-81ce-5b3e-a1f0-089e485ae752",
@@ -16439,7 +16439,7 @@
     {
      "player_id": "99f95e41-bebb-501b-9d1f-0a4dbd42dbb0",
      "name": "Harky",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVK",
      "g": 56,
      "minutes": 1841.29,
@@ -16469,7 +16469,7 @@
     {
      "player_id": "f522cf21-3fef-52e9-8f55-0f9133e1b30e",
      "name": "Shogun",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVK",
      "g": 19,
      "minutes": 660.75,
@@ -16577,7 +16577,7 @@
     {
      "player_id": "7a2eca2a-5473-567f-86fb-700d303e4e70",
      "name": "Shunn",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZ",
      "g": 48,
      "minutes": 1594.18,
@@ -16607,7 +16607,7 @@
     {
      "player_id": "3a654b25-c4a7-5afc-9aa7-fc11f3f606bb",
      "name": "Betty",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZ",
      "g": 15,
      "minutes": 496.62,
@@ -16675,7 +16675,7 @@
     {
      "player_id": "e430a2be-7de5-527b-b9c3-13859f5bfe06",
      "name": "Marble",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHG",
      "g": 60,
      "minutes": 2005.75,
@@ -16723,7 +16723,7 @@
     {
      "player_id": "58b72789-bbc9-52ca-820b-30052e3620de",
      "name": "Kakkun",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DFM",
      "g": 46,
      "minutes": 1442.59,
@@ -16831,7 +16831,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 28,
      "minutes": 854.44,
@@ -16919,7 +16919,7 @@
     {
      "player_id": "dae90bd9-d46f-508b-ba82-821ec2884057",
      "name": "Feng",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DCG",
      "g": 36,
      "minutes": 1161.49,
@@ -16987,7 +16987,7 @@
     {
      "player_id": "e4a8fdae-d9a9-5cc4-948a-e42b7696336f",
      "name": "Doggo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFO",
      "g": 21,
      "minutes": 693.0,
@@ -17020,7 +17020,7 @@
    "g": 20,
    "ix": 100,
    "pg": 18,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "4362ce13-7b89-591a-80da-1f33bdfead94",
@@ -17055,7 +17055,7 @@
     {
      "player_id": "776bda22-2a6f-5afe-aa07-aaa76da3257c",
      "name": "Artemis",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GAM",
      "g": 20,
      "minutes": 671.68,
@@ -17123,7 +17123,7 @@
     {
      "player_id": "7a2eca2a-5473-567f-86fb-700d303e4e70",
      "name": "Shunn",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZ",
      "g": 33,
      "minutes": 1106.36,
@@ -17191,7 +17191,7 @@
     {
      "player_id": "e430a2be-7de5-527b-b9c3-13859f5bfe06",
      "name": "Marble",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHG",
      "g": 32,
      "minutes": 1054.07,
@@ -17224,7 +17224,7 @@
    "g": 19,
    "ix": 92,
    "pg": -7030,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "052c6856-552e-5c65-8311-dfeaf6c3f761",
@@ -17239,7 +17239,7 @@
     {
      "player_id": "f522cf21-3fef-52e9-8f55-0f9133e1b30e",
      "name": "Shogun",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVK",
      "g": 19,
      "minutes": 660.75,
@@ -17337,7 +17337,7 @@
     {
      "player_id": "58b72789-bbc9-52ca-820b-30052e3620de",
      "name": "Kakkun",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DFM",
      "g": 15,
      "minutes": 459.32,
@@ -17425,7 +17425,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 29,
      "minutes": 940.06,
@@ -17483,7 +17483,7 @@
     {
      "player_id": "776bda22-2a6f-5afe-aa07-aaa76da3257c",
      "name": "Artemis",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GAM",
      "g": 30,
      "minutes": 952.56,
@@ -17561,7 +17561,7 @@
     {
      "player_id": "dae90bd9-d46f-508b-ba82-821ec2884057",
      "name": "Feng",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DCG",
      "g": 39,
      "minutes": 1205.02,
@@ -17629,7 +17629,7 @@
     {
      "player_id": "99f95e41-bebb-501b-9d1f-0a4dbd42dbb0",
      "name": "Harky",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVK",
      "g": 28,
      "minutes": 929.77,
@@ -17737,7 +17737,7 @@
     {
      "player_id": "e430a2be-7de5-527b-b9c3-13859f5bfe06",
      "name": "Marble",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHG",
      "g": 20,
      "minutes": 679.08,
@@ -17770,7 +17770,7 @@
    "g": 23,
    "ix": 91,
    "pg": -6642,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "dd45aa6c-8b84-56c4-af69-8d4d51d850a2",
@@ -17795,7 +17795,7 @@
     {
      "player_id": "e4a8fdae-d9a9-5cc4-948a-e42b7696336f",
      "name": "Doggo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFO",
      "g": 23,
      "minutes": 734.9,
@@ -17893,7 +17893,7 @@
     {
      "player_id": "58b72789-bbc9-52ca-820b-30052e3620de",
      "name": "Kakkun",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DFM",
      "g": 18,
      "minutes": 564.98,
@@ -17961,7 +17961,7 @@
     {
      "player_id": "7a2eca2a-5473-567f-86fb-700d303e4e70",
      "name": "Shunn",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZ",
      "g": 15,
      "minutes": 487.82,
@@ -18029,7 +18029,7 @@
     {
      "player_id": "fa1781db-0a9e-561a-9bec-0374cd91566e",
      "name": "Eddie",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "TSW",
      "g": 22,
      "minutes": 673.01,
@@ -18097,7 +18097,7 @@
     {
      "player_id": "e4a8fdae-d9a9-5cc4-948a-e42b7696336f",
      "name": "Doggo",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFO",
      "g": 35,
      "minutes": 1104.29,
@@ -18165,7 +18165,7 @@
     {
      "player_id": "776bda22-2a6f-5afe-aa07-aaa76da3257c",
      "name": "Artemis",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GAM",
      "g": 23,
      "minutes": 795.95,
@@ -18233,7 +18233,7 @@
     {
      "player_id": "3a654b25-c4a7-5afc-9aa7-fc11f3f606bb",
      "name": "Betty",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZ",
      "g": 15,
      "minutes": 496.62,
@@ -18301,7 +18301,7 @@
     {
      "player_id": "99f95e41-bebb-501b-9d1f-0a4dbd42dbb0",
      "name": "Harky",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVK",
      "g": 28,
      "minutes": 911.52,
@@ -18369,7 +18369,7 @@
     {
      "player_id": "dae90bd9-d46f-508b-ba82-821ec2884057",
      "name": "Feng",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DCG",
      "g": 16,
      "minutes": 545.43,
@@ -18437,7 +18437,7 @@
     {
      "player_id": "58b72789-bbc9-52ca-820b-30052e3620de",
      "name": "Kakkun",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DFM",
      "g": 13,
      "minutes": 418.28,
@@ -18470,7 +18470,7 @@
    "g": 8,
    "ix": 73,
    "pg": -23108,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "bda5cff1-edd5-543c-afbc-924d799adbc8",
@@ -18505,7 +18505,7 @@
     {
      "player_id": "e430a2be-7de5-527b-b9c3-13859f5bfe06",
      "name": "Marble",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHG",
      "g": 8,
      "minutes": 272.6,
@@ -18538,7 +18538,7 @@
    "g": 66,
    "ix": 111,
    "pg": 8452,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "d3b3740d-75b5-536d-a3fa-32efd3608d45",
@@ -18563,7 +18563,7 @@
     {
      "player_id": "9d040e84-8f23-505b-83e4-2e1a382d2515",
      "name": "Aomine",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SGW",
      "g": 39,
      "minutes": 1156.04,
@@ -18711,7 +18711,7 @@
     {
      "player_id": "62631b7b-d7a0-5c93-8d77-f612c7bbda82",
      "name": "Nuna",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVKA",
      "g": 22,
      "minutes": 710.67,
@@ -18721,7 +18721,7 @@
     {
      "player_id": "99f95e41-bebb-501b-9d1f-0a4dbd42dbb0",
      "name": "Harky",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVKA",
      "g": 21,
      "minutes": 627.58,
@@ -18781,7 +18781,7 @@
     {
      "player_id": "f2074ba3-0169-591e-accd-12e3ac25873a",
      "name": "SkyK",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVKA",
      "g": 11,
      "minutes": 349.13,
@@ -18814,7 +18814,7 @@
    "g": 51,
    "ix": 96,
    "pg": -2838,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "ca9aef0e-8bc8-56bc-946c-95736ab4daf3",
@@ -18849,7 +18849,7 @@
     {
      "player_id": "098b9796-c066-59e3-8cc2-81ddb9f8823e",
      "name": "Vit",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SCBC",
      "g": 21,
      "minutes": 673.23,
@@ -18879,7 +18879,7 @@
     {
      "player_id": "b703d562-2d7c-5619-96c3-7bbd474ee74a",
      "name": "Yashiro2",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SCBC",
      "g": 19,
      "minutes": 618.09,
@@ -18939,7 +18939,7 @@
     {
      "player_id": "8a359183-717d-5d5c-9e04-a4f0d12bc0a6",
      "name": "Arrietty",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SCBC",
      "g": 11,
      "minutes": 310.25,
@@ -19017,7 +19017,7 @@
     {
      "player_id": "a19ccd22-c172-557d-b683-1a3e55a956b7",
      "name": "Charlington",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "9G",
      "g": 25,
      "minutes": 784.08,
@@ -19085,7 +19085,7 @@
     {
      "player_id": "8439a275-f335-54cf-acc5-8f164106851e",
      "name": "Easylove",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 29,
      "minutes": 927.37,
@@ -19125,7 +19125,7 @@
     {
      "player_id": "92ce37cf-e049-5bea-8951-5a9172871e2a",
      "name": "Okyu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 21,
      "minutes": 611.39,
@@ -19215,7 +19215,7 @@
     {
      "player_id": "114fc0b6-c176-5824-a75b-54d76275c1cf",
      "name": "Vinboiz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 6,
      "minutes": 175.8,
@@ -19225,7 +19225,7 @@
     {
      "player_id": "b703d562-2d7c-5619-96c3-7bbd474ee74a",
      "name": "Yashiro2",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SCBC",
      "g": 4,
      "minutes": 123.29,
@@ -19278,7 +19278,7 @@
    "g": 45,
    "ix": 93,
    "pg": -5805,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "0fb7f086-4423-5346-80b3-9ae5edb7ddf9",
@@ -19293,7 +19293,7 @@
     {
      "player_id": "62631b7b-d7a0-5c93-8d77-f612c7bbda82",
      "name": "Nuna",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVKA",
      "g": 30,
      "minutes": 928.78,
@@ -19363,7 +19363,7 @@
     {
      "player_id": "a19ccd22-c172-557d-b683-1a3e55a956b7",
      "name": "Charlington",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "9G",
      "g": 15,
      "minutes": 495.36,
@@ -19426,7 +19426,7 @@
    "g": 11,
    "ix": 92,
    "pg": -5711,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "a6940ed5-f434-5fb4-a8a8-721026de6226",
@@ -19471,7 +19471,7 @@
     {
      "player_id": "a030b5ba-dbbc-58c1-9290-97410ea74bea",
      "name": "Hung Two",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NHE",
      "g": 7,
      "minutes": 250.7,
@@ -19504,7 +19504,7 @@
    "g": 21,
    "ix": 127,
    "pg": 21170,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "4e16228d-0e88-5089-9152-ee3c92e588a4",
@@ -19519,7 +19519,7 @@
     {
      "player_id": "99f95e41-bebb-501b-9d1f-0a4dbd42dbb0",
      "name": "Harky",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVKA",
      "g": 21,
      "minutes": 627.58,
@@ -19627,7 +19627,7 @@
     {
      "player_id": "bf7714b0-8a2e-52fc-b9a1-7bcbc018d1c6",
      "name": "AisyL",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SGW",
      "g": 25,
      "minutes": 783.49,
@@ -19715,7 +19715,7 @@
     {
      "player_id": "62631b7b-d7a0-5c93-8d77-f612c7bbda82",
      "name": "Nuna",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "9G",
      "g": 19,
      "minutes": 592.18,
@@ -19813,7 +19813,7 @@
     {
      "player_id": "a030b5ba-dbbc-58c1-9290-97410ea74bea",
      "name": "Hung Two",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "NHE",
      "g": 7,
      "minutes": 250.7,
@@ -19861,7 +19861,7 @@
     {
      "player_id": "92ce37cf-e049-5bea-8951-5a9172871e2a",
      "name": "Okyu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 21,
      "minutes": 611.39,
@@ -19969,7 +19969,7 @@
     {
      "player_id": "8a359183-717d-5d5c-9e04-a4f0d12bc0a6",
      "name": "Arrietty",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SCBC",
      "g": 11,
      "minutes": 310.25,
@@ -20047,7 +20047,7 @@
     {
      "player_id": "9d040e84-8f23-505b-83e4-2e1a382d2515",
      "name": "Aomine",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SGW",
      "g": 21,
      "minutes": 611.76,
@@ -20125,7 +20125,7 @@
     {
      "player_id": "8439a275-f335-54cf-acc5-8f164106851e",
      "name": "Easylove",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 25,
      "minutes": 787.16,
@@ -20135,7 +20135,7 @@
     {
      "player_id": "b703d562-2d7c-5619-96c3-7bbd474ee74a",
      "name": "Yashiro2",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 4,
      "minutes": 123.29,
@@ -20193,7 +20193,7 @@
     {
      "player_id": "a19ccd22-c172-557d-b683-1a3e55a956b7",
      "name": "Charlington",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "ZEN",
      "g": 25,
      "minutes": 784.08,
@@ -20281,7 +20281,7 @@
     {
      "player_id": "098b9796-c066-59e3-8cc2-81ddb9f8823e",
      "name": "Vit",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SCBC",
      "g": 21,
      "minutes": 673.23,
@@ -20329,7 +20329,7 @@
     {
      "player_id": "f2074ba3-0169-591e-accd-12e3ac25873a",
      "name": "SkyK",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVKA",
      "g": 11,
      "minutes": 349.13,
@@ -20407,7 +20407,7 @@
     {
      "player_id": "62631b7b-d7a0-5c93-8d77-f612c7bbda82",
      "name": "Nuna",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "9G",
      "g": 11,
      "minutes": 336.61,
@@ -20515,7 +20515,7 @@
     {
      "player_id": "9d040e84-8f23-505b-83e4-2e1a382d2515",
      "name": "Aomine",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SGW",
      "g": 18,
      "minutes": 544.29,
@@ -20583,7 +20583,7 @@
     {
      "player_id": "62631b7b-d7a0-5c93-8d77-f612c7bbda82",
      "name": "Nuna",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "MVKA",
      "g": 22,
      "minutes": 710.67,
@@ -20646,7 +20646,7 @@
    "g": 19,
    "ix": 101,
    "pg": 1205,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "a0dd0ee1-cc91-5079-875e-b1077d4348b0",
@@ -20671,7 +20671,7 @@
     {
      "player_id": "b703d562-2d7c-5619-96c3-7bbd474ee74a",
      "name": "Yashiro2",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SCBC",
      "g": 19,
      "minutes": 618.09,
@@ -20759,7 +20759,7 @@
     {
      "player_id": "a19ccd22-c172-557d-b683-1a3e55a956b7",
      "name": "Charlington",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "9G",
      "g": 15,
      "minutes": 495.36,
@@ -20837,7 +20837,7 @@
     {
      "player_id": "114fc0b6-c176-5824-a75b-54d76275c1cf",
      "name": "Vinboiz",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 6,
      "minutes": 175.8,
@@ -20847,7 +20847,7 @@
     {
      "player_id": "8439a275-f335-54cf-acc5-8f164106851e",
      "name": "Easylove",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "DINO",
      "g": 4,
      "minutes": 140.21,
@@ -20915,7 +20915,7 @@
     {
      "player_id": "616b2a96-1509-5505-b7c6-23a277ca2c14",
      "name": "MnM",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FAK",
      "g": 35,
      "minutes": 1016.64,
@@ -20983,7 +20983,7 @@
     {
      "player_id": "0640d25d-3a76-590d-b752-391caad02228",
      "name": "Prage",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SG7",
      "g": 11,
      "minutes": 316.73,
@@ -21051,7 +21051,7 @@
     {
      "player_id": "5aa26e25-a4ba-50fd-95f1-9933f3e34575",
      "name": "Hermes",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SSG",
      "g": 17,
      "minutes": 472.84,
@@ -21091,7 +21091,7 @@
     {
      "player_id": "88b4de06-28fa-54ec-9c0a-35a19b3416a3",
      "name": "Wako",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SSG",
      "g": 14,
      "minutes": 397.85,
@@ -21149,7 +21149,7 @@
     {
      "player_id": "092f5f4f-4736-5556-abe2-74d2483004ba",
      "name": "Tracy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFOA",
      "g": 29,
      "minutes": 894.34,
@@ -21247,7 +21247,7 @@
     {
      "player_id": "2680475a-a343-5c9b-847b-3644bec384fb",
      "name": "Dotmm",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "WTG",
      "g": 8,
      "minutes": 223.29,
@@ -21315,7 +21315,7 @@
     {
      "player_id": "bc882df1-e3df-5d41-95d7-3c47e4a34bf8",
      "name": "Micinb",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "ORS",
      "g": 6,
      "minutes": 168.89,
@@ -21413,7 +21413,7 @@
     {
      "player_id": "0af0d00d-66ad-5ff6-ac82-b32ac8a06d4d",
      "name": "MadDogg9",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RNF",
      "g": 9,
      "minutes": 258.04,
@@ -21481,7 +21481,7 @@
     {
      "player_id": "0af0d00d-66ad-5ff6-ac82-b32ac8a06d4d",
      "name": "MadDogg9",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RNF",
      "g": 6,
      "minutes": 174.83,
@@ -21569,7 +21569,7 @@
     {
      "player_id": "fe5e0cd6-55fa-5436-85a3-e2f47833aab6",
      "name": "Sniper1",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SG7",
      "g": 4,
      "minutes": 106.09,
@@ -21579,7 +21579,7 @@
     {
      "player_id": "0640d25d-3a76-590d-b752-391caad02228",
      "name": "Prage",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SG7",
      "g": 2,
      "minutes": 58.86,
@@ -21617,7 +21617,7 @@
     {
      "player_id": "37ab1384-3eb2-5c3e-a9fb-8b570b30ee11",
      "name": "Lucifer",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "EWH",
      "g": 6,
      "minutes": 190.42,
@@ -21725,7 +21725,7 @@
     {
      "player_id": "01209961-421d-50b2-9800-5c704483141d",
      "name": "Xiao Yu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RSM",
      "g": 5,
      "minutes": 146.48,
@@ -21793,7 +21793,7 @@
     {
      "player_id": "09dd84cf-86c7-57ce-bc1a-fbddc3909930",
      "name": "X1aoCHiao",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "XJB",
      "g": 4,
      "minutes": 119.93,
@@ -21871,7 +21871,7 @@
     {
      "player_id": "96fdaccf-2ca7-5f0c-8290-801ac59fccd1",
      "name": "0131",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZA",
      "g": 4,
      "minutes": 129.47,
@@ -21901,7 +21901,7 @@
     {
      "player_id": "8a37dc25-a088-5ce1-99ca-ba9e7b838d65",
      "name": "XiaoChiao",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZA",
      "g": 4,
      "minutes": 119.02,
@@ -21924,7 +21924,7 @@
    "g": 4,
    "ix": 66,
    "pg": -24778,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "1ced45c9-e41c-5d2b-8ee0-cc67269971ba",
@@ -21949,7 +21949,7 @@
     {
      "player_id": "37ab1384-3eb2-5c3e-a9fb-8b570b30ee11",
      "name": "Lucifer",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "EWH",
      "g": 4,
      "minutes": 118.1,
@@ -22037,7 +22037,7 @@
     {
      "player_id": "0640d25d-3a76-590d-b752-391caad02228",
      "name": "Prage",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SHKP",
      "g": 11,
      "minutes": 316.73,
@@ -22095,7 +22095,7 @@
     {
      "player_id": "092f5f4f-4736-5556-abe2-74d2483004ba",
      "name": "Tracy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFOA",
      "g": 13,
      "minutes": 419.48,
@@ -22193,7 +22193,7 @@
     {
      "player_id": "5aa26e25-a4ba-50fd-95f1-9933f3e34575",
      "name": "Hermes",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SSG",
      "g": 17,
      "minutes": 472.84,
@@ -22261,7 +22261,7 @@
     {
      "player_id": "616b2a96-1509-5505-b7c6-23a277ca2c14",
      "name": "MnM",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FAK",
      "g": 23,
      "minutes": 655.65,
@@ -22329,7 +22329,7 @@
     {
      "player_id": "2680475a-a343-5c9b-847b-3644bec384fb",
      "name": "Dotmm",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "WTG",
      "g": 8,
      "minutes": 223.29,
@@ -22397,7 +22397,7 @@
     {
      "player_id": "bc882df1-e3df-5d41-95d7-3c47e4a34bf8",
      "name": "Micinb",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "ORS",
      "g": 6,
      "minutes": 168.89,
@@ -22495,7 +22495,7 @@
     {
      "player_id": "0af0d00d-66ad-5ff6-ac82-b32ac8a06d4d",
      "name": "MadDogg9",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "VNR",
      "g": 6,
      "minutes": 174.83,
@@ -22573,7 +22573,7 @@
     {
      "player_id": "09dd84cf-86c7-57ce-bc1a-fbddc3909930",
      "name": "X1aoCHiao",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "XJB",
      "g": 4,
      "minutes": 119.93,
@@ -22641,7 +22641,7 @@
     {
      "player_id": "96fdaccf-2ca7-5f0c-8290-801ac59fccd1",
      "name": "0131",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZA",
      "g": 4,
      "minutes": 129.47,
@@ -22699,7 +22699,7 @@
     {
      "player_id": "37ab1384-3eb2-5c3e-a9fb-8b570b30ee11",
      "name": "Lucifer",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "EQX",
      "g": 4,
      "minutes": 118.1,
@@ -22787,7 +22787,7 @@
     {
      "player_id": "616b2a96-1509-5505-b7c6-23a277ca2c14",
      "name": "MnM",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "FAK",
      "g": 12,
      "minutes": 361.0,
@@ -22855,7 +22855,7 @@
     {
      "player_id": "88b4de06-28fa-54ec-9c0a-35a19b3416a3",
      "name": "Wako",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SSG",
      "g": 14,
      "minutes": 397.85,
@@ -22923,7 +22923,7 @@
     {
      "player_id": "092f5f4f-4736-5556-abe2-74d2483004ba",
      "name": "Tracy",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "CFOA",
      "g": 16,
      "minutes": 474.85,
@@ -22991,7 +22991,7 @@
     {
      "player_id": "0af0d00d-66ad-5ff6-ac82-b32ac8a06d4d",
      "name": "MadDogg9",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RNF",
      "g": 9,
      "minutes": 258.04,
@@ -23024,7 +23024,7 @@
    "g": 6,
    "ix": 92,
    "pg": -6195,
-   "top_role": "BOT",
+   "top_role": "ADC",
    "roster": [
     {
      "player_id": "cf472800-de6c-5fec-a1bf-f5ddec04a077",
@@ -23039,7 +23039,7 @@
     {
      "player_id": "37ab1384-3eb2-5c3e-a9fb-8b570b30ee11",
      "name": "Lucifer",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "EWH",
      "g": 6,
      "minutes": 190.42,
@@ -23157,7 +23157,7 @@
     {
      "player_id": "fe5e0cd6-55fa-5436-85a3-e2f47833aab6",
      "name": "Sniper1",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SG7",
      "g": 4,
      "minutes": 106.09,
@@ -23167,7 +23167,7 @@
     {
      "player_id": "0640d25d-3a76-590d-b752-391caad02228",
      "name": "Prage",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "SG7",
      "g": 2,
      "minutes": 58.86,
@@ -23225,7 +23225,7 @@
     {
      "player_id": "01209961-421d-50b2-9800-5c704483141d",
      "name": "Xiao Yu",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "RSM",
      "g": 5,
      "minutes": 146.48,
@@ -23293,7 +23293,7 @@
     {
      "player_id": "8a37dc25-a088-5ce1-99ca-ba9e7b838d65",
      "name": "XiaoChiao",
-     "role": "BOT",
+     "role": "ADC",
      "main_team": "GZA",
      "g": 4,
      "minutes": 119.02,
