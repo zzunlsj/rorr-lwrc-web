@@ -24,7 +24,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T03:31:52+00:00",
+   "generated_at": "2026-11-17T02:58:51+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "LCK_Cup": 125,
@@ -60,7 +60,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:54:37+00:00",
+   "generated_at": "2026-11-17T02:58:53+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "LEC_Spring": 141,
@@ -94,7 +94,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:54:42+00:00",
+   "generated_at": "2026-11-17T02:58:54+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "LCS_LockIn": 59,
@@ -130,7 +130,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:54:47+00:00",
+   "generated_at": "2026-11-17T02:58:56+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "CBLOL_Cup": 68,
@@ -163,7 +163,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:54:51+00:00",
+   "generated_at": "2026-11-17T02:58:58+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "LCP_S1": 102,
@@ -195,7 +195,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:57:08+00:00",
+   "generated_at": "2026-11-17T02:59:00+00:00",
    "reference_note": "표본이 156게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
    "games_by_tournament": {
     "VCS_Finals": 42,
@@ -223,7 +223,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T02:57:10+00:00",
+   "generated_at": "2026-11-17T02:59:02+00:00",
    "reference_note": "표본이 84게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
    "games_by_tournament": {
     "PCS_Spring": 48,
@@ -257,7 +257,7 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-16T03:31:52+00:00",
+   "generated_at": "2026-11-17T02:58:51+00:00",
    "reference_note": null,
    "games_by_tournament": {
     "FirstStand": 45,
