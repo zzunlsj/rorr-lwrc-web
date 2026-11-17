@@ -94,7 +94,7 @@ const HELP={
   ix:"LwRC+ = 100 × 선수 LwRC/분 ÷ 같은 범위·같은 포지션 평균 LwRC/분.\n100이 평균이고, 121이면 평균보다 21% 높다. 음수도 그대로 표시한다.\n선수 퍼포먼스 참고 지표이며, 승리 기여 지표가 아니다.",
   pg:"LwRC +/G = (선수 LwRC/분 − 같은 포지션 평균 LwRC/분) × 플레이 분 ÷ 게임 수.\n평균 선수보다 한 게임에 팀 기대 골드를 몇 골드 더 움직였는지 나타낸다. 실제로 더 번 골드가 아니다.\n골드 단위라서 평균 골드가 큰 포지션(원딜 등)일수록 같은 LwRC+에서도 값이 크다.",
   rate:"분당 LwRC. LwRC = C 생산 + D 차단 + Risk = 선수가 팀 기대 골드(10분 뒤 팀 골드의 학습 예측 G)를 움직인 양.\n범위 안 선수-게임 값을 ±3σ로 자른 뒤 합 ÷ 플레이 분으로 계산한다.",
-  share:"팀 내 비중 = max(0, 선수 LwRC) ÷ 같은 팀 선수들의 max(0, LwRC) 합.\n분당 값이 아니라 절대량 기준이라 많이 뛴 선수, 골드가 큰 포지션(원딜)일수록 크게 나온다. 골드 기여 기준이다.",
+  share:"팀 내 비중 = max(0, 선수 LwRC) ÷ 같은 팀 선수들의 max(0, LwRC) 합. 그 팀 소속으로 뛴 게임만 센다(시즌 중 이적하면 팀마다 따로).\n분당 값이 아니라 절대량 기준이라 많이 뛴 선수, 골드가 큰 포지션(원딜)일수록 크게 나온다. 골드 기여 기준이다.",
   tix:"팀 LwRC+ = 소속 선수 LwRC+를 그 팀에서 뛴 분으로 가중 평균한 값. 교체 선수도 뛴 만큼 반영된다.",
   tpg:"팀 LwRC +/G = Σ 소속 선수 (LwRC/분 − 포지션 평균) × 그 팀에서 뛴 분 ÷ 팀 게임 수.\n평균적인 팀보다 한 게임에 팀 기대 골드를 몇 골드 더 움직였는지 나타낸다.",
   series:"경기(match) 승–패. 경기는 BO1·BO3·BO5 단위이고, 한 경기 안에서 게임을 1~5번 치른다.\nraw 기준: raw에 그 경기의 게임이 모두 있는 경기만 센다 (일부만 있는 경기는 아래 안내 참고).",
@@ -200,17 +200,17 @@ function detail(r){
   if(st.metric==="gold"){
     if(st.view==="players")return `<div class="dl"><div><span>종료 골드 합</span>${fmt(r.gold)}</div><div><span>플레이 분${q(HELP.min)}</span>${fmt(r.minutes,1)}</div>
       <div><span>15분 골드 차 표본</span>${r.g15}게임</div><div><span>Gold+ → LwRC+</span>${fmt(r.gold_plus)} → ${fmt(r.lwrc_ix)}</div></div>`;
-    const p=D.gold.players.filter(x=>x.scope===st.scope&&x.team===r.team).sort((a,b)=>b.minutes-a.minutes);
-    return `<div class="dl">${p.map(x=>`<div><span>${esc(x.role)} · ${x.g}게임</span><b>${esc(x.name)}</b> Gold+ ${fmt(x.gold_plus)} · LwRC+ ${fmt(x.lwrc_ix)}</div>`).join("")}</div>`;
+    return `<div class="dl">${r.roster.map(x=>`<div><span>${esc(x.role)} · ${x.g}게임${moved(x,r)}</span><b>${esc(x.name)}</b> Gold+ ${fmt(x.gold_plus)} · LwRC+ ${fmt(x.lwrc_ix)}</div>`).join("")}</div>`;
   }
   if(st.view==="players")return `<div class="dl">
     <div><span>LwRC (합)${q(HELP.lwrc)}</span>${fmt(r.lwrc)}</div><div><span>플레이 분${q(HELP.min)}</span>${fmt(r.minutes,1)}</div>
     <div><span>C 생산${q(HELP.c)}</span>${fmt(r.c)}</div><div><span>　실현 골드${q(HELP.cgold)}</span>${fmt(r.c_gold)}</div><div><span>　가속 C 배분${q(HELP.cpie)}</span>${fmt(r.c_pie)}</div>
     <div><span>D 차단${q(HELP.d)}</span>${fmt(r.d)}</div><div><span>Risk 데스${q(HELP.risk)}</span><b class="neg">${fmt(r.risk)}</b></div>
     <div><span>팀 내 비중${q(HELP.share)}</span>${r.team_share==null?"—":fmt(r.team_share,1)+"% (골드 기여 기준)"}</div></div>`;
-  const p=D.players.players.filter(x=>x.scope===st.scope&&x.team===r.team).sort((a,b)=>b.minutes-a.minutes);
-  return `<div class="dl">${p.map(x=>`<div><span>${esc(x.role)} · ${x.g}게임</span><b>${esc(x.name)}</b> ${fmt(x.ix)}</div>`).join("")}</div>`;
+  return `<div class="dl">${r.roster.map(x=>`<div><span>${esc(x.role)} · ${x.g}게임${moved(x,r)}</span><b>${esc(x.name)}</b> ${fmt(x.ix)}${x.team_share==null?"":` · 팀 내 비중 ${fmt(x.team_share,1)}%`}</div>`).join("")}</div>`;
 }
+// 팀 명단(결정 38): 이적 선수는 뛴 팀마다 나온다. 게임 수는 이 팀 소속 게임, LwRC+는 범위 전체 값
+function moved(x,r){return x.main_team===r.team?"":` · 순위표 소속 ${esc(x.main_team)}`}
 function render(){
   document.querySelectorAll("#metric button").forEach(b=>b.classList.toggle("on",b.dataset.m===st.metric));
   document.querySelectorAll("#view button").forEach(b=>b.classList.toggle("on",b.dataset.v===st.view));
