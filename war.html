@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoL WAR 계산법</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#f7f7f5;--panel:#fff;--ink:#1c1c1a;--mute:#6b6b66;--line:#e4e3de;--acc:#2f5bd3;--pos:#1f7a4d;--neg:#b3392f;--chip:#efeee9;--cut:#b3392f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151514;--panel:#1d1d1b;--ink:#ecebe6;--mute:#9a9992;--line:#30302c;--acc:#7c9cff;--pos:#5cc48d;--neg:#ef7d72;--chip:#272724;--cut:#ef7d72}}
+:root[data-theme="dark"]{--bg:#151514;--panel:#1d1d1b;--ink:#ecebe6;--mute:#9a9992;--line:#30302c;--acc:#7c9cff;--pos:#5cc48d;--neg:#ef7d72;--chip:#272724;--cut:#ef7d72}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Segoe UI",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--acc)}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:14px}
+#theme{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:6px 10px;font:inherit;cursor:pointer}
+h1{font-size:30px;line-height:1.3;letter-spacing:-.02em;margin:28px 0 8px}
+.lede{color:var(--mute);font-size:17px;margin:0 0 28px}
+h2{font-size:21px;letter-spacing:-.01em;margin:44px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h2 .n{color:var(--acc);margin-right:8px}
+h3{font-size:16px;margin:24px 0 6px}
+p{margin:10px 0}
+.eq{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0;font:15px/1.9 "SF Mono",ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;white-space:pre}
+.eq b{color:var(--acc);font-weight:600}
+.note{background:var(--chip);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:15px}
+.note b{color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums;margin:12px 0}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{color:var(--mute);font-weight:600;font-size:13px}
+th.l,td.l{text-align:left}
+.tw{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:0 6px}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+figure{margin:18px 0}
+figcaption{color:var(--mute);font-size:13px;margin-top:6px}
+svg text{font:12px -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;fill:var(--ink)}
+svg .mute{fill:var(--mute)}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 18px;font-size:15px}
+.toc ol{margin:4px 0;padding-left:20px}
+.small{font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a href="./">← 결과 조회로</a><button id="theme" title="테마 전환">◐</button></div>
+
+<h1>LoL WAR는 어떻게 계산했나</h1>
+<p class="lede">선수가 대체 선수 대신 뛰어서 팀이 몇 게임을 더 이겼는지 — 골드에서 승수까지 가는 과정을 처음부터 정리한다. 이번 버전은 1단계 <b>골드 WAR(W1)</b>이다.</p>
+
+<div class="toc"><b>순서</b>
+<ol>
+<li>WAR라는 질문</li><li>재료: LwRC — 팀 기대 골드를 움직인 양</li><li>함정: 승리가 만든 골드</li><li>환율: 1승은 몇 골드인가 (GPW)</li>
+<li>기준선: 평균 선수와 대체 선수</li><li>선수 WAR — Chovy로 따라 계산하기</li><li>게임 승에서 경기 승으로</li><li>얼마나 믿을 수 있나</li><li>읽을 때 주의할 점</li>
+</ol></div>
+
+<h2><span class="n">1</span>WAR라는 질문</h2>
+<p>WAR(Wins Above Replacement)는 야구에서 온 개념이다. 질문은 하나다: <b>이 선수 대신 쉽게 구할 수 있는 선수(대체 선수)가 뛰었다면, 팀은 몇 승을 덜 했을까?</b></p>
+<p>야구 WAR는 세 단계로 만든다. ① 선수의 기여를 <i>득점</i> 단위로 잰다. ② 평균 선수와 비교하고, 평균과 대체 선수 사이의 차이를 더한다. ③ 득점을 <i>승리</i>로 바꾸는 환율(약 10득점 = 1승)로 나눈다.</p>
+<p>LoL에서는 득점 자리에 <b>골드</b>가 들어간다. 그래서 필요한 것은 세 가지다: 선수가 만든 골드(LwRC), 골드를 승수로 바꾸는 환율(GPW), 그리고 대체 선수 기준선.</p>
+
+<h2><span class="n">2</span>재료: LwRC — 팀 기대 골드를 움직인 양</h2>
+<p>LwRC+ 탭의 원값인 LwRC를 그대로 쓴다. LwRC는 "지금 게임 상태에서 우리 팀이 10분 뒤에 가질 골드의 예측값(G)"이 선수 행동으로 얼마나 움직였는지를 더한 값이다.</p>
+<div class="eq">LwRC = <b>C</b> 생산 + <b>D</b> 차단 + <b>Risk</b>
+  C    = 본인이 실제로 번 골드 + 교전에서 팀 수입 속도를 끌어올린 몫(관여도로 배분)
+  D    = 교전에서 상대 수입 속도를 떨어뜨린 몫(관여도로 배분)
+  Risk = 본인 데스의 비용 (항상 음수)</div>
+<p>LwRC는 모든 골드 변화를 빠짐없이 장부에 올린다(보존 항등식). 선수에게 나누지 못한 몫(팀 계정, 약 11%)은 WAR에 넣지 않는다.</p>
+
+<h2><span class="n">3</span>함정: 승리가 만든 골드</h2>
+<p>골드로 승패를 설명하려고 하면 곧바로 벽에 부딪힌다. <b>이기는 팀은 마지막에 골드를 몰아서 번다.</b> 결정 한타 승리, 억제기, 넥서스 포탑까지 — 이 골드는 승리의 <i>원인</i>이 아니라 <i>결과</i>다.</p>
+<p>실제로 LCK + 국제대회 715게임에서 게임 전체 LwRC로 보면, 이긴 팀의 LwRC 합이 진 팀보다 적었던 게임은 <b>0.56%(4게임)</b>뿐이다. LwRC가 많은 팀이 99.4% 이겼다는 뜻이다. 이 상태로 "골드 몇 개가 1승인가"를 추정하면, 승리가 만든 골드까지 승리의 원인으로 세게 되어 환율이 1/3로 작아지고 WAR는 약 3배로 부풀려진다.</p>
+<p>그래서 <b>승부가 기운 시점 이후를 잘라낸다.</b> 기준은 "이긴 팀이 넥서스 포탑을 처음 부순 교전이 <i>시작된</i> 순간"이다.</p>
+
+<figure>
+<svg viewBox="0 0 720 150" width="100%" role="img" aria-label="게임 타임라인: 넥서스 포탑을 부순 마지막 교전이 시작되는 시점에서 자른다">
+  <rect x="20" y="58" width="680" height="14" rx="7" fill="var(--chip)"/>
+  <rect x="20" y="58" width="590" height="14" rx="7" fill="var(--acc)" opacity=".75"/>
+  <rect x="150" y="52" width="40" height="26" rx="5" fill="none" stroke="var(--mute)"/>
+  <rect x="300" y="52" width="55" height="26" rx="5" fill="none" stroke="var(--mute)"/>
+  <rect x="455" y="52" width="45" height="26" rx="5" fill="none" stroke="var(--mute)"/>
+  <rect x="610" y="52" width="90" height="26" rx="5" fill="var(--cut)" opacity=".18" stroke="var(--cut)"/>
+  <line x1="610" y1="30" x2="610" y2="100" stroke="var(--cut)" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="610" y="22" text-anchor="middle" style="fill:var(--cut);font-weight:600">컷</text>
+  <line x1="664" y1="78" x2="664" y2="96" stroke="var(--cut)"/>
+  <text x="664" y="112" text-anchor="middle" class="mute">넥서스 포탑 파괴</text>
+  <text x="170" y="46" text-anchor="middle" class="mute">교전</text>
+  <text x="327" y="46" text-anchor="middle" class="mute">교전</text>
+  <text x="477" y="46" text-anchor="middle" class="mute">교전</text>
+  <text x="655" y="46" text-anchor="middle" style="fill:var(--cut)">마지막 교전</text>
+  <text x="20" y="140" class="mute">0분</text>
+  <text x="315" y="140" text-anchor="middle">WAR에 쓰는 구간 (중앙값 96%)</text>
+  <text x="700" y="140" text-anchor="end" class="mute">게임 끝</text>
+</svg>
+<figcaption>교전은 킬·에픽 몬스터·건물 파괴 주변 ±10초로 묶은 구간이다. 컷 이후의 골드는 승리가 만든 골드로 보고 빼고, 컷 앞에서 시작한 교전은 통째로 넣는다. 잘리는 시간은 게임당 중앙값 3.7%(약 1분).</figcaption>
+</figure>
+
+<p>자르고 나면 이긴 팀의 LwRC가 더 적었던 게임이 <b>9.4%</b>로 늘어난다 — 골드에서 앞서고도 진 게임, 뒤지고도 이긴 게임이 다시 보이기 시작한다. 다른 자르는 방법(게임 끝 3분 전, 마지막 교전 시작)도 시험했는데 환율이 거의 같게 나왔다(40.3k~40.5k).</p>
+<p>이후 모든 계산은 이렇게 자른 값으로 한다. 선수 쪽 값을 <code>lwrc_pre</code>(컷 전 LwRC), <code>minutes_pre</code>(컷 전 플레이 분)라고 부른다. 환율과 선수 값을 <b>같은 컷</b>으로 맞춰야 단위가 어긋나지 않는다.</p>
+
+<h2><span class="n">4</span>환율: 1승은 몇 골드인가 (GPW)</h2>
+<p>게임마다 두 팀의 컷 전 LwRC 차와 승패를 놓고 로지스틱 회귀를 한다.</p>
+<div class="eq">x = Σ lwrc_pre(블루 5명) − Σ lwrc_pre(레드 5명)
+P(블루 승) = σ(β₀ + <b>β</b>·x)              β₀ = 진영 효과
+
+<b>GPW</b> = 4 ÷ β                          (Gold Per Win)</div>
+<p>왜 4÷β인가: 승률 50% 근처에서 x가 1골드 늘면 승률은 β/4만큼 오른다. 승률을 1(=1승)만큼 올리려면 4/β 골드가 필요하다. 야구의 "10득점 = 1승"과 같은 자리의 숫자다.</p>
+<div class="tw"><table>
+<tr><th class="l">리그(학습 범위)</th><th>게임</th><th>GPW (골드/승)</th><th>90% 구간</th></tr>
+<tr><td class="l">LCK + 국제대회</td><td>715</td><td><b>40,537</b></td><td>35,998 ~ 45,491</td></tr>
+<tr><td class="l">LEC</td><td>381</td><td>34,528</td><td>29,124 ~ 40,823</td></tr>
+<tr><td class="l">LCS</td><td>260</td><td>30,045</td><td>24,693 ~ 36,562</td></tr>
+<tr><td class="l">CBLOL</td><td>287</td><td>29,882</td><td>22,265 ~ 38,273</td></tr>
+<tr><td class="l">LCP</td><td>283</td><td>28,859</td><td>23,552 ~ 35,548</td></tr>
+<tr><td class="l">VCS (참고)</td><td>156</td><td>28,827</td><td>18,097 ~ 40,489</td></tr>
+<tr><td class="l">PCS (참고)</td><td>84</td><td>21,318</td><td>16,543 ~ 32,285</td></tr>
+</table></div>
+<p class="small">구간은 게임을 다시 뽑아 1,000번 추정한 결과. GPW는 리그마다 따로 추정하고, 리그끼리는 비교하지 않는다(LwRC 자체를 리그마다 따로 학습했기 때문). 국제대회는 LCK + 국제대회 값을 쓴다.</p>
+
+<h2><span class="n">5</span>기준선: 평균 선수와 대체 선수</h2>
+<h3>평균 선수</h3>
+<p>같은 범위(예: LCK 시즌)·같은 포지션 선수 전원의 분당 LwRC를 시간 가중으로 평균한다. LwRC+의 100에 해당하는 값이다.</p>
+<div class="eq">denom[포지션] = Σ lwrc_pre ÷ Σ minutes_pre      (그 범위·포지션 전원)</div>
+
+<h3>대체 선수</h3>
+<p>대체 선수는 "2군이나 다른 팀에서 바로 데려올 수 있는 선수"다. 기준을 하나 정해야 한다: <b>대체 선수 5명으로만 꾸린 팀은 게임 승률이 r = 30%</b>라고 둔다.</p>
+<p>그러면 리그 전체가 대체 선수보다 더 이긴 승수가 정해진다. 게임마다 두 팀이 합쳐 1승을 나누는데, 대체 선수 팀끼리라면 2r = 0.6승만 나온다. 나머지가 실제 선수들이 만든 몫이다.</p>
+<div class="eq">리그 전체 WAR = N × (1 − 2r)                   N = 범위 게임 수
+
+rate_rep[포지션] = denom − (1 − 2r) × GPW ÷ (10 × L)
+                                        L = 게임당 평균 컷 전 분</div>
+<p>LCK 시즌(502게임, L = 30.8분)에서 계산하면, 대체 선수는 평균 선수보다 분당 <b>52.7</b> 낮다: 0.4 × 40,537 ÷ (10 × 30.76) = 52.7. 다섯 포지션에 똑같이 나눴다.</p>
+<div class="tw"><table>
+<tr><th class="l">LCK 시즌, 분당 LwRC</th><th>TOP</th><th>JG</th><th>MID</th><th>ADC</th><th>SUP</th></tr>
+<tr><td class="l">평균 선수 (denom)</td><td>448.9</td><td>481.9</td><td>487.2</td><td>571.5</td><td>367.4</td></tr>
+<tr><td class="l">대체 선수 (rate_rep)</td><td>396.2</td><td>429.1</td><td>434.5</td><td>518.8</td><td>314.7</td></tr>
+<tr><td class="l small">검산: 300분 이상 선수 하위 20%</td><td class="small">428.2</td><td class="small">456.5</td><td class="small">453.0</td><td class="small">516.6</td><td class="small">333.5</td></tr>
+</table></div>
+<p class="small">검산용 하위 20% 선수가 대체 수준보다 조금 위에 있다 — LCK에서 주전으로 300분 넘게 뛴 선수 중 가장 약한 축도 대체 선수보다는 낫다는 뜻이라 자연스럽다. r을 25%·35%로 바꾼 결과도 함께 계산해 둔다.</p>
+
+<h2><span class="n">6</span>선수 WAR — Chovy로 따라 계산하기</h2>
+<div class="eq"><b>GAA</b> = (선수 rate − denom) × minutes_pre        평균 대비 초과 골드
+<b>REP</b> = (denom − rate_rep) × minutes_pre        평균이 대체보다 나은 몫
+<b>WAR</b> = (GAA + REP) ÷ GPW</div>
+<p>2026 LCK 시즌, GEN Chovy (미드, 101게임):</p>
+<div class="eq">컷 전 플레이 3,128.9분, 분당 LwRC 578.3  (미드 평균 487.2, 대체 434.5)
+
+GAA = (578.3 − 487.2) × 3,128.9 = <b>+285,058</b> 골드
+REP = (487.2 − 434.5) × 3,128.9 = <b>+164,931</b> 골드
+WAR = (285,058 + 164,931) ÷ 40,537 = <b>11.10</b> 승</div>
+<p>대체 미드 대신 Chovy가 뛰어서 GEN이 101게임 중 약 11게임을 더 이겼다는 뜻이다(90% 구간 9.2 ~ 12.8).</p>
+<p>T1 Faker는 분당 479.0으로 미드 평균보다 조금 낮아 GAA는 <span class="neg">−27,928</span>이지만, 대체 선수보다는 높아 REP +179,751을 더하면 <b>WAR 3.75</b>다. <b>평균보다 아래여도 대체 선수보다 나으면 WAR는 양수</b>다 — 이 차이가 LwRC+와 WAR의 핵심 차이다. 반대로 대체 수준보다 낮으면 음수가 되고, 표에 "대체 수준 미만"으로 표시한다.</p>
+<p class="small">한 범위에서 여러 포지션을 뛴 선수는 포지션별로 계산해 더한다. REP는 뛴 시간에 비례하므로 많이 뛴 선수일수록 크다 — 경기에 꾸준히 나서는 것 자체가 가치라는 WAR의 관점이다.</p>
+
+<h2><span class="n">7</span>게임 승에서 경기 승으로</h2>
+<p>정본은 <b>게임 승</b>이다. 하지만 순위는 경기(BO1·BO3·BO5) 승으로 정해지니, 보조 값으로 <b>경기 WAR</b>도 계산한다. 게임 승률이 조금 오를 때 경기 승률이 얼마나 오르는지는 형식과 팀 승률 p에 따라 다르다.</p>
+<div class="eq">게임당 승률 변화  Δp = WAR ÷ 게임 수
+
+BO1: M′ = 1
+BO3: M′ = 6p(1 − p)                 (p = 50%일 때 1.5배)
+BO5: M′ = 30p²(1 − p)²              (p = 50%일 때 1.875배)
+
+경기 WAR = Σ(출전 경기) M′(p) × Δp</div>
+<p>팽팽한 팀(p ≈ 50%)에서는 게임 1승의 가치가 경기에서 더 커지고, 압도적인 팀(p가 0 또는 1에 가까움)에서는 작아진다. GEN은 게임 승률 74%라 경기 WAR가 게임 WAR의 절반 아래로 줄어든다(Chovy 4.87). raw 데이터에 게임이 모두 있는 경기만 센다.</p>
+
+<h2><span class="n">8</span>얼마나 믿을 수 있나</h2>
+<h3>개인 구간</h3>
+<p>선수의 출전 게임을 복원추출로 1,000번 다시 뽑아 WAR를 다시 계산하고, 5%~95% 범위를 90% 구간으로 표시한다. 게임 수가 적을수록 넓다.</p>
+<h3>팀 단위 검산</h3>
+<p>팀의 기대 승 = 소속 선수 WAR 합 + 게임 수 × r. 이것이 실제 게임 승과 맞는지 본다.</p>
+<div class="tw"><table>
+<tr><th class="l">LCK 시즌</th><th>게임</th><th>WAR 합</th><th>기대 승</th><th>실제 승</th><th>잔차</th></tr>
+<tr><td class="l">GEN</td><td>101</td><td>46.7</td><td>77.0</td><td>75</td><td class="neg">−2.0</td></tr>
+<tr><td class="l">T1</td><td>108</td><td>30.7</td><td>63.1</td><td>65</td><td class="pos">+1.9</td></tr>
+<tr><td class="l">DK</td><td>120</td><td>23.6</td><td>59.6</td><td>65</td><td class="pos">+5.4</td></tr>
+<tr><td class="l">BRO</td><td>93</td><td>15.5</td><td>43.4</td><td>37</td><td class="neg">−6.4</td></tr>
+</table></div>
+<p>실제 승 ~ 기대 승 회귀의 기울기는 LCK 1.08, LCK + 국제대회 전체 1.02로 1에 가깝다. 잔차는 골드로 설명되지 않은 승수 — 운영, 클러치, 그리고 운이다.</p>
+
+<h2><span class="n">9</span>읽을 때 주의할 점</h2>
+<div class="note"><b>기술 지표다, 예측 지표가 아니다.</b> WAR는 그 게임에서 실제로 일어난 골드 흐름으로 계산한다. 그래서 팀 승수를 아주 잘 설명하지만(R² 0.94), 그 안에는 그 판의 운도 들어 있다. "다음 시즌 몇 승을 더 할 선수인가"로 읽으면 안 된다.</div>
+<div class="note"><b>팀 효과를 분리하지 않았다.</b> 강팀 주전은 함께 뛰는 동료 덕분에 값이 높게 나온다. LCK 시즌 포지션 1위 다섯 명이 모두 GEN인 것도 이 영향이 크다. 같은 팀 안 비교나 이적 전후 비교에 더 적합하다.</div>
+<div class="note"><b>리그끼리 비교하지 않는다.</b> LwRC·GPW·대체 수준을 리그마다 따로 계산했다. LEC 선수의 WAR 5와 LCK 선수의 WAR 5는 같은 뜻이 아니다. VCS·PCS는 표본이 작아 참고용이다.</div>
+<div class="note"><b>골드로 나타나지 않는 기여는 빠져 있다.</b> 이번 버전(W1)은 골드 성분만 담았다. 시야·오브젝트 압박처럼 골드로 이어지지 않은 가치는 게임 승률 모델을 따로 만든 뒤(W2) 더할 예정이다.</div>
+
+<h3>숫자로 보는 정리</h3>
+<div class="eq">WAR = [ (rate − denom) + (denom − rate_rep) ] × minutes_pre ÷ GPW
+    = (rate − rate_rep) × minutes_pre ÷ GPW
+
+rate      = 컷 전 LwRC ÷ 컷 전 분       (선수)
+rate_rep  = denom − (1 − 2r)·GPW ÷ (10L)  (대체 선수, r = 0.30)
+GPW       = 4 ÷ β                         (1승 = 약 4만 골드, LCK + 국제대회)</div>
+
+<p class="small">버전 war-w1-2026-11-20 · 2026 시즌 raw 데이터(LCK·국제대회 715게임, 지역 리그 1,451게임) · 사양 docs/spec/08-war.md · 결과는 <a href="./">결과 조회</a>의 WAR 탭.</p>
+</div>
+<script>
+document.getElementById("theme").onclick=()=>{const h=document.documentElement,dark=h.dataset.theme?h.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;h.dataset.theme=dark?"light":"dark"};
+</script>
+</body>
+</html>
