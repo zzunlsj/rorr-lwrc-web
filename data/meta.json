@@ -27,13 +27,43 @@
    "generated_at": "2026-11-17T12:21:20+00:00",
    "reference_note": null,
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:44+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:10+00:00",
     "gpw": 40537.2,
     "gpw_lo": 35998.2,
     "gpw_hi": 45490.8,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "lck": {
+      "gpw_pool": "lck",
+      "gpw_games": 502,
+      "gpw": 39999.9,
+      "gpw_lo": 34713.5,
+      "gpw_hi": 46182.5
+     },
+     "lck_s1": {
+      "gpw_pool": "lck",
+      "gpw_games": 502,
+      "gpw": 39999.9,
+      "gpw_lo": 34713.5,
+      "gpw_hi": 46182.5
+     },
+     "lck_s2": {
+      "gpw_pool": "lck",
+      "gpw_games": 502,
+      "gpw": 39999.9,
+      "gpw_lo": 34713.5,
+      "gpw_hi": 46182.5
+     },
+     "lck_s3": {
+      "gpw_pool": "lck",
+      "gpw_games": 502,
+      "gpw": 39999.9,
+      "gpw_lo": 34713.5,
+      "gpw_hi": 46182.5
+     }
+    }
    },
    "games_by_tournament": {
     "LCK_Cup": 125,
@@ -72,13 +102,43 @@
    "generated_at": "2026-11-17T12:21:25+00:00",
    "reference_note": null,
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:45+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:17+00:00",
     "gpw": 34528.0,
     "gpw_lo": 29124.2,
     "gpw_hi": 40823.2,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "lec": {
+      "gpw_pool": "run",
+      "gpw_games": 381,
+      "gpw": 34528.0,
+      "gpw_lo": 29124.2,
+      "gpw_hi": 40823.2
+     },
+     "lec_s1": {
+      "gpw_pool": "run",
+      "gpw_games": 381,
+      "gpw": 34528.0,
+      "gpw_lo": 29124.2,
+      "gpw_hi": 40823.2
+     },
+     "lec_s2": {
+      "gpw_pool": "run",
+      "gpw_games": 381,
+      "gpw": 34528.0,
+      "gpw_lo": 29124.2,
+      "gpw_hi": 40823.2
+     },
+     "lec_s3": {
+      "gpw_pool": "run",
+      "gpw_games": 381,
+      "gpw": 34528.0,
+      "gpw_lo": 29124.2,
+      "gpw_hi": 40823.2
+     }
+    }
    },
    "games_by_tournament": {
     "LEC_Spring": 141,
@@ -115,13 +175,43 @@
    "generated_at": "2026-11-17T12:21:30+00:00",
    "reference_note": null,
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:46+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:23+00:00",
     "gpw": 30044.7,
     "gpw_lo": 24692.9,
     "gpw_hi": 36561.7,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "lcs": {
+      "gpw_pool": "run",
+      "gpw_games": 260,
+      "gpw": 30044.7,
+      "gpw_lo": 24692.9,
+      "gpw_hi": 36561.7
+     },
+     "lcs_s1": {
+      "gpw_pool": "run",
+      "gpw_games": 260,
+      "gpw": 30044.7,
+      "gpw_lo": 24692.9,
+      "gpw_hi": 36561.7
+     },
+     "lcs_s2": {
+      "gpw_pool": "run",
+      "gpw_games": 260,
+      "gpw": 30044.7,
+      "gpw_lo": 24692.9,
+      "gpw_hi": 36561.7
+     },
+     "lcs_s3": {
+      "gpw_pool": "run",
+      "gpw_games": 260,
+      "gpw": 30044.7,
+      "gpw_lo": 24692.9,
+      "gpw_hi": 36561.7
+     }
+    }
    },
    "games_by_tournament": {
     "LCS_LockIn": 59,
@@ -160,13 +250,50 @@
    "generated_at": "2026-11-17T12:21:34+00:00",
    "reference_note": null,
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:48+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:30+00:00",
     "gpw": 29882.0,
     "gpw_lo": 22264.6,
     "gpw_hi": 38273.2,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "cblol": {
+      "gpw_pool": "run",
+      "gpw_games": 287,
+      "gpw": 29882.0,
+      "gpw_lo": 22264.6,
+      "gpw_hi": 38273.2
+     },
+     "cblol_s1": {
+      "gpw_pool": "run",
+      "gpw_games": 287,
+      "gpw": 29882.0,
+      "gpw_lo": 22264.6,
+      "gpw_hi": 38273.2
+     },
+     "cblol_s2": {
+      "gpw_pool": "run",
+      "gpw_games": 287,
+      "gpw": 29882.0,
+      "gpw_lo": 22264.6,
+      "gpw_hi": 38273.2
+     },
+     "cblol_s3": {
+      "gpw_pool": "run",
+      "gpw_games": 287,
+      "gpw": 29882.0,
+      "gpw_lo": 22264.6,
+      "gpw_hi": 38273.2
+     },
+     "cblol_s4": {
+      "gpw_pool": "run",
+      "gpw_games": 287,
+      "gpw": 29882.0,
+      "gpw_lo": 22264.6,
+      "gpw_hi": 38273.2
+     }
+    }
    },
    "games_by_tournament": {
     "CBLOL_Cup": 68,
@@ -202,13 +329,43 @@
    "generated_at": "2026-11-17T12:21:39+00:00",
    "reference_note": null,
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:49+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:36+00:00",
     "gpw": 28858.6,
     "gpw_lo": 23552.5,
     "gpw_hi": 35548.4,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "lcp": {
+      "gpw_pool": "run",
+      "gpw_games": 283,
+      "gpw": 28858.6,
+      "gpw_lo": 23552.5,
+      "gpw_hi": 35548.4
+     },
+     "lcp_s1": {
+      "gpw_pool": "run",
+      "gpw_games": 283,
+      "gpw": 28858.6,
+      "gpw_lo": 23552.5,
+      "gpw_hi": 35548.4
+     },
+     "lcp_s2": {
+      "gpw_pool": "run",
+      "gpw_games": 283,
+      "gpw": 28858.6,
+      "gpw_lo": 23552.5,
+      "gpw_hi": 35548.4
+     },
+     "lcp_s3": {
+      "gpw_pool": "run",
+      "gpw_games": 283,
+      "gpw": 28858.6,
+      "gpw_lo": 23552.5,
+      "gpw_hi": 35548.4
+     }
+    }
    },
    "games_by_tournament": {
     "LCP_S1": 102,
@@ -243,13 +400,43 @@
    "generated_at": "2026-11-17T12:21:43+00:00",
    "reference_note": "표본이 156게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:50+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:42+00:00",
     "gpw": 28827.3,
     "gpw_lo": 18096.7,
     "gpw_hi": 40489.3,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "vcs": {
+      "gpw_pool": "run",
+      "gpw_games": 156,
+      "gpw": 28827.3,
+      "gpw_lo": 18096.7,
+      "gpw_hi": 40489.3
+     },
+     "vcs_s1": {
+      "gpw_pool": "run",
+      "gpw_games": 156,
+      "gpw": 28827.3,
+      "gpw_lo": 18096.7,
+      "gpw_hi": 40489.3
+     },
+     "vcs_s2": {
+      "gpw_pool": "run",
+      "gpw_games": 156,
+      "gpw": 28827.3,
+      "gpw_lo": 18096.7,
+      "gpw_hi": 40489.3
+     },
+     "vcs_s3": {
+      "gpw_pool": "run",
+      "gpw_games": 156,
+      "gpw": 28827.3,
+      "gpw_lo": 18096.7,
+      "gpw_hi": 40489.3
+     }
+    }
    },
    "games_by_tournament": {
     "VCS_Finals": 42,
@@ -280,13 +467,36 @@
    "generated_at": "2026-11-17T12:21:48+00:00",
    "reference_note": "표본이 84게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:51+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:47+00:00",
     "gpw": 21318.4,
     "gpw_lo": 16543.3,
     "gpw_hi": 32284.9,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "pcs": {
+      "gpw_pool": "run",
+      "gpw_games": 84,
+      "gpw": 21318.4,
+      "gpw_lo": 16543.3,
+      "gpw_hi": 32284.9
+     },
+     "pcs_s1": {
+      "gpw_pool": "run",
+      "gpw_games": 84,
+      "gpw": 21318.4,
+      "gpw_lo": 16543.3,
+      "gpw_hi": 32284.9
+     },
+     "pcs_s2": {
+      "gpw_pool": "run",
+      "gpw_games": 84,
+      "gpw": 21318.4,
+      "gpw_lo": 16543.3,
+      "gpw_hi": 32284.9
+     }
+    }
    },
    "games_by_tournament": {
     "PCS_Spring": 48,
@@ -323,13 +533,43 @@
    "generated_at": "2026-11-17T12:21:20+00:00",
    "reference_note": null,
    "war": {
-    "version": "war-w1-2026-11-20",
-    "generated_at": "2026-11-20T05:20:44+00:00",
+    "version": "war-w1-2026-11-21",
+    "generated_at": "2026-11-21T03:05:10+00:00",
     "gpw": 40537.2,
     "gpw_lo": 35998.2,
     "gpw_hi": 45490.8,
     "r": 0.3,
-    "cut_rule": "A_prime"
+    "cut_rule": "A_prime",
+    "scopes": {
+     "intl": {
+      "gpw_pool": "intl",
+      "gpw_games": 213,
+      "gpw": 41856.4,
+      "gpw_lo": 32078.6,
+      "gpw_hi": 52358.2
+     },
+     "fs": {
+      "gpw_pool": "intl",
+      "gpw_games": 213,
+      "gpw": 41856.4,
+      "gpw_lo": 32078.6,
+      "gpw_hi": 52358.2
+     },
+     "msi": {
+      "gpw_pool": "intl",
+      "gpw_games": 213,
+      "gpw": 41856.4,
+      "gpw_lo": 32078.6,
+      "gpw_hi": 52358.2
+     },
+     "worlds": {
+      "gpw_pool": "intl",
+      "gpw_games": 213,
+      "gpw": 41856.4,
+      "gpw_lo": 32078.6,
+      "gpw_hi": 52358.2
+     }
+    }
    },
    "games_by_tournament": {
     "FirstStand": 45,
