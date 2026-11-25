@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LwRC+ 계산법</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#f7f7f5;--panel:#fff;--ink:#1c1c1a;--mute:#6b6b66;--line:#e4e3de;--acc:#2f5bd3;--pos:#1f7a4d;--neg:#b3392f;--chip:#efeee9;--cut:#b3392f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151514;--panel:#1d1d1b;--ink:#ecebe6;--mute:#9a9992;--line:#30302c;--acc:#7c9cff;--pos:#5cc48d;--neg:#ef7d72;--chip:#272724;--cut:#ef7d72}}
+:root[data-theme="dark"]{--bg:#151514;--panel:#1d1d1b;--ink:#ecebe6;--mute:#9a9992;--line:#30302c;--acc:#7c9cff;--pos:#5cc48d;--neg:#ef7d72;--chip:#272724;--cut:#ef7d72}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Segoe UI",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--acc)}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:14px}
+#theme{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:6px 10px;font:inherit;cursor:pointer}
+h1{font-size:30px;line-height:1.3;letter-spacing:-.02em;margin:28px 0 8px}
+.lede{color:var(--mute);font-size:17px;margin:0 0 28px}
+h2{font-size:21px;letter-spacing:-.01em;margin:44px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h2 .n{color:var(--acc);margin-right:8px}
+h3{font-size:16px;margin:24px 0 6px}
+p{margin:10px 0}
+.eq{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0;font:15px/1.9 "SF Mono",ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;white-space:pre}
+.eq b{color:var(--acc);font-weight:600}
+.note{background:var(--chip);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:15px}
+.note b{color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums;margin:12px 0}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{color:var(--mute);font-weight:600;font-size:13px}
+th.l,td.l{text-align:left}
+.tw{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:0 6px}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+figure{margin:18px 0}
+figcaption{color:var(--mute);font-size:13px;margin-top:6px}
+svg text{font:12px -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;fill:var(--ink)}
+svg .mute{fill:var(--mute)}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 18px;font-size:15px}
+.toc ol{margin:4px 0;padding-left:20px}
+.small{font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a href="./">← 결과 조회로</a><button id="theme" title="테마 전환">◐</button></div>
+
+<h1>LwRC+는 어떻게 계산했나</h1>
+<p class="lede">선수가 팀의 <b>기대 골드</b>를 얼마나 움직였는지를 같은 포지션 평균과 비교한 값이다. 게임 데이터에서 시작해 선수 한 명의 시즌 LwRC+까지 가는 과정을 실제 게임 하나로 따라간다. LwRC+는 <b>선수 퍼포먼스 참고 지표</b>이고, 승리 기여 지표가 아니다.</p>
+
+<div class="toc"><b>순서</b>
+<ol>
+<li>LwRC+라는 질문</li><li>기대 골드 G — 10분 뒤 팀 골드 예측</li><li>번 골드와 속도로 나누기</li><li>교전 하나 뜯어보기 — C · D · Risk · 팀 계정</li>
+<li>교전 몫을 선수에게 나누기 (배분)</li><li>게임 LwRC — 장부 맞추기</li><li>시즌 LwRC+ — Chovy로 따라 계산하기</li><li>얼마나 믿을 수 있나</li><li>읽을 때 주의할 점</li>
+</ol></div>
+
+<h2><span class="n">1</span>LwRC+라는 질문</h2>
+<p>LoL에서 골드는 거의 모든 것을 사는 화폐다. 그런데 "누가 골드를 많이 벌었나"만 보면 놓치는 것이 많다. 한타에서 이니시를 열어 동료가 킬을 먹게 한 선수, 죽지 않아 상대에게 현상금을 내주지 않은 선수, 상대의 성장을 끊은 선수의 몫이 빠진다.</p>
+<p>LwRC+의 질문은 이것이다: <b>이 선수의 플레이로 팀이 앞으로 가질 골드(기대 골드)가 얼마나 늘었나?</b> 직접 번 골드에 더해, 교전에서 팀의 골드 흐름을 빠르게 하거나 상대를 늦춘 몫, 그리고 자기 데스로 잃은 몫까지 골드 단위로 센다. 이 합이 <b>LwRC</b>이고, 같은 범위 · 같은 포지션 평균을 100으로 맞춘 값이 <b>LwRC+</b>다.</p>
+<div class="eq"><b>LwRC</b>  = C 생산 + D 차단 + Risk          선수가 팀 기대 골드 G를 움직인 양
+<b>LwRC+</b> = 100 × (선수 LwRC/분) ÷ (같은 범위 · 같은 포지션 평균 LwRC/분)</div>
+
+<h2><span class="n">2</span>기대 골드 G — 10분 뒤 팀 골드 예측</h2>
+<p>먼저 매초(1Hz) 게임 상태를 보고 <b>"이 팀은 10분 뒤에 골드를 얼마나 갖고 있을까"</b>를 예측하는 모델을 만든다. 이 예측값이 기대 골드 <b>G</b>다. 상태는 32가지 — 양 팀 골드 · 레벨, 살아 있는 인원과 부활 대기, 타워 · 억제기, 드래곤 스택 · 영혼, 바론 · 장로 버프 남은 시간, 공허 유충 · 전령 · 아타칸 등이다.</p>
+<p>모델은 선형 리지 회귀다. 한 경기의 게임이 학습과 평가에 섞이지 않도록 경기 단위로 5개 묶음으로 나눠, 각 게임의 G는 그 게임이 속한 묶음을 뺀 모델로 계산한다(크로스피팅).</p>
+<p>모델이 배운 계수를 사건 단위로 바꾸면 "이 일이 일어나면 G가 얼마나 움직이나"라는 단가표가 된다. LCK 모델의 예:</p>
+<div class="tw"><table>
+<tr><th class="l">사건</th><th>우리 팀 G</th><th>상대 팀 G</th></tr>
+<tr><td class="l">골드 1,000 획득</td><td class="pos">+1,457</td><td class="neg">−348</td></tr>
+<tr><td class="l">드래곤 (장로 제외, 영혼 전)</td><td class="pos">+449</td><td class="neg">−573</td></tr>
+<tr><td class="l">드래곤 영혼 (4번째 드래곤)</td><td class="pos">+2,467</td><td class="neg">−654</td></tr>
+<tr><td class="l">바론 (처치 순간)</td><td class="pos">+3,144</td><td class="neg">−801</td></tr>
+<tr><td class="l">아군 1명 데스 (부활 30초)</td><td class="neg">−663</td><td class="pos">+848</td></tr>
+</table></div>
+<p class="small">골드 1,000이 G를 1,000보다 더 올리는 것은 골드가 아이템이 되어 앞으로의 수입도 늘리기 때문이다. 데스 비용은 부활 대기가 줄어드는 만큼 매초 회복된다.</p>
+<div class="note"><b>학습 범위</b> — 리그마다 그 리그 게임만으로 따로 학습한다(LCK는 LCK 502게임). 국제대회(First Stand · MSI · Worlds)만 예외다. 국제대회 게임만으로는 213게임이라 모델 검증(계수 부호)을 통과하지 못해, 참가 리그(LCK · LEC · LCS · CBLOL · LCP · VCS · PCS) 경기 전부와 국제대회를 함께 학습한다(2,166게임). VCS · PCS는 표본이 작아 검증을 통과하지 못해 "참고용"으로 표시한다.</div>
+
+<h2><span class="n">3</span>번 골드와 속도로 나누기</h2>
+<p>G는 "지금 가진 골드"와 "앞으로 10분 동안 더 벌 골드"의 합으로 볼 수 있다.</p>
+<div class="eq"><b>G</b> = 현재 골드 + <b>V</b>          V = 앞으로 10분의 예상 수입 (골드가 들어오는 속도)</div>
+<p>그래서 G의 변화도 두 가지로 나뉜다.</p>
+<ul>
+<li><b>실제로 번 골드</b> — CS · 킬 · 어시스트 · 오브젝트로 들어온 골드. 번 사람에게 그대로 돌아간다(<b>C 실현 골드</b>). 교전 안이든 밖이든 같다.</li>
+<li><b>속도 V의 변화</b> — 상대를 죽이고 타워를 밀면 당장 번 골드보다 "앞으로 더 빨리 벌 수 있는 상태"가 된다. 이 몫은 그 일이 일어난 <b>교전</b>에서 계산해 참여한 선수들에게 나눈다(4~5절).</li>
+</ul>
+
+<h2><span class="n">4</span>교전 하나 뜯어보기 — C · D · Risk · 팀 계정</h2>
+<p>킬 · 건물 · 오브젝트 같은 사건을 시간으로 묶어 <b>교전 클러스터</b>를 만든다(사건 전후 10초 창, 가까운 창은 합침). 예시는 2026 LCK 플레이오프 <b>GEN vs HLE 4게임</b>(9월 13일, GEN 승)의 24:12 ~ 24:57 교전이다. 킬 3, 건물 1.</p>
+<div class="tw"><table>
+<tr><th class="l">항목 (이 교전 동안)</th><th>GEN</th><th>HLE</th></tr>
+<tr><td class="l">G 변화</td><td class="pos">+7,391</td><td class="neg">−2,418</td></tr>
+<tr><td class="l">├ 실제로 번 골드</td><td>+3,299</td><td>+901</td></tr>
+<tr><td class="l">└ 속도 V 변화</td><td class="pos">+4,092</td><td class="neg">−3,319</td></tr>
+<tr><td class="l">　 그중 시간항 (시간이 흘러 생기는 변화)</td><td>−65</td><td>−65</td></tr>
+<tr><td class="l">　 그중 자연 감쇠 (버프 · 부활 대기가 시간만으로 바뀐 몫)</td><td>−993</td><td>+770</td></tr>
+<tr><td class="l">　 그중 데스 비용 (Risk)</td><td>0</td><td class="neg">−3,315</td></tr>
+</table></div>
+<p>여기서 네 가지 몫이 나온다.</p>
+<div class="eq"><b>C 파이</b> (GEN)  = V 변화 − Risk − 시간항 − 자연 감쇠
+           = 4,092 − 0 − (−65) − (−993)      = <b>+5,151</b>   우리 팀이 빨라진 몫
+<b>D 파이</b> (GEN)  = −(HLE의 V 변화 − 시간항 − 자연 감쇠)
+           = −(−3,319 − (−65) − 770)         = <b>+4,024</b>   상대 팀을 늦춘 몫 (HLE 데스 3,315 포함)
+<b>Risk</b>  (HLE)  = 데스 3번의 비용                   = <b>−3,315</b>   죽은 선수 본인에게
+<b>팀 계정</b> (GEN) = 시간항 + 자연 감쇠                 = <b>−1,058</b>   선수에게 나누지 않음</div>
+<p><b>Risk</b>는 데스 한 번마다 그 선수에게 붙는다 — 살아 있는 인원 −1, 부활 대기, 상대에게 넘어간 현상금 · 셧다운의 값이다. <b>팀 계정</b>은 누구의 플레이라고 보기 어려운 몫(시간이 흘러서, 버프가 저절로 끝나서, 모델 예측 오차)을 모아 두는 곳이다. 선수에게 억지로 나누지 않는다.</p>
+
+<h2><span class="n">5</span>교전 몫을 선수에게 나누기 (배분)</h2>
+<p>C 파이와 D 파이를 그 교전에 관여한 우리 팀 선수에게 나눈다. 관여도는 일곱 가지로 잰다: <b>딜</b>, <b>어시스트</b>, <b>받아낸 피해</b>, <b>현장 존재</b>(교전 사건 지점 반경 2,300 안에 살아서 있던 시간 비율), <b>시야</b>(와드 설치 1분 = 1, 제거 = 2), <b>CC</b>, <b>보호</b>(아군 보호막 · 회복).</p>
+<p>일곱 가지에 얼마씩 무게를 줄지는 사람이 정하지 않는다. "관여도가 이랬던 교전에서 팀 G가 실제로 얼마나 빨라졌나"를 모든 교전으로 회귀해서 배운다(음수가 안 되게 제한한 리지 회귀). LCK 모델이 배운 무게를 "선수 간 차이 1 표준편차가 교전당 몇 골드인가"로 바꾸면:</p>
+<div class="tw"><table>
+<tr><th class="l">관여도</th><th>교전당 골드 (1 표준편차)</th></tr>
+<tr><td class="l">딜</td><td>약 440</td></tr>
+<tr><td class="l">어시스트</td><td>약 430</td></tr>
+<tr><td class="l">현장 존재</td><td>약 255</td></tr>
+<tr><td class="l">받아낸 피해</td><td>약 195</td></tr>
+<tr><td class="l">시야</td><td>약 104 (와드 1분 ≈ 53골드, 제거 ≈ 106골드)</td></tr>
+<tr><td class="l">보호</td><td>약 35</td></tr>
+<tr><td class="l">CC</td><td>0</td></tr>
+</table></div>
+<p class="small">시야는 회귀로 정하기 어려워 배분 몫의 6.72%로 고정했다(시야 점수에서 라이엇이 쓰는 설치 : 제거 비율 1 : 2). CC는 다른 관여도와 겹쳐 따로 더하는 몫이 0으로 나왔다.</p>
+<p>위 교전에서 GEN 다섯 명의 관여도 점수와 몫:</p>
+<div class="tw"><table>
+<tr><th class="l">선수</th><th>관여 점수</th><th>지분</th><th>C 파이 몫</th><th>D 파이 몫</th></tr>
+<tr><td class="l">Kiin (탑)</td><td>3,028</td><td>26.7%</td><td>1,377</td><td>1,076</td></tr>
+<tr><td class="l">Canyon (정글)</td><td>676</td><td>6.0%</td><td>307</td><td>240</td></tr>
+<tr><td class="l"><b>Chovy (미드)</b></td><td><b>3,308</b></td><td><b>29.2%</b></td><td><b>1,504</b></td><td><b>1,175</b></td></tr>
+<tr><td class="l">Ruler (원딜)</td><td>2,223</td><td>19.6%</td><td>1,011</td><td>790</td></tr>
+<tr><td class="l">Duro (서포터)</td><td>2,091</td><td>18.5%</td><td>951</td><td>743</td></tr>
+<tr><td class="l">합</td><td>11,326</td><td>100%</td><td>5,151</td><td>4,024</td></tr>
+</table></div>
+<p>Chovy는 이 교전에서 딜 2,622 · 어시스트 3 · 받아낸 피해 1,583 · 현장 존재 91%로 가장 깊게 관여해 가장 큰 몫을 받았다. 관여 점수는 그 게임을 학습에서 뺀 모델의 무게로 계산하므로 위 표의 무게로 곱한 값과 조금 다르다.</p>
+
+<h2><span class="n">6</span>게임 LwRC — 장부 맞추기</h2>
+<p>게임 안의 모든 교전과 교전 밖 골드를 더하면 그 게임의 선수 LwRC가 된다. 같은 게임에서 Chovy(빅토르, 28.0분):</p>
+<div class="eq">C 실현 골드   11,918     (실제로 번 골드, 시작 골드 500 제외)
+C 파이        +6,747     (교전에서 우리 팀이 빨라진 몫)
+D 차단        +2,752     (교전에서 상대를 늦춘 몫)
+Risk          −1,252     (본인 데스 비용)
+──────────────────────
+<b>LwRC</b>        <b>20,164</b></div>
+<p>팀 단위로는 장부가 정확히 맞아야 한다(<b>보존 항등식</b>). 게임 시작부터 끝까지 팀 G가 움직인 양은 선수들의 C · Risk와 팀 계정의 합과 같다. D는 상대 팀 장부에서 나온 몫이라 여기에 넣지 않는다.</p>
+<div class="eq">GEN:  G(끝) − G(시작) = 92,888 − 18,219 = <b>74,668</b>
+      = 실현 골드 56,411 + C 파이 32,804 + Risk −5,578 + 팀 계정 −8,969 = <b>74,668</b>   (차이 0)</div>
+<p class="small">LCK 502게임 모두 오차 1골드 이내로 맞는다(최대 차이 0.00000000003골드). 맞지 않는 게임은 산출에서 뺀다.</p>
+
+<h2><span class="n">7</span>시즌 LwRC+ — Chovy로 따라 계산하기</h2>
+<p>시즌 값은 게임별 LwRC+의 평균이 아니라 <b>합의 비율</b>로 계산한다. 길게 뛴 게임이 그만큼 더 반영된다. 한 게임만 튀는 값이 전체를 흔들지 않도록, 같은 범위 · 같은 포지션 안에서 선수-게임의 분당 LwRC를 평균 ± 3 표준편차로 자른 뒤 계산한다.</p>
+<p>2026 LCK 시즌, GEN Chovy (미드, 101게임, 3,270.0분):</p>
+<div class="eq">분당 LwRC   = 2,130,650 ÷ 3,270.0                 = <b>651.6</b>
+미드 평균   = LCK 미드 전원의 LwRC 합 ÷ 플레이 분 합   = <b>529.8</b>
+
+<b>LwRC+</b>      = 100 × 651.6 ÷ 529.8                  = <b>123</b>     (LCK 미드 1위 / 12명)
+<b>LwRC +/G</b>   = (651.6 − 529.8) × 3,270.0 ÷ 101      = <b>+3,943</b>   골드/게임</div>
+<p>Chovy는 같은 시간 동안 LCK 평균 미드보다 팀 기대 골드를 23% 더 움직였고, 한 게임에 평균 미드보다 약 3,900골드를 더 움직였다. 시즌 LwRC 213만은 실현 골드 140만 + C 파이 65만 + D 30만 + Risk −21만이다.</p>
+<p><b>팀 내 비중</b>(21.3%)은 같은 팀 선수들의 LwRC 합에서 차지하는 몫이고, <b>팀 LwRC+</b>는 소속 선수 LwRC+를 그 팀에서 뛴 분으로 가중 평균한 값이다.</p>
+
+<h2><span class="n">8</span>얼마나 믿을 수 있나</h2>
+<div class="tw"><table>
+<tr><th class="l">검사 (LCK)</th><th>결과</th></tr>
+<tr><td class="l">G 모델 계수 부호 (골드 · 생존 인원 · 드래곤 · 바론은 +, 부활 대기는 −)</td><td>통과 (5개 묶음 모두)</td></tr>
+<tr><td class="l">처음 보는 교전에서 배분 모델 설명력</td><td>64% (상황 정보만으로는 9%)</td></tr>
+<tr><td class="l">보존 항등식</td><td>502게임 모두 통과</td></tr>
+<tr><td class="l">팀 계정 크기 (선수에게 나누지 못한 몫)</td><td>약 12% (계수를 손으로 정한 단순 G 모델은 약 51%)</td></tr>
+<tr><td class="l">일관성 — 홀수 게임 vs 짝수 게임 (10게임 이상 52명)</td><td>0.82</td></tr>
+<tr><td class="l">일관성 — 시즌 앞 반 vs 뒤 반</td><td>0.62</td></tr>
+<tr><td class="l">게임 길이와의 상관</td><td>−0.01 (길이에 끌려가지 않음)</td></tr>
+</table></div>
+<p class="small">다른 리그 모델의 설명력은 50 ~ 64%. 일관성은 같은 선수의 게임을 둘로 나눠 두 반쪽 LwRC+의 상관을 본 값으로, 1에 가까울수록 같은 선수가 꾸준히 비슷한 값을 낸다는 뜻이다(시즌 앞 · 뒤는 메타 · 폼 변화도 섞인다).</p>
+
+<h2><span class="n">9</span>읽을 때 주의할 점</h2>
+<ul>
+<li><b>승리 기여 지표가 아니다.</b> 팀 기대 골드를 움직인 양이다. 골드로 드러나지 않는 플레이(시야 장악의 일부, 라인 관리, 콜)는 덜 잡히고, 승리 해석은 WAR 등 다른 수치와 함께 본다.</li>
+<li><b>리그가 다른 선수끼리 비교하지 않는다.</b> 100은 그 리그(또는 국제대회) 같은 포지션 평균이다. LCK 120과 LEC 120은 같은 수준이라는 뜻이 아니다.</li>
+<li><b>게임 수를 함께 본다.</b> 한 게임이라도 뛰면 순위에 들어가지만, 게임이 적으면 값이 크게 흔들린다.</li>
+<li><b>골드가 큰 포지션은 +/G가 크다.</b> LwRC+는 포지션 평균 대비 비율이라 포지션끼리 공정하지만, +/G와 팀 내 비중은 골드 단위라 원딜 · 미드가 크게 나온다.</li>
+<li><b>실제로 번 골드와 나란히 보기.</b> <a href="gold.html">Gold+</a>는 같은 게임 · 같은 기준으로 실제 골드만 센다. 두 순위 차이가 교전 · 데스에서 생긴 차이다.</li>
+</ul>
+
+<p class="small">버전 lwrc_v1.0-rev (2026-11-25 LCK · 국제대회 학습 범위 분리 반영) · 2026 시즌 raw 데이터(LCK 502게임 · 국제대회 213게임 · 지역 리그 1,451게임) · 사양 docs/spec/ · 예시 수치는 LCK 모델 기준 · 결과는 <a href="./">결과 조회</a>의 LwRC+ 탭.</p>
+</div>
+<script>
+document.getElementById("theme").onclick=()=>{const h=document.documentElement,dark=h.dataset.theme?h.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;h.dataset.theme=dark?"light":"dark"};
+</script>
+</body>
+</html>
