@@ -1,4 +1,5 @@
 {
+ "updated": "2026-11-25",
  "min_games_for_ranking": 1,
  "leagues": [
   {
@@ -24,44 +25,44 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-17T12:21:20+00:00",
+   "generated_at": "2026-11-25T01:59:53+00:00",
    "reference_note": null,
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:10+00:00",
-    "gpw": 40537.2,
-    "gpw_lo": 35998.2,
-    "gpw_hi": 45490.8,
+    "generated_at": "2026-11-25T02:00:19+00:00",
+    "gpw": 40985.6,
+    "gpw_lo": 35553.3,
+    "gpw_hi": 47397.4,
     "r": 0.3,
     "cut_rule": "A_prime",
     "scopes": {
      "lck": {
       "gpw_pool": "lck",
       "gpw_games": 502,
-      "gpw": 39999.9,
-      "gpw_lo": 34713.5,
-      "gpw_hi": 46182.5
+      "gpw": 40985.6,
+      "gpw_lo": 35553.3,
+      "gpw_hi": 47397.4
      },
      "lck_s1": {
       "gpw_pool": "lck",
       "gpw_games": 502,
-      "gpw": 39999.9,
-      "gpw_lo": 34713.5,
-      "gpw_hi": 46182.5
+      "gpw": 40985.6,
+      "gpw_lo": 35553.3,
+      "gpw_hi": 47397.4
      },
      "lck_s2": {
       "gpw_pool": "lck",
       "gpw_games": 502,
-      "gpw": 39999.9,
-      "gpw_lo": 34713.5,
-      "gpw_hi": 46182.5
+      "gpw": 40985.6,
+      "gpw_lo": 35553.3,
+      "gpw_hi": 47397.4
      },
      "lck_s3": {
       "gpw_pool": "lck",
       "gpw_games": 502,
-      "gpw": 39999.9,
-      "gpw_lo": 34713.5,
-      "gpw_hi": 46182.5
+      "gpw": 40985.6,
+      "gpw_lo": 35553.3,
+      "gpw_hi": 47397.4
      }
     }
    },
@@ -103,7 +104,7 @@
    "reference_note": null,
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:17+00:00",
+    "generated_at": "2026-11-23T05:55:25+00:00",
     "gpw": 34528.0,
     "gpw_lo": 29124.2,
     "gpw_hi": 40823.2,
@@ -176,7 +177,7 @@
    "reference_note": null,
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:23+00:00",
+    "generated_at": "2026-11-23T05:55:33+00:00",
     "gpw": 30044.7,
     "gpw_lo": 24692.9,
     "gpw_hi": 36561.7,
@@ -251,7 +252,7 @@
    "reference_note": null,
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:30+00:00",
+    "generated_at": "2026-11-23T05:55:42+00:00",
     "gpw": 29882.0,
     "gpw_lo": 22264.6,
     "gpw_hi": 38273.2,
@@ -330,7 +331,7 @@
    "reference_note": null,
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:36+00:00",
+    "generated_at": "2026-11-23T05:55:50+00:00",
     "gpw": 28858.6,
     "gpw_lo": 23552.5,
     "gpw_hi": 35548.4,
@@ -401,7 +402,7 @@
    "reference_note": "표본이 156게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:42+00:00",
+    "generated_at": "2026-11-23T05:55:57+00:00",
     "gpw": 28827.3,
     "gpw_lo": 18096.7,
     "gpw_hi": 40489.3,
@@ -468,7 +469,7 @@
    "reference_note": "표본이 84게임으로 작아 기대 골드 모델 검증(생존 인원 계수 부호)을 통과하지 못했다. 값이 크게 흔들릴 수 있다.",
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:47+00:00",
+    "generated_at": "2026-11-23T05:56:03+00:00",
     "gpw": 21318.4,
     "gpw_lo": 16543.3,
     "gpw_hi": 32284.9,
@@ -530,44 +531,44 @@
    ],
    "allocation_method": "regression",
    "version": "lwrc_v1.0-rev",
-   "generated_at": "2026-11-17T12:21:20+00:00",
+   "generated_at": "2026-11-25T02:01:49+00:00",
    "reference_note": null,
    "war": {
     "version": "war-w1-2026-11-21",
-    "generated_at": "2026-11-21T03:05:10+00:00",
-    "gpw": 40537.2,
-    "gpw_lo": 35998.2,
-    "gpw_hi": 45490.8,
+    "generated_at": "2026-11-25T02:02:22+00:00",
+    "gpw": 34803.9,
+    "gpw_lo": 32292.2,
+    "gpw_hi": 37230.9,
     "r": 0.3,
     "cut_rule": "A_prime",
     "scopes": {
      "intl": {
       "gpw_pool": "intl",
       "gpw_games": 213,
-      "gpw": 41856.4,
-      "gpw_lo": 32078.6,
-      "gpw_hi": 52358.2
+      "gpw": 40446.9,
+      "gpw_lo": 31360.7,
+      "gpw_hi": 50432.2
      },
      "fs": {
       "gpw_pool": "intl",
       "gpw_games": 213,
-      "gpw": 41856.4,
-      "gpw_lo": 32078.6,
-      "gpw_hi": 52358.2
+      "gpw": 40446.9,
+      "gpw_lo": 31360.7,
+      "gpw_hi": 50432.2
      },
      "msi": {
       "gpw_pool": "intl",
       "gpw_games": 213,
-      "gpw": 41856.4,
-      "gpw_lo": 32078.6,
-      "gpw_hi": 52358.2
+      "gpw": 40446.9,
+      "gpw_lo": 31360.7,
+      "gpw_hi": 50432.2
      },
      "worlds": {
       "gpw_pool": "intl",
       "gpw_games": 213,
-      "gpw": 41856.4,
-      "gpw_lo": 32078.6,
-      "gpw_hi": 52358.2
+      "gpw": 40446.9,
+      "gpw_lo": 31360.7,
+      "gpw_hi": 50432.2
      }
     }
    },
@@ -583,7 +584,7 @@
  ],
  "notes": [
   "리그마다 G 모델·배분을 그 리그 게임만으로 학습하고, LwRC+ 기준(100)도 그 리그 같은 포지션 평균이다. 리그 간 수준 차이는 보정하지 않으므로 리그가 다른 선수의 LwRC+는 직접 비교하지 않는다.",
-  "국제대회(First Stand · MSI · Worlds)는 기존 산출(LCK + 국제대회로 학습). Worlds는 전체 46경기 98게임 중 97게임 반영 (8강 KC vs T1 1게임은 raw 미수령)",
+  "국제대회(First Stand · MSI · Worlds)는 참가 리그 경기 전부(LCK · LEC · LCS · CBLOL · LCP · VCS · PCS, LPL은 데이터 없음)와 국제대회 게임을 함께 학습하고, LwRC+ 기준(100)은 국제대회 같은 포지션 평균이다 (결정 53). Worlds는 전체 46경기 98게임 중 97게임 반영 (8강 KC vs T1 1게임은 raw 미수령)",
   "경기·게임 전적은 raw 기준: 게임 전적 = raw 게임 승패, 경기 전적·최근 5경기 = raw에 게임이 모두 있는 경기만"
  ]
 }

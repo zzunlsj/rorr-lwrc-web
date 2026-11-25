@@ -53,7 +53,7 @@ tr.detail td{background:var(--bg);text-align:left;white-space:normal;cursor:defa
 <div class="wrap">
 <header style="display:flex;gap:12px;align-items:flex-start">
   <div style="flex:1">
-    <h1>LwRC+ 2026</h1>
+    <h1>LwRC+ 2026 <span id="updated" style="font-size:13px;font-weight:400;color:var(--mute)"></span></h1>
     <p id="desc">선수 퍼포먼스 참고 지표 — 선택한 리그·대회 범위 안에서 같은 포지션 평균을 100으로 계산. 리그 간 수준 차이는 보정하지 않는다. 승리 기여 지표가 아니다.</p>
   </div>
   <button id="theme" title="테마 전환">◐</button>
@@ -324,6 +324,7 @@ function renderMeta(L){
 function init(){
   load();
   if(st.metric==="pci"&&!D.pci)st.metric="lwrc";
+  document.getElementById("updated").textContent=D.meta.updated?`업데이트 ${D.meta.updated}`:"";
   if(!D.meta.leagues.some(l=>l.key===st.league&&l.scopes.some(([s])=>s===st.scope))){st.league=D.meta.leagues[0].key;st.scope=D.meta.leagues[0].scopes[0][0]}
   document.getElementById("league").innerHTML=D.meta.leagues.map(l=>`<button data-l="${esc(l.key)}" class="${l.reference_note?"refl":""}">${esc(l.name)}</button>`).join("");
   document.getElementById("league").onclick=e=>{const b=e.target.closest("button");if(b){st.league=b.dataset.l;st.scope=lgOf().scopes[0][0];st.open=null;render()}};
