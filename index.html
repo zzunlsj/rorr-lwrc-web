@@ -284,7 +284,7 @@ function detail(r){
 function moved(x,r){return x.main_team===r.team?"":` · 순위표 소속 ${esc(x.main_team)}`}
 function render(){
   document.querySelectorAll("#metric button").forEach(b=>b.classList.toggle("on",b.dataset.m===st.metric));
-  document.getElementById("desc").innerHTML=esc(DESC[st.metric])+(st.metric==="war"?' <a href="war.html" style="color:var(--acc)">계산 방법 보기 →</a>':"");
+  document.getElementById("desc").innerHTML=esc(DESC[st.metric])+(st.metric==="war"?' <a href="war.html" style="color:var(--acc)">계산 방법 보기 →</a>':st.metric==="pci"?' <a href="pci.html" style="color:var(--acc)">계산 방법 보기 →</a>':"");
   if(st.metric==="pci")st.view="players";   // PCI+는 선수 단위만
   document.getElementById("view").style.display=st.metric==="pci"?"none":"";
   document.querySelectorAll("#view button").forEach(b=>b.classList.toggle("on",b.dataset.v===st.view));
