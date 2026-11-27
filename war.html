@@ -45,7 +45,7 @@ svg .mute{fill:var(--mute)}
 <div class="top"><a href="./">← 결과 조회로</a><button id="theme" title="테마 전환">◐</button></div>
 
 <h1>LoL WAR는 어떻게 계산했나</h1>
-<p class="lede">선수가 대체 선수 대신 뛰어서 팀이 몇 게임을 더 이겼는지 — 골드에서 승수까지 가는 과정을 처음부터 정리한다. 지금의 LoL WAR는 1단계 <b>골드 WAR(W1)</b>를 <b>잠정 버전</b>으로 쓴다(2026-11-23). 골드로 드러나지 않는 기여 등 다음 단계는 검토 의견과 연구 협업으로 발전시킬 계획이다(10절).</p>
+<p class="lede">선수가 대체 선수 대신 뛰어서 팀이 몇 게임을 더 이겼는지 — 골드에서 승수까지 가는 과정을 처음부터 정리한다. 지금의 LoL WAR는 1단계 <b>골드 WAR(W1)</b>를 <b>LoL WAR v1.0</b>으로 쓴다(2026-11-23). 골드로 드러나지 않는 기여 등 다음 단계는 검토 의견과 연구 협업으로 발전시킬 계획이다(10절).</p>
 
 <div class="toc"><b>순서</b>
 <ol>
@@ -185,7 +185,7 @@ BO5: M′ = 30p²(1 − p)²              (p = 50%일 때 1.875배)
 <div class="note"><b>골드로 나타나지 않는 기여는 빠져 있다.</b> 이번 버전(W1)은 골드 성분만 담았다. 시야·오브젝트 압박, 게임을 끝내는 마지막 교전처럼 골드로 이어지지 않은 가치는 담지 않았다(10절).</div>
 
 <h2><span class="n">10</span>앞으로 — 함께 발전시킬 부분</h2>
-<p>골드 WAR(W1)를 지금의 LoL WAR로 <b>잠정 인정</b>한다. 아래 과제는 혼자 정하기보다 커뮤니티 검토와 연구 협업으로 발전시키려 한다.</p>
+<p>골드 WAR(W1)를 <b>LoL WAR v1.0</b>으로 정한다. 아래 과제는 혼자 정하기보다 커뮤니티 검토와 연구 협업으로 발전시키려 한다.</p>
 <div class="tw"><table>
 <tr><th class="l">과제</th><th class="l">내용</th><th class="l">지금 상태</th></tr>
 <tr><td class="l">비골드 성분 (W2)</td><td class="l">교전마다 게임 승률이 얼마나 움직였는지(승률 추가분)를 선수에게 나눈다. 골드로 이미 센 몫과 겹치지 않게 하는 방법이 핵심 쟁점</td><td class="l">게임 승률 모델 완성, 사양 초안</td></tr>
@@ -212,7 +212,7 @@ rate      = 컷 전 LwRC ÷ 컷 전 분       (선수)
 rate_rep  = denom − (1 − 2r)·GPW ÷ (10L)  (대체 선수, r = 0.30)
 GPW       = 4 ÷ β                         (1승 = 약 4만 골드, LCK)</div>
 
-<p class="small">버전 war-w1-2026-11-21 (2026-11-23 LoL WAR 잠정 버전으로 인정, 2026-11-25 LCK · 국제대회 학습 범위 분리 반영) · 2026 시즌 raw 데이터(LCK·국제대회 715게임, 지역 리그 1,451게임) · 사양 docs/spec/08-war.md · 결과는 <a href="./">결과 조회</a>의 WAR 탭.</p>
+<p class="small">버전 war-w1-2026-11-21 (2026-11-23 LoL WAR v1.0으로 정함, 2026-11-25 LCK · 국제대회 학습 범위 분리 반영) · 2026 시즌 raw 데이터(LCK·국제대회 715게임, 지역 리그 1,451게임) · 사양 docs/spec/08-war.md · 결과는 <a href="./">결과 조회</a>의 WAR 탭.</p>
 </div>
 <script>
 document.getElementById("theme").onclick=()=>{const h=document.documentElement,dark=h.dataset.theme?h.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;h.dataset.theme=dark?"light":"dark"};
