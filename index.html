@@ -60,7 +60,7 @@ tr.detail td{background:var(--bg);text-align:left;white-space:normal;cursor:defa
 </header>
 
 <div class="bar">
-  <div class="seg" id="metric"><button data-m="lwrc" class="on">LwRC+</button><button data-m="gold">실제 골드</button><button data-m="war">WAR</button><button data-m="pci" hidden>PCI+</button></div>
+  <div class="seg" id="metric"><button data-m="lwrc" class="on">LwRC+</button><button data-m="gold">실제 골드</button><button data-m="war">WAR</button><button data-m="pci" hidden>5Tool+</button></div>
   <div class="seg" id="view"><button data-v="players" class="on">선수</button><button data-v="teams">팀</button></div>
 </div>
 <div class="bar">
@@ -139,16 +139,16 @@ const HELP={
   wexp:"기대 승 = 팀 WAR 합 + 게임 수 × r (r = 대체 선수로만 채운 팀의 게임 승률 0.30).",
   wres:"잔차 = 실제 게임 승 − 기대 승. 골드로 설명되지 않은 승수(운영·클러치·운).",
   wwins:"게임 승 (raw 게임 기준).",
-  // PCI+ (잠정 버전, 결정 52). 정의는 specs/pci_step*_report, config/pci.yaml
-  prank:"같은 범위·같은 포지션 안에서 PCI+ 순위 / 순위 대상 선수 수. 이 범위에서 10게임 이상 뛴 선수만 순위에 들어간다.",
-  pci:"PCI+ = 100 + 15·Z. 게임마다 다섯 기둥(Laning · Combat · Objective · Vision/Map · Risk)을 포지션 가중으로 합친 값을 같은 범위·같은 포지션 안에서 표준화했다.\n115면 평균보다 1 표준편차 위다 (평균 대비 %가 아니다).\n시즌 값 = 게임 값의 플레이 분 가중 평균.",
+  // 5Tool+ (구 PCI+, 잠정 버전, 결정 52 · 53). 정의는 specs/pci_step*_report, config/pci.yaml
+  prank:"같은 범위·같은 포지션 안에서 5Tool+ 순위 / 순위 대상 선수 수. 이 범위에서 10게임 이상 뛴 선수만 순위에 들어간다.",
+  pci:"5Tool+ = 100 + 15·Z. 게임마다 다섯 기둥(Laning · Combat · Objective · Vision/Map · Risk)을 포지션 가중으로 합친 값을 같은 범위·같은 포지션 안에서 표준화했다.\n115면 평균보다 1 표준편차 위다 (평균 대비 %가 아니다).\n시즌 값 = 게임 값의 플레이 분 가중 평균.",
   plane:"Laning+ — 15분 골드 차 · CS 차, 평균 레벨 차, 포탑 방패, 초반 솔로킬, 초반 데스.",
   pcomb:"Combat+ — 분당 딜, 팀 내 딜 비중, 골드당 딜, 킬 관여, 킬 비중, CC, 유틸, 받은 피해.",
   pobj:"Objective+ — 에픽 오브젝트 참여, 오브젝트 교전 킬 관여, 오브젝트 주변 시야, 막타 · 스틸, 오브젝트 딜, 포탑 딜 · 관여.",
   pvis:"Vision/Map+ — 분당 시야 점수 · 와드 제거, 제어 와드, 오브젝트 전 시야, 로밍 성과, 맵 압박(존 체류).",
   prisk:"Risk+ — 데스 비용의 반대 부호 (데스 수 · 셧다운 · 오브젝트 직전 데스 등). 높을수록 데스로 잃은 것이 적다.",
   prel:"신뢰도 — 이 범위 게임 수 기준: 15게임 이상 High, 8게임 이상 Medium, 그 밖 Low.",
-  plx:"같은 범위의 LwRC+ (비교용). LwRC+는 평균 대비 비율, PCI+는 Z 점수라 숫자 크기를 직접 비교하지 않는다.",
+  plx:"같은 범위의 LwRC+ (비교용). LwRC+는 평균 대비 비율, 5Tool+는 Z 점수라 숫자 크기를 직접 비교하지 않는다.",
 };
 const rk=v=>v==null?"—":v===0?"0":`<span class="${sgn(v)}">${v>0?"▲":"▼"}${Math.abs(v)}</span>`;
 const plus=(v,d=0)=>v==null?"—":`<span class="${sgn(v)}">${v>0?"+":""}${fmt(v,d)}</span>`;
@@ -221,7 +221,7 @@ const COLS={
     {k:"team",h:"팀",l:1,t:HELP.team,f:r=>`${esc(r.team)} <span class="tag">${esc(r.lg)}</span>`},
     {k:"role",h:"포지션",l:1,t:HELP.role},
     {k:"g",h:"게임",t:HELP.g},
-    {k:"pci_plus",h:"PCI+",c:"ix",t:HELP.pci,f:r=>IX1(r.pci_plus)},
+    {k:"pci_plus",h:"5Tool+",c:"ix",t:HELP.pci,f:r=>IX1(r.pci_plus)},
     {k:"plus_Laning",h:"Laning+",t:HELP.plane,f:r=>IX1(r.plus_Laning)},
     {k:"plus_Combat",h:"Combat+",t:HELP.pcomb,f:r=>IX1(r.plus_Combat)},
     {k:"plus_Objective",h:"Objective+",t:HELP.pobj,f:r=>IX1(r.plus_Objective)},
@@ -259,9 +259,9 @@ function rows(){
   return r.sort((a,b)=>{const x=a[k],y=b[k];if(x==null)return 1;if(y==null)return -1;return(typeof x==="string"?x.localeCompare(y):x-y)*dir});
 }
 function detail(r){
-  if(st.metric==="pci")return `<div class="dl"><div><span>PCI+${q(HELP.pci)}</span>${fmt(r.pci_plus,1)}</div><div><span>플레이 분${q(HELP.min)}</span>${fmt(r.minutes,1)}</div>
+  if(st.metric==="pci")return `<div class="dl"><div><span>5Tool+${q(HELP.pci)}</span>${fmt(r.pci_plus,1)}</div><div><span>플레이 분${q(HELP.min)}</span>${fmt(r.minutes,1)}</div>
     <div><span>신뢰도${q(HELP.prel)}</span>${esc(r.reliability)} (${r.g}게임)</div><div><span>LwRC+${q(HELP.plx)}</span>${r.lwrc_ix==null?"—":`${fmt(r.lwrc_ix)}${r.lwrc_rank==null?"":` (${r.lwrc_rank}위)`}`}</div>
-    <div><span>PCI+ 순위 vs LwRC+ 순위</span>${r.role_rank==null||r.lwrc_rank==null?"—":`${r.role_rank}위 / ${r.lwrc_rank}위`}</div></div>`;
+    <div><span>5Tool+ 순위 vs LwRC+ 순위</span>${r.role_rank==null||r.lwrc_rank==null?"—":`${r.role_rank}위 / ${r.lwrc_rank}위`}</div></div>`;
   if(st.metric==="war"){
     if(st.view==="players")return `<div class="dl"><div><span>WAR${q(HELP.war)}</span>${plus(r.war,2)}</div><div><span>90% 구간${q(HELP.wci)}</span>${fmt(r.war_lo,2)} ~ ${fmt(r.war_hi,2)}</div>
       <div><span>GAA${q(HELP.gaa)}</span>${plus(r.gaa)}</div><div><span>REP${q(HELP.rep)}</span>${fmt(r.rep)}</div>
@@ -285,7 +285,7 @@ function moved(x,r){return x.main_team===r.team?"":` · 순위표 소속 ${esc(x
 function render(){
   document.querySelectorAll("#metric button").forEach(b=>b.classList.toggle("on",b.dataset.m===st.metric));
   document.getElementById("desc").innerHTML=esc(DESC[st.metric])+(st.metric==="war"?' <a href="war.html" style="color:var(--acc)">계산 방법 보기 →</a>':st.metric==="pci"?' <a href="pci.html" style="color:var(--acc)">계산 방법 보기 →</a>':"");
-  if(st.metric==="pci")st.view="players";   // PCI+는 선수 단위만
+  if(st.metric==="pci")st.view="players";   // 5Tool+는 선수 단위만
   document.getElementById("view").style.display=st.metric==="pci"?"none":"";
   document.querySelectorAll("#view button").forEach(b=>b.classList.toggle("on",b.dataset.v===st.view));
   const L=lgOf();
@@ -293,7 +293,7 @@ function render(){
   document.getElementById("scope").innerHTML=L.scopes.map(([s,n])=>`<button data-s="${s}" class="${s===st.scope?"on":""}">${esc(n)}</button>`).join("");
   const ref=document.getElementById("ref");ref.hidden=!L.reference_note;
   ref.innerHTML=L.reference_note?`<b>참고용</b> — ${esc(L.reference_note)}`:"";
-  if(st.metric==="pci"){ref.hidden=false;ref.innerHTML=`<b>잠정 버전</b> — PCI+ ${esc(D.pci.meta.spec_version)}. 긴 게임에서 높게 나오는 경향(특히 ADC), 골드당 딜과 분당 딜의 중복, 신뢰도가 낮은 일부 컴포넌트를 재설계한 뒤 다시 산출할 예정이다. 값과 순위는 바뀔 수 있다. LCK · 국제대회만 산출.`}
+  if(st.metric==="pci"){ref.hidden=false;ref.innerHTML=`<b>잠정 버전</b> — 5Tool+ ${esc(D.pci.meta.spec_version)}. 긴 게임에서 높게 나오는 경향(특히 ADC), 골드당 딜과 분당 딜의 중복, 신뢰도가 낮은 일부 컴포넌트를 재설계한 뒤 다시 산출할 예정이다. 값과 순위는 바뀔 수 있다. LCK · 국제대회만 산출.`}
   renderMeta(L);
   document.getElementById("role").style.display=st.view==="players"?"":"none";
   const cols=COLS[key()],[sk,sd]=st.sort[key()];
@@ -307,7 +307,7 @@ function render(){
   save();
 }
 const POOL={lck:"LCK",intl:"국제대회"};   // GPW 학습 범위 (결정 44)
-const DESC={pci:"PCI+ (Player Contribution Index) — 다섯 기둥(Laning · Combat · Objective · Vision/Map · Risk)을 같은 범위 · 같은 포지션 안에서 Z 점수로 표준화한 값. 100이 평균, 15가 1 표준편차.",lwrc:"선수 퍼포먼스 참고 지표 — 선택한 리그·대회 범위 안에서 같은 포지션 평균을 100으로 계산. 리그 간 수준 차이는 보정하지 않는다. 승리 기여 지표가 아니다.",
+const DESC={pci:"5Tool+ (구 PCI+) — 다섯 기둥(Laning · Combat · Objective · Vision/Map · Risk)을 같은 범위 · 같은 포지션 안에서 Z 점수로 표준화한 값. 100이 평균, 15가 1 표준편차.",lwrc:"선수 퍼포먼스 참고 지표 — 선택한 리그·대회 범위 안에서 같은 포지션 평균을 100으로 계산. 리그 간 수준 차이는 보정하지 않는다. 승리 기여 지표가 아니다.",
   gold:"게임 내 실제 골드(totalGold) 기준 — LwRC+와 같은 게임·범위·포지션으로 비교.",
   war:"WAR (LoL WAR v1.0 = 골드 WAR W1) — 대체 선수보다 팀에 더해 준 게임 승수. 그 게임에서 실현된 골드로 계산한 기술 지표이며 예측 지표가 아니다. 리그 간에는 비교하지 않는다."};
 const lgOf=()=>D.meta.leagues.find(l=>l.key===st.league)||D.meta.leagues[0];
@@ -315,7 +315,7 @@ function renderMeta(L){
   const G=L.war.scopes[st.scope];   // scope별 GPW (결정 44)
   const m=D.meta,g=L.games_by_tournament;
   document.getElementById("meta").innerHTML=`${esc(L.name)} 데이터: ${Object.entries(g).map(([t,n])=>`${esc(t)} ${n}`).join(" · ")} (총 ${Object.values(g).reduce((a,b)=>a+b,0)}게임)
-    · ${st.metric==="pci"?`PCI+ ${esc(D.pci.meta.spec_version)} · 시즌 = 게임 값의 플레이 분 가중 평균 (D5 잠정) · 순위 ${D.pci.meta.min_games_rank}게임 이상 · 생성 ${esc(D.pci.meta.generated_utc.slice(0,10))}`:st.metric==="war"?`WAR ${esc(L.war.version)} · GPW ${fmt(G.gpw)}골드/승 (90% ${fmt(G.gpw_lo)}~${fmt(G.gpw_hi)}, ${esc(POOL[G.gpw_pool]??"리그 전체")} ${G.gpw_games}게임 기준) · r ${L.war.r} · 생성 ${esc(L.war.generated_at.slice(0,10))}`
+    · ${st.metric==="pci"?`5Tool+ ${esc(D.pci.meta.spec_version)} · 시즌 = 게임 값의 플레이 분 가중 평균 (D5 잠정) · 순위 ${D.pci.meta.min_games_rank}게임 이상 · 생성 ${esc(D.pci.meta.generated_utc.slice(0,10))}`:st.metric==="war"?`WAR ${esc(L.war.version)} · GPW ${fmt(G.gpw)}골드/승 (90% ${fmt(G.gpw_lo)}~${fmt(G.gpw_hi)}, ${esc(POOL[G.gpw_pool]??"리그 전체")} ${G.gpw_games}게임 기준) · r ${L.war.r} · 생성 ${esc(L.war.generated_at.slice(0,10))}`
       :`가중 ${esc(L.allocation_method)} · ${esc(L.version)} · 생성 ${esc(L.generated_at.slice(0,10))}`}
     <ul>${m.notes.map(n=>`<li>${esc(n)}</li>`).join("")}${L.incomplete_matches.length?`<li>raw에 일부 게임만 있어 경기 전적·최근 5경기에서 뺀 경기: ${L.incomplete_matches.map(esc).join(", ")}</li>`:""}
     <li>순위(#)는 이 범위에서 ${m.min_games_for_ranking}게임 이상 뛴 선수 전원. 행을 누르면 C·D·Risk 성분을 볼 수 있다.</li><li>실제 골드 탭은 게임 내 totalGold 관측값만으로 계산했다 (G 모델·배분 없음). LwRC+와 같은 게임·범위·포지션 기준이라 나란히 비교할 수 있다.</li>
@@ -355,7 +355,7 @@ function init(){
   document.getElementById("theme").onclick=()=>{const h=document.documentElement,dark=h.dataset.theme?h.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;h.dataset.theme=dark?"light":"dark"};
   render();
 }
-// pci.json(report.build_site, 결정 52)이 없으면 PCI+ 탭을 숨긴다
+// pci.json(report.build_site, 결정 52)이 없으면 5Tool+ 탭을 숨긴다
 const pciP=fetch("data/pci.json").then(r=>r.ok?r.json():null).catch(()=>null);
 Promise.all([...["players","teams","meta","gold","war"].map(n=>fetch(`data/${n}.json`).then(r=>r.json())),pciP]).then(([p,t,m,g,w,c])=>{D={players:p,teams:t,meta:m,gold:g,war:w,pci:c};
   if(c){const lx=new Map(p.players.map(x=>[x.scope+"|"+x.player_id,x])),n={};

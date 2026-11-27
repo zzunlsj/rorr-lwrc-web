@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PCI+ 계산법</title>
+<title>5Tool+ 계산법</title>
 <meta name="robots" content="noindex">
 <style>
 :root{--bg:#f7f7f5;--panel:#fff;--ink:#1c1c1a;--mute:#6b6b66;--line:#e4e3de;--acc:#2f5bd3;--pos:#1f7a4d;--neg:#b3392f;--chip:#efeee9}
@@ -41,24 +41,24 @@ th.l,td.l{text-align:left}
 <div class="wrap">
 <div class="top"><a href="./">← 결과 조회로</a><button id="theme" title="테마 전환">◐</button></div>
 
-<h1>PCI+는 어떻게 계산했나</h1>
-<p class="lede">한 게임에서 선수가 남긴 기록 29가지를 다섯 기둥(라인전 · 교전 · 오브젝트 · 시야/맵 · 리스크)으로 묶고, 같은 범위 · 같은 포지션 선수들 사이의 위치(Z 점수)로 나타낸다. 지금 게시한 값은 <b>잠정 버전(pci-v1.0-local)</b>이며, 재설계한 뒤 다시 산출할 예정이다(9절).</p>
+<h1>5Tool+는 어떻게 계산했나</h1>
+<p class="lede">이름은 2026-11-27 PCI+에서 5Tool+로 바꿨다. 한 게임에서 선수가 남긴 기록 29가지를 다섯 기둥(라인전 · 교전 · 오브젝트 · 시야/맵 · 리스크)으로 묶고, 같은 범위 · 같은 포지션 선수들 사이의 위치(Z 점수)로 나타낸다. 지금 게시한 값은 <b>잠정 버전(pci-v1.0-local)</b>이며, 재설계한 뒤 다시 산출할 예정이다(9절).</p>
 
 <div class="note"><b>잠정 버전</b> — 검증에서 세 가지 문제가 나왔다: 긴 게임에서 값이 높게 나오는 경향(특히 원딜), 분당 딜과 골드당 딜의 중복, 신뢰도가 낮은 일부 컴포넌트. 이를 고친 뒤 값과 순위는 바뀔 수 있다.</div>
 
 <div class="toc"><b>순서</b>
 <ol>
-<li>PCI+라는 질문 — LwRC+와 무엇이 다른가</li><li>재료: 다섯 기둥과 29개 컴포넌트</li><li>같은 잣대로 바꾸기 — Z 점수</li><li>기둥 점수</li>
-<li>포지션 가중과 PCI+</li><li>Chovy 한 게임으로 따라 계산하기</li><li>시즌 값 · 순위 · 신뢰도</li><li>얼마나 믿을 수 있나</li><li>알려진 문제와 재설계 계획</li>
+<li>5Tool+라는 질문 — LwRC+와 무엇이 다른가</li><li>재료: 다섯 기둥과 29개 컴포넌트</li><li>같은 잣대로 바꾸기 — Z 점수</li><li>기둥 점수</li>
+<li>포지션 가중과 5Tool+</li><li>Chovy 한 게임으로 따라 계산하기</li><li>시즌 값 · 순위 · 신뢰도</li><li>얼마나 믿을 수 있나</li><li>알려진 문제와 재설계 계획</li>
 </ol></div>
 
-<h2><span class="n">1</span>PCI+라는 질문 — LwRC+와 무엇이 다른가</h2>
+<h2><span class="n">1</span>5Tool+라는 질문 — LwRC+와 무엇이 다른가</h2>
 <p>LwRC+는 선수의 플레이가 <b>팀 기대 골드</b>를 얼마나 움직였는지 하나의 장부로 잰다. 골드라는 한 단위로 모든 행동을 환산하는 방식이다.</p>
-<p>PCI+(Player Contribution Index)는 반대로 접근한다. 골드로 환산하지 않고, 경기 분석에서 흔히 보는 기록 — 라인전 격차, 딜, 킬 관여, 오브젝트 참여, 시야, 데스 — 을 하나씩 잰 뒤 <b>같은 포지션 선수들과 비교한 상대 위치</b>로 바꿔 합친다. 그래서 골드에 잘 드러나지 않는 기여(시야 장악, 오브젝트 주변 움직임, CC 등)도 따로 볼 수 있다.</p>
-<div class="eq">PCI+ = 100 + 15 × Z
+<p>5Tool+(구 PCI+)는 반대로 접근한다. 골드로 환산하지 않고, 경기 분석에서 흔히 보는 기록 — 라인전 격차, 딜, 킬 관여, 오브젝트 참여, 시야, 데스 — 을 하나씩 잰 뒤 <b>같은 포지션 선수들과 비교한 상대 위치</b>로 바꿔 합친다. 그래서 골드에 잘 드러나지 않는 기여(시야 장악, 오브젝트 주변 움직임, CC 등)도 따로 볼 수 있다.</p>
+<div class="eq">5Tool+ = 100 + 15 × Z
   Z = 같은 범위 · 같은 포지션 안에서의 표준 점수
   100 = 평균,  115 = 평균보다 1 표준편차 위,  85 = 1 표준편차 아래</div>
-<p>PCI+는 <b>비율이 아니다</b>. 115는 "평균보다 15% 높다"가 아니라 "평균보다 1 표준편차 위"라는 뜻이다. 그래서 LwRC+와 숫자 크기를 직접 비교하지 않는다(결과 표의 LwRC+ 열은 순위 비교용이다).</p>
+<p>5Tool+는 <b>비율이 아니다</b>. 115는 "평균보다 15% 높다"가 아니라 "평균보다 1 표준편차 위"라는 뜻이다. 그래서 LwRC+와 숫자 크기를 직접 비교하지 않는다(결과 표의 LwRC+ 열은 순위 비교용이다).</p>
 
 <h2><span class="n">2</span>재료: 다섯 기둥과 29개 컴포넌트</h2>
 <p>컴포넌트는 모두 경기 라이브 피드(1초 단위 상태 + 이벤트)에서 직접 계산한다. 가중은 설계에서 정한 고정값이며, 승패나 LwRC+에 맞춰 조정하지 않았다. 음수 가중은 많을수록 감점이라는 뜻이다.</p>
@@ -138,10 +138,10 @@ th.l,td.l{text-align:left}
 <p>컴포넌트가 결측이면(예: 그 게임에 에픽 오브젝트가 없어 FightKP를 계산할 수 없음) 빼고, 남은 가중으로 비율을 맞춰 다시 키운다 — 남은 컴포넌트의 |가중| 합이 원래 합과 같아지도록.</p>
 <p>Risk는 컴포넌트가 DeathCost 하나뿐이라 부호만 뒤집는다. 데스 비용이 적을수록 Risk+가 높다.</p>
 
-<h2><span class="n">5</span>포지션 가중과 PCI+</h2>
+<h2><span class="n">5</span>포지션 가중과 5Tool+</h2>
 <p>다섯 기둥 Raw를 포지션마다 다른 가중으로 합친 뒤, 같은 묶음 안에서 한 번 더 표준화한다.</p>
-<div class="eq">PCI Raw = Σ 포지션 가중 × 기둥 Raw
-PCI+    = 100 + 15 × (PCI Raw를 같은 묶음 안에서 다시 표준화)</div>
+<div class="eq">종합 Raw = Σ 포지션 가중 × 기둥 Raw
+5Tool+    = 100 + 15 × (종합 Raw를 같은 묶음 안에서 다시 표준화)</div>
 <div class="tw"><table>
 <tr><th class="l">포지션</th><th>Laning</th><th>Combat</th><th>Objective</th><th>Vision/Map</th><th>Risk</th></tr>
 <tr><td class="l">TOP</td><td>.25</td><td>.30</td><td>.15</td><td>.10</td><td>.20</td></tr>
@@ -150,7 +150,7 @@ PCI+    = 100 + 15 × (PCI Raw를 같은 묶음 안에서 다시 표준화)</div
 <tr><td class="l">ADC</td><td>.20</td><td>.45</td><td>.15</td><td>.05</td><td>.15</td></tr>
 <tr><td class="l">SUP</td><td>.15</td><td>.25</td><td>.20</td><td>.30</td><td>.10</td></tr>
 </table></div>
-<p class="small">기둥+ 값을 가중 평균한 것이 아니라 기둥 Raw를 합친 뒤 다시 표준화한다. 그래서 PCI+가 기둥+들의 가중 평균과 정확히 같지는 않다.</p>
+<p class="small">기둥+ 값을 가중 평균한 것이 아니라 기둥 Raw를 합친 뒤 다시 표준화한다. 그래서 5Tool+가 기둥+들의 가중 평균과 정확히 같지는 않다.</p>
 
 <h2><span class="n">6</span>Chovy 한 게임으로 따라 계산하기</h2>
 <p>2026-05-24 LCK 정규 시즌, GEN vs DNS. GEN Chovy (미드, 애니), 28.2분, 승리. 범위 = LCK 시즌 · 미드(1,004 선수-게임).</p>
@@ -190,15 +190,15 @@ Risk      = −Z(DeathCost) = −(−1.18)                                      
 </table></div>
 <p class="small">예: Laning+ = 100 + 15 × (0.538 − (−0.004)) ÷ 0.859 = 109.5</p>
 
-<h3>④ PCI+</h3>
-<div class="eq">PCI Raw = .25×0.538 + .35×0.597 + .15×(−0.627) + .15×(−0.594) + .10×1.177 = <b>0.278</b>
-PCI+    = 100 + 15 × (0.278 − (−0.005)) ÷ 0.479                            = <b>108.9</b></div>
+<h3>④ 5Tool+</h3>
+<div class="eq">종합 Raw = .25×0.538 + .35×0.597 + .15×(−0.627) + .15×(−0.594) + .10×1.177 = <b>0.278</b>
+5Tool+    = 100 + 15 × (0.278 − (−0.005)) ÷ 0.479                            = <b>108.9</b></div>
 <p>라인전 우위 · 높은 딜과 CC · 노데스가 오브젝트 · 시야의 약점을 덮고 평균보다 약 0.6 표준편차 위다. 같은 게임 GEN Ruler(원딜) 130.1, Kiin(탑) 118.6, DNS Clozer(미드) 82.2.</p>
 
 <h2><span class="n">7</span>시즌 값 · 순위 · 신뢰도</h2>
-<div class="eq">시즌 PCI+ (기둥+도 같음) = Σ (게임 PCI+ × 플레이 분) ÷ Σ 플레이 분</div>
-<p>Chovy의 LCK 시즌 101게임(3,270분)을 이렇게 평균하면 <b>PCI+ 109.6</b>, LCK 미드 1위다(Laning+ 106.7 · Combat+ 106.0 · Objective+ 105.6 · Vision/Map+ 110.7 · Risk+ 103.9).</p>
-<p>게임 하나의 PCI+는 표준편차가 15이지만, 시즌 평균은 게임마다의 들쭉날쭉함이 상쇄되어 선수 간 차이가 훨씬 좁다(시즌 값의 표준편차 약 3 ~ 8). 시즌 PCI+ 110은 같은 포지션 안에서 꽤 높은 값이다.</p>
+<div class="eq">시즌 5Tool+ (기둥+도 같음) = Σ (게임 5Tool+ × 플레이 분) ÷ Σ 플레이 분</div>
+<p>Chovy의 LCK 시즌 101게임(3,270분)을 이렇게 평균하면 <b>5Tool+ 109.6</b>, LCK 미드 1위다(Laning+ 106.7 · Combat+ 106.0 · Objective+ 105.6 · Vision/Map+ 110.7 · Risk+ 103.9).</p>
+<p>게임 하나의 5Tool+는 표준편차가 15이지만, 시즌 평균은 게임마다의 들쭉날쭉함이 상쇄되어 선수 간 차이가 훨씬 좁다(시즌 값의 표준편차 약 3 ~ 8). 시즌 5Tool+ 110은 같은 포지션 안에서 꽤 높은 값이다.</p>
 <ul>
 <li><b>순위(#)</b>: 그 범위에서 10게임 이상 뛴 선수만. 10게임 미만은 값은 표시하되 순위는 "—".</li>
 <li><b>신뢰도</b>: 15게임 이상 High, 8 ~ 14게임 Medium, 7게임 이하 Low.</li>
@@ -209,7 +209,7 @@ PCI+    = 100 + 15 × (0.278 − (−0.005)) ÷ 0.479                           
 <p>LCK + 국제대회 715게임으로 검증했다. 안정성은 한 선수의 게임을 둘로 나눠(시즌 앞 · 뒤 반, 또는 홀수 · 짝수 게임) 두 반쪽의 값이 얼마나 같은지(상관 r)로 본다. 반쪽마다 10게임 이상인 78명.</p>
 <div class="tw"><table>
 <tr><th class="l">지표</th><th>앞 · 뒤 반</th><th>홀 · 짝</th></tr>
-<tr><td class="l">PCI+</td><td>.65</td><td>.63</td></tr>
+<tr><td class="l">5Tool+</td><td>.65</td><td>.63</td></tr>
 <tr><td class="l">LwRC+ (참고)</td><td>.61</td><td>.67</td></tr>
 <tr><td class="l">Laning+</td><td>.55</td><td>.46</td></tr>
 <tr><td class="l">Combat+</td><td>.35</td><td>.50</td></tr>
@@ -217,13 +217,13 @@ PCI+    = 100 + 15 × (0.278 − (−0.005)) ÷ 0.479                           
 <tr><td class="l">Vision/Map+</td><td>.71</td><td>.78</td></tr>
 <tr><td class="l">Risk+</td><td>.39</td><td>.63</td></tr>
 </table></div>
-<p>PCI+ 시즌 값과 LwRC+의 상관은 .74다. 비슷한 선수를 높게 보지만 같은 지표는 아니다. 특히 Vision/Map+는 LwRC+와 상관이 .34로 낮아, LwRC+가 잘 잡지 못하는 부분을 보여 준다. 반대로 Objective+ · Risk+는 LwRC+와 많이 겹친다(.61 · .71).</p>
+<p>5Tool+ 시즌 값과 LwRC+의 상관은 .74다. 비슷한 선수를 높게 보지만 같은 지표는 아니다. 특히 Vision/Map+는 LwRC+와 상관이 .34로 낮아, LwRC+가 잘 잡지 못하는 부분을 보여 준다. 반대로 Objective+ · Risk+는 LwRC+와 많이 겹친다(.61 · .71).</p>
 
 <h2><span class="n">9</span>알려진 문제와 재설계 계획</h2>
 <p>검증에서 다음 문제가 나와, 정의를 고쳐 다시 산출할 예정이다. 그때 값과 순위가 바뀔 수 있다.</p>
 <div class="tw"><table>
 <tr><th class="l">문제</th><th class="l">내용</th><th class="l">검토 중인 방향</th></tr>
-<tr><td class="l">게임 길이 의존</td><td class="l w">게임 PCI+와 게임 길이의 상관: 원딜 .27, 서폿 .17, 정글 .15. 분당 지표(시야 점수 · 딜 · 받은 피해)도 후반에 올라가고, 25분 이하 게임은 Vision/Map+가 7 ~ 12점 낮게 나온다. 시즌 값을 플레이 분으로 가중 평균하므로 긴 게임의 비중도 크다.</td><td class="l w">컴포넌트별 게임 길이 보정, 길이 구간별 표준화, 또는 고정 시간 구간(예: 0 ~ 25분) 기준</td></tr>
+<tr><td class="l">게임 길이 의존</td><td class="l w">게임 5Tool+와 게임 길이의 상관: 원딜 .27, 서폿 .17, 정글 .15. 분당 지표(시야 점수 · 딜 · 받은 피해)도 후반에 올라가고, 25분 이하 게임은 Vision/Map+가 7 ~ 12점 낮게 나온다. 시즌 값을 플레이 분으로 가중 평균하므로 긴 게임의 비중도 크다.</td><td class="l w">컴포넌트별 게임 길이 보정, 길이 구간별 표준화, 또는 고정 시간 구간(예: 0 ~ 25분) 기준</td></tr>
 <tr><td class="l">딜 지표 중복</td><td class="l w">골드당 딜 = 분당 딜 ÷ 분당 골드인데, 같은 포지션 안에서 분당 골드 차이가 작아 두 지표의 상관이 .91 ~ .97이다. Combat 가중 .40이 사실상 딜량 하나에 실린다.</td><td class="l w">골드당 딜 제외, 또는 "같은 골드 대비 딜"로 재정의</td></tr>
 <tr><td class="l">신뢰도 낮은 컴포넌트</td><td class="l w">FightKP · SoloKill · KillShare · RoamSuccess · SecureSteal · ObjectiveVision은 반쪽 간 상관이 .36 이하 — 게임마다 운에 크게 좌우된다.</td><td class="l w">가중 축소, 정의 변경, 또는 시즌 단위에서만 사용</td></tr>
 <tr><td class="l">작은 범위의 순위</td><td class="l w">Worlds · MSI · First Stand는 1 · 2위 차이가 오차보다 작은 경우가 많다 (예: Worlds 탑 108.6 vs 107.6, 표준오차 약 5).</td><td class="l w">오차 범위 표시, 차이가 작으면 공동 순위</td></tr>
@@ -233,11 +233,11 @@ PCI+    = 100 + 15 × (0.278 − (−0.005)) ÷ 0.479                           
 <div class="eq">Z_c      = clamp±3( (winsor±3σ(값) − μ) ÷ σ )       같은 범위 · 같은 포지션
 기둥 Raw = Σ w_c × Z_c                            (Risk = −Z(DeathCost))
 기둥+    = 100 + 15 × std(기둥 Raw)
-PCI Raw  = Σ 포지션 가중 × 기둥 Raw
-PCI+     = 100 + 15 × std(PCI Raw)                 게임 단위
+종합 Raw  = Σ 포지션 가중 × 기둥 Raw
+5Tool+     = 100 + 15 × std(종합 Raw)                 게임 단위
 시즌     = 플레이 분 가중 평균                     순위 10게임 이상</div>
 
-<p class="small">버전 pci-v1.0-local (2026-11-24, 잠정) · 2026 시즌 raw 데이터(LCK · 국제대회 715게임) · 설계 Notion「LOL PCI+ 설계」, 구현 src/pci/, 설정 config/pci.yaml · 결과는 <a href="./">결과 조회</a>의 PCI+ 탭.</p>
+<p class="small">버전 pci-v1.0-local (2026-11-24, 잠정) · 2026 시즌 raw 데이터(LCK · 국제대회 715게임) · 설계 Notion「5Tool+ 설계 (구 PCI+)」, 구현 src/pci/, 설정 config/pci.yaml · 결과는 <a href="./">결과 조회</a>의 5Tool+ 탭.</p>
 </div>
 <script>
 document.getElementById("theme").onclick=()=>{const h=document.documentElement,dark=h.dataset.theme?h.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;h.dataset.theme=dark?"light":"dark"};
